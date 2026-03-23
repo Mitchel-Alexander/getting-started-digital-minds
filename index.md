@@ -1,16 +1,9 @@
 ---
 layout: home
 title: Getting Started in Digital Minds
-entry_points:
-  - title: "80,000 Hours — Moral Status of Digital Minds"
-    description: "A clear, accessible overview of why this field matters and what is at stake."
-    url: "https://80000hours.org/problem-profiles/moral-status-digital-minds/"
-  - title: "The Digital Minds Newsletter"
-    description: "A regular publication tracking developments across the field."
-    url: "https://www.digitalminds.news/"
-  - title: "Digital Minds: A Quickstart Guide"
-    description: "Curated articles, media, and research for readers ranging from curious beginners to aspiring contributors."
-    url: "https://aviparrack.substack.com/p/digital-minds-a-quickstart-guide"
+start_here:
+  title: "What You Can Do This Week"
+  description: "You do not need to commit to a career change to engage with digital minds. Some of the most useful starting points take an afternoon."
 sections:
   - title: "Research Areas"
     description: "The questions the field is working on, with key readings and relevant groups."

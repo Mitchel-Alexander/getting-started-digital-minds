@@ -6,18 +6,34 @@ layout: default
     {{ content }}
   </section>
 
-  {% if page.entry_points %}
-  <section class="entry-points">
+  {% if page.start_here %}
+  <section class="start-here">
     <h2>Start here</h2>
-    <div class="card-grid">
-      {% for item in page.entry_points %}
-      <a href="{{ item.url }}" class="card" target="_blank" rel="noopener">
-        <h3>{{ item.title }}</h3>
-        <p>{{ item.description }}</p>
-      </a>
-      {% endfor %}
+    <button class="start-here-toggle" aria-expanded="false" aria-controls="start-here-content">
+      <div class="start-here-header">
+        <h3>{{ page.start_here.title }}</h3>
+        <p>{{ page.start_here.description }}</p>
+      </div>
+      <span class="start-here-chevron" aria-hidden="true">&#9662;</span>
+    </button>
+    <div class="start-here-content" id="start-here-content">
+      {% capture start_here_md %}{% include start-here-content.md %}{% endcapture %}
+      {{ start_here_md | markdownify }}
     </div>
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var toggle = document.querySelector('.start-here-toggle');
+      var content = document.getElementById('start-here-content');
+      if (toggle && content) {
+        toggle.addEventListener('click', function () {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          content.classList.toggle('open');
+        });
+      }
+    });
+  </script>
   {% endif %}
 
   {% if page.sections %}

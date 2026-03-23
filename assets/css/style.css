@@ -227,6 +227,73 @@ em {
   color: #333;
 }
 
+/* Start here — expandable card */
+.start-here {
+  margin-bottom: 2.5rem;
+}
+
+.start-here-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  margin-top: 0.75rem;
+}
+
+.start-here-toggle:hover {
+  border-color: #003366;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+}
+
+.start-here-header h3 {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem 0;
+  color: #003366;
+}
+
+.start-here-header p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.start-here-chevron {
+  font-size: 1.1rem;
+  color: #003366;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+
+.start-here-toggle[aria-expanded="true"] .start-here-chevron {
+  transform: rotate(180deg);
+}
+
+.start-here-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  padding: 0 1.5rem;
+}
+
+.start-here-content.open {
+  max-height: 2000px;
+  padding: 1rem 1.5rem 1.5rem;
+}
+
 /* Card grid */
 .card-grid {
   display: grid;
