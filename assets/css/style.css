@@ -188,6 +188,10 @@ em {
   margin-bottom: 1.5rem;
 }
 
+.entry-points .card-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
   display: block;
   padding: 1.25rem 1.5rem;
@@ -277,6 +281,10 @@ em {
   }
 
   .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-points .card-grid {
     grid-template-columns: 1fr;
   }
 }
