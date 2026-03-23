@@ -6,26 +6,24 @@ start_here:
   description: "You do not need to commit to a career change to engage with digital minds. Some of the most useful starting points take an afternoon."
 sections:
   - title: "Research Areas"
-    description: "The questions the field is working on, with key readings and relevant groups."
+    description: "What the field is actually working on. Organised by the questions being asked, with key readings and the groups asking them."
     url: "/research-areas/"
   - title: "Pathways"
-    description: "How to enter the field, whether through adjacent disciplines or dedicated programmes."
+    description: "How people enter the field. Adjacent routes, dedicated programmes, and career guidance by discipline and stage."
     url: "/pathways/"
   - title: "Field Map"
     description: "An interactive directory of the organisations and people working on digital minds."
     url: "https://mitchel-alexander.github.io/digital-minds-map/"
     external: true
   - title: "Tips & Resources"
-    description: "What to do first, how to publish, where to find people, and how to build the right skills."
+    description: "Practical guidance on publishing, building connections, making the case for digital minds work, and the skills that transfer."
     url: "/tips-resources/"
 ---
 
 # Getting Started in Digital Minds
 
-As AI systems grow more capable, a set of questions is gaining urgency. Could these systems have minds? Could they experience something? Could they have interests that matter morally?
+AI systems are becoming more sophisticated. Whether they could one day have minds, experiences, or morally relevant interests is an open question, and experts are divided. We cannot yet say whether current or future AI systems will have welfare that matters. We can say that the question is urgent, that the institutions needed to address it are still being built, and that the window to shape them is now.
 
-Nobody knows. Experts disagree sharply, and the empirical tools for settling the question remain primitive. But a growing number of researchers, policymakers, and members of the public think the possibility warrants serious attention. If AI systems can have morally relevant experiences, current practices may be causing harm at an enormous scale. If they cannot, we still need to understand why, and what follows for how we design and govern these systems.
+Digital minds is where this work happens. Philosophers, cognitive scientists, AI researchers, neuroscientists, lawyers, and policymakers are developing the concepts, evidence, and governance frameworks the question demands. The field is young and its central problems remain genuinely unsettled. For people willing to work at the intersection of disciplines, and to sit with deep uncertainty, that is the opening.
 
-Digital minds is the field that takes these questions on. It draws on philosophy of mind, cognitive science, AI research, neuroscience, law, and ethics. The field is young. Its institutions are still forming, its methods are contested, and many of its central questions remain wide open. For newcomers, that is the opportunity.
-
-This guide is a map of the terrain: who is working on these questions, how the field is organised, where to find resources, and how to get involved.
+This site will help you find your way in. What the field is working on, how people enter it, who is doing the work, and what you can do this week.
