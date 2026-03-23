@@ -1,0 +1,11 @@
+title: Getting Started in Digital Minds
+description: A guide for newcomers to the digital minds field
+baseurl: /getting-started-digital-minds
+url: https://mitchel-alexander.github.io
+theme: minima
+permalink: /:slug/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

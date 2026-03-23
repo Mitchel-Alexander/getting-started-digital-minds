@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="home">
+  <section class="hero">
+    {{ content }}
+  </section>
+
+  {% if page.entry_points %}
+  <section class="entry-points">
+    <h2>Start here</h2>
+    <div class="card-grid">
+      {% for item in page.entry_points %}
+      <a href="{{ item.url }}" class="card" target="_blank" rel="noopener">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.sections %}
+  <section class="section-nav">
+    <h2>Explore the guide</h2>
+    <div class="card-grid">
+      {% for item in page.sections %}
+      <a href="{{ item.url | relative_url }}" class="card section-card" {% if item.external %}target="_blank" rel="noopener"{% endif %}>
+        <h3>{{ item.title }}{% if item.external %} ↗{% endif %}</h3>
+        <p>{{ item.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</article>

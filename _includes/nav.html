@@ -1,0 +1,17 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">Digital Minds</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/research-areas/' | relative_url }}" {% if page.url == '/research-areas/' %}class="active"{% endif %}>Research Areas</a></li>
+      <li><a href="{{ '/pathways/' | relative_url }}" {% if page.url == '/pathways/' %}class="active"{% endif %}>Pathways</a></li>
+      <li><a href="https://mitchel-alexander.github.io/digital-minds-map/" target="_blank" rel="noopener">Field Map ↗</a></li>
+      <li><a href="{{ '/tips-resources/' | relative_url }}" {% if page.url == '/tips-resources/' %}class="active"{% endif %}>Tips &amp; Resources</a></li>
+    </ul>
+  </div>
+</nav>
