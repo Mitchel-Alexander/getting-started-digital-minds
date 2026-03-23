@@ -30,4 +30,4 @@ The philosopher Jonathan Birch describes the distinctive challenge in *The Edge 
 
 > "If sentient AI is achieved, it will be achieved in systems whose recent precursors were correctly seen as mere tools and playthings with no moral status. The point at which this judgement shifts from correct to dangerously incorrect will be very hard for us to see. There is a real risk that we will continue to regard these systems as our tools and playthings long *after* they become sentient. ... I fear that we may create sentient AI long before we recognize we have done so. It could be much easier than we tend to think."
 
-This site will help you find your way in. What the field is working on, how people enter it, who is doing the work, and what you can do this week.
+This site is designed to help you become familiar with digital minds as a field. What researchers are working on, the questions shaping the agenda, how people are entering the conversation, and where to begin.
