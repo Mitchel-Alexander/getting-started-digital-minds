@@ -5,6 +5,9 @@ permalink: /research-areas/
 description: The questions the field is working on, with key readings and relevant groups.
 ---
 
+* TOC
+{:toc}
+
 ## Overview
 
 Digital minds research is often described by discipline: philosophy, neuroscience, computer science, law. But the field's structure is better understood through the questions it asks, which follow a logical sequence.

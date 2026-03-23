@@ -49,4 +49,12 @@ layout: default
     </div>
   </section>
   {% endif %}
+
+  {% if page.open_question %}
+  <section class="open-question">
+    <h2>An open question</h2>
+    <blockquote>{{ page.open_question.text }}</blockquote>
+    <p class="open-question-cta">This is one of many unsettled questions the field is working on. See <a href="{{ '/research-areas/' | relative_url }}">Research Areas</a> for the full landscape.</p>
+  </section>
+  {% endif %}
 </article>

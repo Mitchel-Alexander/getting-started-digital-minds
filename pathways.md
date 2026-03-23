@@ -5,6 +5,9 @@ permalink: /pathways/
 description: How to enter the field, whether through adjacent disciplines or dedicated programmes.
 ---
 
+* TOC
+{:toc}
+
 Digital minds is a small field. There is no standard career track, no dedicated undergraduate programme, and few organisations that hire specifically for digital minds roles. The dedicated programmes that do exist are competitive, and progression paths remain unclear.
 
 Individual contributions carry real weight, though. The community is small enough that a thoughtful blog post or a well-organised reading group can build recognition quickly. Dedicated research positions are starting to appear at AI labs, non-profits, and university research centres. The trajectory is toward more institutional support, but for now the field rewards people who can independently identify and pursue useful work.

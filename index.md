@@ -18,6 +18,8 @@ sections:
   - title: "Tips & Resources"
     description: "Practical guidance on publishing, building connections, making the case for digital minds work, and the skills that transfer."
     url: "/tips-resources/"
+open_question:
+  text: "How should we weigh the risk of moral oversight — failing to recognise a morally relevant AI system — against moral overextension — granting moral status where it is unwarranted?"
 ---
 
 # Getting Started in Digital Minds

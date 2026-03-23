@@ -5,6 +5,9 @@ permalink: /tips-resources/
 description: What to do first, how to publish, where to find people, and how to build the right skills.
 ---
 
+* TOC
+{:toc}
+
 The earlier sections of this guide describe the field and how to enter it. This one is practical. It covers what to do first, how to present yourself, where to find people, and how to build the skills and visibility that make a contribution possible.
 
 Some of this advice applies broadly. Some is specific to digital minds. Where the field's youth or interdisciplinary character creates distinctive challenges, we say so.
@@ -130,6 +133,3 @@ Writing with someone whose expertise complements yours is one of the most natura
 Look for collaborators among your peers and in adjacent fields. Reading groups, structured programmes, and workshops are where these partnerships tend to form.
 
 
-## Career Profiles
-
-*To be populated with short first-person accounts from individuals working in or entering digital minds, varying across discipline, career stage, and pathway.*

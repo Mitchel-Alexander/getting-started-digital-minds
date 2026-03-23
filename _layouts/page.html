@@ -3,8 +3,30 @@ layout: default
 ---
 <article class="page">
   <h1 class="page-title">{{ page.title }}</h1>
+  {% assign words = content | number_of_words %}
+  {% assign minutes = words | divided_by: 230 %}
+  {% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+  <p class="reading-time">{{ minutes }} min read</p>
   {% if page.description %}
   <p class="page-description">{{ page.description }}</p>
   {% endif %}
   {{ content }}
 </article>
+<script>
+  // Wrap "Key readings" and "Relevant groups" blocks in a styled container
+  document.querySelectorAll('article.page p > strong').forEach(function(el) {
+    var text = el.textContent.trim().toLowerCase();
+    if (text === 'key readings:' || text === 'relevant groups:') {
+      var p = el.parentElement;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'aside-block';
+      p.parentNode.insertBefore(wrapper, p);
+      wrapper.appendChild(p);
+      // Also grab the following ul if it exists
+      var next = wrapper.nextElementSibling;
+      if (next && next.tagName === 'UL') {
+        wrapper.appendChild(next);
+      }
+    }
+  });
+</script>
