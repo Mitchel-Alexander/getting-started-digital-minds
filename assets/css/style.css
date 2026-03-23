@@ -416,29 +416,18 @@ em {
   margin-bottom: 0.3rem;
 }
 
-/* Open question teaser (homepage) */
-.open-question {
-  margin-top: 2.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
-}
-
-.open-question blockquote {
+/* Hero blockquote (homepage) */
+.hero blockquote {
   border-left: 3px solid #003366;
-  margin: 0.75rem 0 1rem;
+  margin: 1.25rem 0 1.5rem;
   padding: 0.75rem 1.25rem;
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-style: italic;
   color: #1a1a2e;
   line-height: 1.6;
   background: #f8f9fb;
   border-radius: 0 4px 4px 0;
-}
-
-.open-question-cta {
-  font-size: 0.9rem;
-  color: #555;
 }
 
 /* Footer */

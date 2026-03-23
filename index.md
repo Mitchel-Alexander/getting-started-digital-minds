@@ -18,8 +18,6 @@ sections:
   - title: "Tips & Resources"
     description: "Practical guidance on publishing, building connections, making the case for digital minds work, and the skills that transfer."
     url: "/tips-resources/"
-open_question:
-  text: "How should we weigh the risk of moral oversight — failing to recognise a morally relevant AI system — against moral overextension — granting moral status where it is unwarranted?"
 ---
 
 # Getting Started in Digital Minds
@@ -27,5 +25,9 @@ open_question:
 AI systems are becoming more sophisticated. Whether they could one day have minds, experiences, or morally relevant interests is an open question, and experts are divided. We cannot yet say whether current or future AI systems will have welfare that matters. We can say that the question is urgent, that the institutions needed to address it are still being built, and that the window to shape them is now.
 
 Digital minds is where this work happens. Philosophers, cognitive scientists, AI researchers, neuroscientists, lawyers, and policymakers are developing the concepts, evidence, and governance frameworks the question demands. The field is young and its central problems remain genuinely unsettled. For people willing to work at the intersection of disciplines, and to sit with deep uncertainty, that is the opening.
+
+The philosopher Jonathan Birch describes the distinctive challenge in *The Edge of Sentience* (2024):
+
+> "If sentient AI is achieved, it will be achieved in systems whose recent precursors were correctly seen as mere tools and playthings with no moral status. The point at which this judgement shifts from correct to dangerously incorrect will be very hard for us to see. There is a real risk that we will continue to regard these systems as our tools and playthings long *after* they become sentient. ... I fear that we may create sentient AI long before we recognize we have done so. It could be much easier than we tend to think."
 
 This site will help you find your way in. What the field is working on, how people enter it, who is doing the work, and what you can do this week.
