@@ -1,0 +1,54 @@
+- title: Home
+  url: /
+  sections: []
+
+- title: Research Areas
+  url: /research-areas/
+  sections:
+    - title: Consciousness and Subjective Experience
+      anchor: consciousness-and-subjective-experience
+    - title: Moral Status and Criteria
+      anchor: moral-status-and-criteria
+    - title: Welfare Assessment and Measurement
+      anchor: welfare-assessment-and-measurement
+    - title: AI Cognition and Agency
+      anchor: ai-cognition-and-agency
+    - title: Rights and Legal Personhood
+      anchor: rights-and-legal-personhood
+    - title: Governance under Uncertainty
+      anchor: governance-under-uncertainty
+    - title: Perceptions of Consciousness
+      anchor: perceptions-of-consciousness
+
+- title: Pathways
+  url: /pathways/
+  sections:
+    - title: Technical Track
+      anchor: technical-track
+    - title: Governance Track
+      anchor: governance-track
+    - title: Adjacent Pathways
+      anchor: adjacent-pathways
+    - title: Digital Minds Programmes
+      anchor: digital-minds-programmes
+
+- title: Field Map
+  url: https://mitchel-alexander.github.io/digital-minds-map/
+  external: true
+  sections: []
+
+- title: Tips & Resources
+  url: /tips-resources/
+  sections:
+    - title: What You Can Do This Week
+      anchor: what-you-can-do-this-week
+    - title: Building Connections
+      anchor: building-connections
+    - title: Making the Case
+      anchor: making-the-case-for-digital-minds
+    - title: Skills
+      anchor: skills-for-digital-minds-work
+    - title: Publishing
+      anchor: publishing
+    - title: Career Profiles
+      anchor: career-profiles

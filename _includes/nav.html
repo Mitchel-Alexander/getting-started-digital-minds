@@ -7,11 +7,22 @@
       <span class="bar"></span>
     </button>
     <ul class="nav-links">
-      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-      <li><a href="{{ '/research-areas/' | relative_url }}" {% if page.url == '/research-areas/' %}class="active"{% endif %}>Research Areas</a></li>
-      <li><a href="{{ '/pathways/' | relative_url }}" {% if page.url == '/pathways/' %}class="active"{% endif %}>Pathways</a></li>
-      <li><a href="https://mitchel-alexander.github.io/digital-minds-map/" target="_blank" rel="noopener">Field Map ↗</a></li>
-      <li><a href="{{ '/tips-resources/' | relative_url }}" {% if page.url == '/tips-resources/' %}class="active"{% endif %}>Tips &amp; Resources</a></li>
+      {% for item in site.data.nav %}
+      <li class="nav-item{% if item.sections.size > 0 %} has-dropdown{% endif %}">
+        <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+           {% if item.external %}target="_blank" rel="noopener"{% endif %}
+           {% if page.url == item.url %}class="active"{% endif %}>
+          {{ item.title }}{% if item.external %} ↗{% endif %}{% if item.sections.size > 0 %} <span class="dropdown-arrow">▾</span>{% endif %}
+        </a>
+        {% if item.sections.size > 0 %}
+        <ul class="dropdown">
+          {% for section in item.sections %}
+          <li><a href="{{ item.url | relative_url }}#{{ section.anchor }}">{{ section.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
