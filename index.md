@@ -31,8 +31,8 @@ sections:
 
 As AI systems grow more capable, a set of questions is gaining urgency. Could these systems have minds? Could they experience something? Could they have interests that matter morally?
 
-Nobody knows. Experts disagree sharply, and the empirical tools for settling the question remain primitive. But a growing number of researchers, policymakers, and members of the public think the possibility warrants serious attention.
+Nobody knows. Experts disagree sharply, and the empirical tools for settling the question remain primitive. But a growing number of researchers, policymakers, and members of the public think the possibility warrants serious attention. If AI systems can have morally relevant experiences, current practices may be causing harm at an enormous scale. If they cannot, we still need to understand why, and what follows for how we design and govern these systems.
 
-Digital minds is the field that takes these questions on. It draws on philosophy of mind, cognitive science, AI research, neuroscience, law, and ethics. The field is young, its institutions are still forming, and many of its central questions remain wide open. For newcomers, that is the opportunity.
+Digital minds is the field that takes these questions on. It draws on philosophy of mind, cognitive science, AI research, neuroscience, law, and ethics. The field is young. Its institutions are still forming, its methods are contested, and many of its central questions remain wide open. For newcomers, that is the opportunity.
 
 This guide is a map of the terrain: who is working on these questions, how the field is organised, where to find resources, and how to get involved.
