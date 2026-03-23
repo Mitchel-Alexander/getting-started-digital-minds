@@ -1,7 +1,7 @@
 ### An afternoon
 
-- Read the [80,000 Hours profile on the moral status of digital minds](https://80000hours.org/problem-profiles/moral-status-digital-minds/). The best short introduction to the field: what the questions are, why they matter, and where the uncertainty lies.
 - Subscribe to the [Digital Minds Newsletter](https://www.digitalminds.news/). The closest thing the field has to a shared bulletin board. Covers new research, events, job openings, and policy developments as they happen.
+- Read the [80,000 Hours profile on the moral status of digital minds](https://80000hours.org/problem-profiles/moral-status-digital-minds/). The best short introduction to the field: what the questions are, why they matter, and where the uncertainty lies.
 - Browse [Avi Parrack's Quickstart Guide](https://aviparrack.substack.com/p/digital-minds-a-quickstart-guide). A curated reading list that scales with your level of commitment, from a single paper to a full syllabus.
 - Watch an episode of [Exploring Machine Consciousness](https://www.youtube.com/@PRISM_Global) (PRISM), [Our Lives With Bots](https://www.youtube.com/@OurLivesWithBots), or [Conspicuous Cognition](https://www.youtube.com/@conspicuouscognition/videos). Three channels approaching consciousness, AI, and moral status from different directions. Good for getting a feel for how people in the field actually talk about these questions.
 
