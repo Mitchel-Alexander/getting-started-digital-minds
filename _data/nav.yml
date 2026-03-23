@@ -5,20 +5,12 @@
 - title: Research Areas
   url: /research-areas/
   sections:
-    - title: Consciousness and Subjective Experience
-      anchor: consciousness-and-subjective-experience
-    - title: Moral Status and Criteria
-      anchor: moral-status-and-criteria
-    - title: Welfare Assessment and Measurement
-      anchor: welfare-assessment-and-measurement
-    - title: AI Cognition and Agency
-      anchor: ai-cognition-and-agency
-    - title: Rights and Legal Personhood
-      anchor: rights-and-legal-personhood
-    - title: Governance under Uncertainty
-      anchor: governance-under-uncertainty
-    - title: Perceptions of Consciousness
-      anchor: perceptions-of-consciousness
+    - title: What Might AI Systems Be?
+      anchor: what-might-ai-systems-be
+    - title: What Would That Mean?
+      anchor: what-would-that-mean
+    - title: What Should We Do About It?
+      anchor: what-should-we-do-about-it
 
 - title: Pathways
   url: /pathways/

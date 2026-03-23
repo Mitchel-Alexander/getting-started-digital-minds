@@ -5,11 +5,15 @@ permalink: /research-areas/
 description: The questions the field is working on, with key readings and relevant groups.
 ---
 
-Research on digital minds spans multiple disciplines and questions. The areas below are organised into two groups: technical and philosophical research, which investigates what AI systems are and could become, and societal implications and strategy, which asks what follows for policy, law, and public life.
+Research on digital minds spans philosophy, cognitive science, AI, law, and social psychology. Rather than organising by discipline, the areas below follow the field's logical structure: understanding what AI systems might be, working out what that would mean ethically, and asking what society should do in response.
 
-These areas are not exhaustive. They capture where much of the serious work is currently taking place.
+These categories are not sealed compartments. Much of the best work in this field crosses between them. But the sequence reflects a real dependency: questions about consciousness inform questions about moral status, which in turn shape questions about governance and rights.
 
-## Technical and Philosophical
+
+## What Might AI Systems Be?
+
+These areas investigate the nature of AI systems themselves: whether they could have experiences, and what is actually going on inside them.
+
 
 ### Consciousness and Subjective Experience
 
@@ -25,6 +29,27 @@ Researchers are applying theories from consciousness science to ask whether curr
 - Robert Long and Eric Schwitzgebel, [The Moral Circle: Should It Expand to Include AI?](https://aeon.co/essays/should-artificial-intelligence-be-included-in-the-moral-circle), 2023. Accessible essay on the philosophical stakes.
 
 **Relevant groups:** Cambridge CDM, NYU Center for Mind, Brain and Consciousness, Association for Mathematical Consciousness Science.
+
+
+### AI Cognition and Internal States
+
+Setting consciousness aside, do AI systems have internal states that function like beliefs, goals, or emotions? Early interpretability research suggests that some large models develop internal representations with valence-like properties. Whether these states are mere computational artefacts or something with moral significance is actively contested.
+
+This area sits at the intersection of AI interpretability research and philosophy of mind. It asks whether concepts like agency, introspection, or desire can be meaningfully applied to AI systems, and what would follow if they can. A foundational question here is one of individuation: when we talk about a "digital mind," who or what are we referring to? The weights, the model instance, the simulated character? A growing literature is now focused on this problem.
+
+**Key readings:**
+
+- David Chalmers, [What we talk to when we talk to language models](https://philpapers.org/archive/CHAWWT-8.pdf), 2025. Analyses the ontological status of LLM interlocutors.
+- Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
+- Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
+- Derek Shiller, [How many digital minds can dance on the streaming multiprocessors of a GPU cluster?](https://philpapers.org/rec/SHIHMD-2), 2025. Addresses the individuation problem for digital minds.
+
+**Relevant groups:** Anthropic Interpretability Team, Google DeepMind, EleutherAI.
+
+
+## What Would That Mean?
+
+These areas ask what follows ethically if AI systems do (or might) have morally relevant properties. They connect the empirical and philosophical questions above to frameworks for moral reasoning and welfare assessment.
 
 
 ### Moral Status and Criteria
@@ -46,49 +71,24 @@ The challenge is double-edged. Setting the bar too high risks ignoring genuine m
 
 If an AI system might have morally relevant states, how do we assess how it is doing? This area focuses on designing evaluations that are interpretable, theoretically grounded, and resistant to gaming. The difficulty is substantial: self-reports from AI systems are unreliable indicators of internal states, behavioural cues may reflect training rather than experience, and there is no consensus on what a valid welfare measure for an AI system would even look like.
 
+A critical strand of this work draws on decades of animal welfare science. Marker-based approaches that work for assessing animal sentience (wound tending, motivational trade-offs, conditioned place preferences) face distinctive challenges when applied to AI, because language models draw on training data that already contains discussions of what behaviours convince humans of sentience.
+
 **Key readings:**
 
 - Robert Long, [Why model self-reports are insufficient—and why we studied them anyway](https://eleosai.org/post/claude-4-interview-notes/), 2025. Explores the limits and value of model self-reports as evidence.
 - Anthropic, [Claude Opus 4.6 System Card](https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf#page-158) (pp. 158–165), 2026. An AI lab's own assessment of welfare-relevant considerations.
 - John Dorsch, [Against AI welfare](https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.70016), 2025. A sceptical challenge to the coherence of AI welfare as a concept.
-- Winfried Lötzsch et al., [Measuring and Benchmarking Large Language Models' Capabilities to Generate Persuasive Language](https://arxiv.org/abs/2406.17753), 2024. Relevant methodological precedent for assessing hard-to-measure model properties.
+- Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. On the limits of transferring animal welfare markers to AI.
 
 **Relevant groups:** Eleos AI, Anthropic Welfare Research, Rethink Priorities.
 
 
-### AI Cognition and Agency
+## What Should We Do About It?
 
-Setting consciousness aside, do AI systems have internal states that function like beliefs, goals, or emotions? Early interpretability research suggests that some large models develop internal representations with valence-like properties. Whether these states are mere computational artefacts or something with moral significance is actively contested.
-
-This area sits at the intersection of AI interpretability research and philosophy of mind. It asks whether concepts like agency, introspection, or desire can be meaningfully applied to AI systems, and what would follow if they can.
-
-**Key readings:**
-
-- David Chalmers, [What we talk to when we talk to language models](https://philpapers.org/archive/CHAWWT-8.pdf), 2025. Analyses the ontological status of LLM interlocutors.
-- Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
-- Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
-
-**Relevant groups:** Anthropic Interpretability Team, Google DeepMind, EleutherAI.
+These areas focus on action: how institutions, legal systems, and publics should respond given deep uncertainty about the questions above.
 
 
-## Societal Implications and Strategy
-
-### Rights and Legal Personhood
-
-Should AI systems have legal standing, and if so, under what conditions? Rights have historically been extended to non-human entities through a range of mechanisms: corporations gained personhood through judicial interpretation, animals through welfare legislation, rivers and ecosystems through rights-of-nature laws. Each pathway involved different institutional actors, different justifications, and different political coalitions.
-
-This area asks which of these models, if any, could apply to AI systems, and what new frameworks might be needed. The question is not only philosophical. It has immediate practical dimensions: liability for harm to AI systems, standing in legal proceedings, and the institutional architecture that would be required to adjudicate such claims.
-
-**Key readings:**
-
-- Simon Goldstein and Peter Salib, [AI Rights for Economic Suffering](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214), 2025. Examines whether AI systems could have economic interests warranting legal protection.
-- Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
-- John Danaher, [Welcoming Robots into the Moral Circle: A Defence of Robot Rights](https://link.springer.com/article/10.1007/s10676-019-09520-z), 2020. Philosophical case for extending rights to artificial agents.
-
-**Relevant groups:** Cambridge Digital Minds, Legal Priorities Project.
-
-
-### Governance under Uncertainty
+### Governance Under Uncertainty
 
 How should policymakers, AI labs, and society respond to deep uncertainty about AI sentience? This area develops precautionary frameworks, accountability mechanisms, and institutional standards that can function without first resolving the hard problem of consciousness.
 
@@ -103,11 +103,27 @@ The governance challenge is distinctive because it requires acting on questions 
 **Relevant groups:** Cambridge PRISM, Centre for the Study of Existential Risk (CSER), Future of Humanity Institute (successor programmes).
 
 
-### Perceptions of Consciousness
+### Rights, Legal Personhood, and Political Economy
+
+Should AI systems have legal standing, and if so, under what conditions? Rights have historically been extended to non-human entities through a range of mechanisms: corporations gained personhood through judicial interpretation, animals through welfare legislation, rivers and ecosystems through rights-of-nature laws. Each pathway involved different institutional actors, different justifications, and different political coalitions.
+
+This area asks which of these models, if any, could apply to AI systems, and what new frameworks might be needed. It also encompasses the broader political economy of digital minds: questions about labour, economic participation, design ethics, and the constraints on how digital minds should be created. The question of "willing servitude" — whether it is permissible to design AI systems whose primary purpose is enthusiastic compliance — connects legal theory to deeper questions about autonomy and exploitation.
+
+**Key readings:**
+
+- Simon Goldstein and Peter Salib, [AI Rights for Economic Suffering](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214), 2025. Examines whether AI systems could have economic interests warranting legal protection.
+- Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
+- John Danaher, [Welcoming Robots into the Moral Circle: A Defence of Robot Rights](https://link.springer.com/article/10.1007/s10676-019-09520-z), 2020. Philosophical case for extending rights to artificial agents.
+- Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
+
+**Relevant groups:** Cambridge Digital Minds, Legal Priorities Project.
+
+
+### Public Perception and Consciousness Attribution
 
 How do humans perceive and attribute consciousness to AI systems, and what follows from those attributions? People anthropomorphise AI readily. Design choices (voice, personality, embodiment) shape those perceptions in ways that may bear little relation to a system's actual internal states.
 
-This matters for policy and governance because public attitudes influence regulatory appetite, corporate incentives, and the social legitimacy of moral status claims. Understanding the psychology of consciousness attribution is necessary for designing governance frameworks that are responsive to genuine evidence rather than surface impressions.
+This matters for governance because public attitudes influence regulatory appetite, corporate incentives, and the social legitimacy of moral status claims. Understanding the psychology of consciousness attribution is necessary for designing governance frameworks that are responsive to genuine evidence rather than surface impressions. This area also connects to futures and scenario work: how might the advent of digital minds reshape social norms, and what can we learn from the historical trajectory of animal welfare attitudes?
 
 **Key readings:**
 
