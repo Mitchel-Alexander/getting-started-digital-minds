@@ -5,6 +5,8 @@
 - title: Research Areas
   url: /research-areas/
   sections:
+    - title: Overview
+      anchor: overview
     - title: What Might AI Systems Be?
       anchor: what-might-ai-systems-be
     - title: What Would That Mean?

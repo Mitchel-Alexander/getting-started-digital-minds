@@ -5,9 +5,15 @@ permalink: /research-areas/
 description: The questions the field is working on, with key readings and relevant groups.
 ---
 
-Research on digital minds spans philosophy, cognitive science, AI, law, and social psychology. Rather than organising by discipline, the areas below follow the field's logical structure: understanding what AI systems might be, working out what that would mean ethically, and asking what society should do in response.
+## Overview
 
-These categories are not sealed compartments. Much of the best work in this field crosses between them. But the sequence reflects a real dependency: questions about consciousness inform questions about moral status, which in turn shape questions about governance and rights.
+Digital minds research is often described by discipline: philosophy, neuroscience, computer science, law. But the field's structure is better understood through the questions it asks, which follow a logical sequence.
+
+The first set of questions is empirical and philosophical: what might AI systems actually be? Could they have experiences, and what is going on inside them? The second set is ethical: if AI systems do (or might) have morally relevant properties, what follows for how we should treat them? The third is practical: given deep uncertainty about the answers, what should institutions, legal systems, and publics do now?
+
+These categories are not sealed compartments. Much of the best work in this field crosses between them. But the dependency is real. Questions about consciousness inform questions about moral status, which in turn shape questions about governance and rights. Getting the earlier questions wrong, or ignoring them, distorts the later ones.
+
+The areas below are organised along this sequence.
 
 
 ## What Might AI Systems Be?
