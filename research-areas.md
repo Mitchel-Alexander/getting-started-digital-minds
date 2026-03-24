@@ -16,20 +16,7 @@ The first set of questions is empirical and philosophical: what might AI systems
 
 These categories are not sealed compartments. Much of the best work in this field crosses between them. But the dependency is real. Questions about consciousness inform questions about moral status, which in turn shape questions about governance and rights. Getting the earlier questions wrong, or ignoring them, distorts the later ones.
 
-<div class="card-grid card-grid--stacked" markdown="0">
-  <a href="#what-might-ai-systems-be" class="card section-card">
-    <h3>What Might AI Systems Be?</h3>
-    <p>Empirical and philosophical questions about consciousness, cognition, and internal states in AI systems.</p>
-  </a>
-  <a href="#what-would-that-mean" class="card section-card">
-    <h3>What Would That Mean?</h3>
-    <p>Ethical frameworks for moral status, welfare assessment, and reasoning under deep uncertainty.</p>
-  </a>
-  <a href="#what-should-we-do-about-it" class="card section-card">
-    <h3>What Should We Do About It?</h3>
-    <p>Governance, legal personhood, public perception, and institutional responses to uncertain moral patients.</p>
-  </a>
-</div>
+The areas below are organised along this sequence.
 
 
 ## What Might AI Systems Be?
