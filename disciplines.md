@@ -123,8 +123,10 @@ How digital minds questions reach wider audiences matters for the field's long-t
 Journalism fellowships focused on AI and technology, such as the [Tarbell Fellowship](https://tarbellfellowship.org/), provide training that can be directed toward digital minds topics. Op-eds, feature articles, and explainers in general-interest or science-focused publications shape how the public and policymakers encounter these questions for the first time. For researchers in other disciplines, the ability to communicate your work to non-specialist audiences is itself a distinctive and undersupplied contribution.
 
 **Selected reading:**
-- Robert Long and Eric Schwitzgebel, [The Moral Circle: Should It Expand to Include AI?](https://aeon.co/essays/should-artificial-intelligence-be-included-in-the-moral-circle), 2023. An accessible essay on the philosophical stakes, and a model for public-facing writing on this topic.
-- Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. Another example of rigorous ideas communicated for a general audience.
+- Columbia Journalism Review, [How to report better on artificial intelligence](https://www.cjr.org/analysis/how-to-report-better-on-artificial-intelligence.php). Practical guidance on covering AI without sensationalism.
+- Scientific American, [Is AI Really Conscious, or Are We Bringing It to Life?](https://www.scientificamerican.com/article/is-ai-really-conscious-or-are-we-bringing-it-to-life/). An example of careful science communication on AI consciousness for a general audience.
+- Science, [If AI becomes conscious, how will we know?](https://www.science.org/content/article/if-ai-becomes-conscious-how-will-we-know). Reporting on the scientific challenges of detecting consciousness in AI systems.
+- Desirable AI, [Journalism Toolkit](https://www.desirableai.com/journalism-toolkit). Resources for journalists covering AI topics responsibly.
 
 </div>
 </details>
