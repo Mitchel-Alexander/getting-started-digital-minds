@@ -17,12 +17,10 @@
 - title: Pathways
   url: /pathways/
   sections:
-    - title: Technical Track
-      anchor: technical-track
-    - title: Governance Track
-      anchor: governance-track
-    - title: Adjacent Pathways
-      anchor: adjacent-pathways
+    - title: By Discipline
+      url: /pathways/disciplines/
+    - title: By Career Stage
+      url: /pathways/career-stages/
     - title: Digital Minds Programmes
       anchor: digital-minds-programmes
 

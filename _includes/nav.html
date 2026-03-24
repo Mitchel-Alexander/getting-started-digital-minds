@@ -17,7 +17,11 @@
         {% if item.sections.size > 0 %}
         <ul class="dropdown">
           {% for section in item.sections %}
+          {% if section.url %}
+          <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+          {% else %}
           <li><a href="{{ item.url | relative_url }}#{{ section.anchor }}">{{ section.title }}</a></li>
+          {% endif %}
           {% endfor %}
         </ul>
         {% endif %}
