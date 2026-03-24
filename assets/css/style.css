@@ -348,6 +348,11 @@ em {
   font-size: 0.95rem;
 }
 
+/* Stacked card grid (single column, full width) */
+.card-grid--stacked {
+  grid-template-columns: 1fr;
+}
+
 /* Table of contents */
 #markdown-toc {
   background: #f8f9fb;

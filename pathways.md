@@ -11,7 +11,7 @@ The questions the field asks span philosophy, cognitive science, AI research, la
 
 This matters for how you think about entering. A direct path runs through dedicated digital minds programmes and organisations. An indirect path runs through adjacent disciplines, bringing relevant expertise into spaces where these questions are not yet being asked. The indirect path carries more uncertainty, but many of the field's most pressing needs (connecting research to governance, bridging disciplinary divides) are best addressed by people with deep roots elsewhere.
 
-<div class="card-grid" markdown="0">
+<div class="card-grid card-grid--stacked" markdown="0">
   <a href="/getting-started-digital-minds/pathways/disciplines/" class="card section-card">
     <h3>Entering from your discipline</h3>
     <p>What different backgrounds bring to digital minds and where to look for entry points.</p>
