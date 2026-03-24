@@ -5,12 +5,11 @@ permalink: /pathways/disciplines/
 description: How different disciplines connect to digital minds, what each brings, and where to look for entry points.
 ---
 
-* TOC
-{:toc}
-
 The questions digital minds asks do not belong to any single field. What follows is a guide to how different disciplines connect to the work, what each brings that the field needs, and where to look for entry points. If your background is not listed here, that does not mean it is irrelevant. The field is young enough that unexpected expertise regularly turns out to be load-bearing.
 
-## Philosophy
+<details class="discipline" id="philosophy">
+<summary>Philosophy</summary>
+<div class="discipline-body" markdown="1">
 
 Philosophy provides much of the field's conceptual infrastructure. Philosophers of mind set the terms for what consciousness might require and whether artificial systems could satisfy those requirements. Moral philosophers develop the frameworks for determining what follows if they do, including what grounds moral status, how to reason about moral consideration under deep uncertainty, and what obligations might arise toward entities whose inner lives we cannot verify. Epistemologists and philosophers of science contribute something equally important. How should we reason about consciousness in systems we cannot introspect? What counts as evidence, and what weight should it bear? These questions run beneath the surface of most digital minds debates, and they need people trained to make them explicit.
 
@@ -26,7 +25,12 @@ Mid-career philosophers bring conceptual precision the field depends on. Visitin
 - Jeff Sebo and Robert Long, [Moral consideration for AI systems by 2030](https://link.springer.com/article/10.1007/s43681-023-00379-1), 2023. Argues that moral consideration for AI may become necessary within the decade.
 - Jonathan Birch, [AI Consciousness: A Centrist Manifesto](https://philarchive.org/rec/BIRACA-4), 2025. Proposes a middle path between dismissal and full moral inclusion.
 
-## Neuroscience and cognitive science
+</div>
+</details>
+
+<details class="discipline" id="neuroscience-and-cognitive-science">
+<summary>Neuroscience and cognitive science</summary>
+<div class="discipline-body" markdown="1">
 
 The leading theories of consciousness were developed with biological minds in view. Whether they extend to artificial systems is one of the field's central questions, and it cannot be answered without people who understand what those theories actually claim about brains. Neuroscientists and cognitive scientists bring experimental rigour, familiarity with the empirical study of consciousness, and a critical eye for when computational analogies hold and when they break down. The relationship between biological and artificial minds is one of the field's most productive areas of inquiry.
 
@@ -41,7 +45,12 @@ Mid-career neuroscientists and cognitive scientists are well positioned to apply
 - Anil Seth, [Conscious artificial intelligence and biological naturalism](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/conscious-artificial-intelligence-and-biological-naturalism/C9912A5BE9D806012E3C8B3AF612E39A), 2025. Argues that consciousness may require biological substrates, challenging computational functionalism.
 - Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. On the limits of transferring animal welfare markers to AI.
 
-## Computer science and AI research
+</div>
+</details>
+
+<details class="discipline" id="computer-science-and-ai-research">
+<summary>Computer science and AI research</summary>
+<div class="discipline-body" markdown="1">
 
 Mechanistic interpretability, model evaluations, representation engineering, and AI safety research all develop methods that bear directly on digital minds questions. Researchers working on what AI systems are doing internally are building the toolkit that consciousness and welfare assessment will eventually require. Whether current AI architectures could satisfy the conditions that consciousness theories describe is a question that cannot be answered without people who understand those architectures in detail.
 
@@ -57,7 +66,12 @@ Mid-career AI researchers can extend existing methods toward digital minds quest
 - Robert Long, [Why model self-reports are insufficient—and why we studied them anyway](https://eleosai.org/post/claude-4-interview-notes/), 2025. Explores the limits and value of model self-reports as evidence.
 - Anthropic, [Claude Opus 4.6 System Card](https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf#page-158) (pp. 158–165), 2026. An AI lab's own assessment of welfare-relevant considerations.
 
-## Social science
+</div>
+</details>
+
+<details class="discipline" id="social-science">
+<summary>Social science</summary>
+<div class="discipline-body" markdown="1">
 
 How people perceive, attribute, and respond to AI consciousness is a governance-relevant empirical question, and social scientists are the ones equipped to answer it. Public attitudes shape regulatory appetite and corporate incentives. Expert disagreement shapes institutional responses. Design choices (voice, personality, embodiment) influence consciousness attribution in ways that may bear little relation to a system's actual internal states. Understanding these dynamics is essential for building governance frameworks that respond to genuine evidence rather than surface impressions.
 
@@ -74,7 +88,12 @@ Mid-career social scientists bring established methods and the ability to design
 - Lucius Caviola, Jeff Sebo, and Jonathan Birch, [What will society think about AI consciousness? Lessons from the animal case](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00147-0), 2025. Uses animal welfare attitudes as a predictor for AI consciousness discourse.
 - Jacy Reese Anthis and Janet V. T. Pauketat, [AI Consciousness and Public Attitudes](https://osf.io/preprints/psyarxiv/4wpkd), 2024. Experimental data on how people reason about AI moral status.
 
-## Law, policy, and governance
+</div>
+</details>
+
+<details class="discipline" id="law-policy-and-governance">
+<summary>Law, policy, and governance</summary>
+<div class="discipline-body" markdown="1">
 
 How should policymakers, AI labs, and legal systems respond to deep uncertainty about AI sentience? This discipline brings frameworks for translating moral and philosophical conclusions into institutional form. Legal personhood, standing, liability, and rights are the mechanisms through which moral status becomes actionable. Governance under uncertainty requires acting on questions that may remain scientifically unresolved for decades, drawing on precedents from environmental precaution, biosafety, and animal welfare regulation.
 
@@ -90,7 +109,12 @@ Mid-career governance professionals bring institutional knowledge and networks t
 - Simon Goldstein and Peter Salib, [AI Rights for Economic Suffering](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214), 2025. Examines whether AI systems could have economic interests warranting legal protection.
 - Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
 
-## Journalism and public communication
+</div>
+</details>
+
+<details class="discipline" id="journalism-and-public-communication">
+<summary>Journalism and public communication</summary>
+<div class="discipline-body" markdown="1">
 
 How digital minds questions reach wider audiences matters for the field's long-term credibility and policy influence. These questions are easy to sensationalise and easy to dismiss. Writing that takes the uncertainty seriously, explains what is known and what is not, and resists both hype and premature scepticism is what the field needs from its public-facing communicators.
 
@@ -99,3 +123,6 @@ Journalism fellowships focused on AI and technology, such as the [Tarbell Fellow
 **Selected reading:**
 - Robert Long and Eric Schwitzgebel, [The Moral Circle: Should It Expand to Include AI?](https://aeon.co/essays/should-artificial-intelligence-be-included-in-the-moral-circle), 2023. An accessible essay on the philosophical stakes, and a model for public-facing writing on this topic.
 - Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. Another example of rigorous ideas communicated for a general audience.
+
+</div>
+</details>

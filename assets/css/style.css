@@ -416,6 +416,66 @@ em {
   margin-bottom: 0.3rem;
 }
 
+/* Collapsible discipline sections */
+details.discipline {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.15s;
+}
+
+details.discipline[open] {
+  border-color: #003366;
+}
+
+details.discipline summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #003366;
+}
+
+details.discipline summary::-webkit-details-marker {
+  display: none;
+}
+
+details.discipline summary::after {
+  content: "▸";
+  font-size: 1rem;
+  color: #003366;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+details.discipline[open] summary::after {
+  transform: rotate(90deg);
+}
+
+details.discipline summary:hover {
+  background: #f8f9fb;
+}
+
+details.discipline .discipline-body {
+  padding: 0 1.25rem 1.25rem;
+}
+
+details.discipline .discipline-body p,
+details.discipline .discipline-body ul {
+  margin-bottom: 0.75rem;
+}
+
+details.discipline .discipline-body p:last-child,
+details.discipline .discipline-body ul:last-child {
+  margin-bottom: 0;
+}
+
 /* Hero blockquote (homepage) */
 .hero blockquote {
   border-left: 3px solid #003366;
