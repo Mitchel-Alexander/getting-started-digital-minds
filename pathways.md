@@ -34,7 +34,8 @@ The most useful thing a student can do is build strong foundations in one contri
 **Useful actions:**
 - Form or join a reading group on digital minds, AI consciousness, or AI welfare
 - Write a thesis or dissertation on a digital minds topic (supervisors may be open even if they do not specialise in this area)
-- Attend conferences such as the Association for the Scientific Study of Consciousness (ASSC) or the Association for Mathematical Consciousness Science (AMCS)
+- Attend online events and field-building conferences such as [Sentient Futures](https://www.sentientfutures.ai/) or [EA Global](https://www.eaglobal.org/)
+- Apply for a mentorship or fellowship programme (see [Digital Minds Programmes](#digital-minds-programmes) below)
 - Follow the Digital Minds Newsletter and the research outputs of groups like Eleos AI and Rethink Priorities
 
 ### Early Career
@@ -46,6 +47,7 @@ Most early-career researchers enter digital minds through a PhD in a contributin
 - Research positions at dedicated organisations (Eleos AI, Rethink Priorities, PRISM)
 - Interpretability and welfare research roles at AI labs (Anthropic, Google DeepMind)
 - Postdoctoral fellowships in consciousness science, philosophy of mind, or AI ethics
+- [Career Development and Transition Funding](https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/career-development-and-transition-funding/) from Coefficient Giving, for researchers moving into areas relevant to global catastrophic risks
 
 **Useful actions:**
 - Publish in relevant venues (journals like *Neuroscience of Consciousness*, *Minds and Machines*, *Philosophy & Technology*; conferences like ASSC, NeurIPS workshops)
