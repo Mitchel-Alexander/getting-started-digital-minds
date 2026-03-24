@@ -14,7 +14,7 @@ The questions the field asks span philosophy, cognitive science, AI research, la
 
 This matters for how you think about entering. A direct path runs through dedicated digital minds programmes and organisations, outlined below. An indirect path runs through adjacent disciplines, bringing relevant expertise into spaces where these questions are not yet being asked. The indirect path carries more uncertainty, but many of the field's most pressing needs — connecting research to governance, bridging disciplinary divides — are best addressed by people with deep roots elsewhere.
 
-Below, we first discuss adjacent pathways and then the emerging direct pipeline. We also outline two broad disciplinary tracks, technical research and governance, with guidance by career stage.
+Below, we outline two broad disciplinary tracks, technical research and governance, with guidance by career stage. We then discuss adjacent pathways and the emerging pipeline of dedicated digital minds programmes.
 
 
 ## Technical Track
@@ -81,7 +81,8 @@ Digital minds governance is a niche within a niche. Few programmes teach it dire
 - Write policy briefs or seminar papers on digital minds topics
 - Engage with AI governance groups and student policy organisations
 - Seek internships at organisations working on AI governance, animal welfare policy, or technology ethics
-- Attend events hosted by Cambridge Digital Minds, PRISM, or similar initiatives
+- Attend online events and field-building conferences such as [Sentient Futures](https://www.sentientfutures.ai/) or [EA Global](https://www.eaglobal.org/)
+- Apply for a mentorship or fellowship programme (see [Digital Minds Programmes](#digital-minds-programmes) below)
 
 ### Early Career
 
@@ -92,6 +93,7 @@ Early-career governance professionals typically enter digital minds from AI gove
 - Legal research positions on AI rights or personhood
 - Roles at organisations with explicit digital minds programmes (PRISM, Rethink Priorities)
 - Fellowships in AI governance, technology policy, or responsible innovation
+- [Career Development and Transition Funding](https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/career-development-and-transition-funding/) from Coefficient Giving, for researchers moving into areas relevant to global catastrophic risks
 
 **Useful actions:**
 - Publish policy analysis or legal commentary on digital minds governance questions
@@ -111,11 +113,7 @@ Experienced governance professionals from AI policy, animal welfare, bioethics, 
 
 ## Adjacent Pathways
 
-Digital minds is perhaps best understood, at least for now, as a cause area positioned between multiple convergent disciplines rather than a coherent discipline in its own right. This creates an unusual situation for someone thinking about how to enter.
-
-The most legible route is to join a dedicated digital minds programme or organisation, and we outline that pipeline further below. But the field also needs people embedded in adjacent institutions who bring digital minds questions into spaces where they are not yet being asked. An AI policy researcher who raises welfare considerations in regulatory discussions. An interpretability researcher who asks consciousness-relevant questions about model internals. A journalist who makes these questions legible for public audiences. In a field this young, these contributions may be where much of the impact lies.
-
-Adjacent paths carry more uncertainty about whether you end up doing sustained digital minds work. What these roles offer in return is an outside perspective: familiarity with how another field handles similar problems, and the ability to identify what digital minds has yet to learn from it. A willingness to recognise the limits of one's own discipline and to take seriously what others have to offer is itself a form of expertise the field needs.
+The field also needs people embedded in adjacent institutions who bring digital minds questions into spaces where they are not yet being asked. An AI policy researcher who raises welfare considerations in regulatory discussions. An interpretability researcher who asks consciousness-relevant questions about model internals. A journalist who makes these questions legible for public audiences. Adjacent paths carry more uncertainty about whether you end up doing sustained digital minds work, but in a field this young these contributions may be where much of the impact lies.
 
 Below are some adjacent areas where digital minds questions are increasingly relevant, with examples of programmes and roles that can serve as entry points.
 
