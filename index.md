@@ -22,10 +22,8 @@ sections:
 
 # Getting Started in Digital Minds
 
-AI systems are becoming more sophisticated. Whether they could have minds, experiences, or morally relevant interests is an open question, and experts remain deeply divided. But if some AI systems do have morally relevant experiences, and we fail to recognise this, the consequences could be severe and widespread.
+AI systems are becoming more sophisticated. Whether they could one day have minds, experiences, or morally relevant interests is an open question, and experts remain deeply divided. But if some AI systems do have morally relevant experiences, and we fail to recognise this, the consequences could be severe and widespread. Taking this possibility seriously, whilst weighing precaution against persistent uncertainty, is a central concern of digital minds as a cause area.
 
-> "I fear that we may create sentient AI long before we recognize we have done so. It could be much easier than we tend to think."
->
-> — Jonathan Birch, *The Edge of Sentience* (2024)
+Digital minds brings together an interdisciplinary community of researchers and practitioners to develop the concepts, evidence, and governance frameworks that would be needed should empirical evidence indicate that some AI systems are sentient. The aim is to ensure these frameworks are in place before they are needed, rather than built in response to a crisis we failed to anticipate.
 
-Digital minds brings together researchers and practitioners across disciplines to develop the concepts, evidence, and governance frameworks needed before this becomes a crisis rather than a question. This site is designed to help you find your way in.
+This site is designed to help you become familiar with digital minds as a field. What researchers are working on, the questions shaping the agenda, how people are entering the conversation, and where to begin.
