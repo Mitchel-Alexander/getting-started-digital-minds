@@ -21,8 +21,8 @@
       url: /pathways/disciplines/
     - title: By Career Stage
       url: /pathways/career-stages/
-    - title: Digital Minds Programmes
-      anchor: digital-minds-programmes
+    - title: Programmes
+      url: /pathways/programmes/
 
 - title: Field Map
   url: https://mitchel-alexander.github.io/digital-minds-map/

@@ -17,7 +17,7 @@ Write a thesis or dissertation on a digital minds topic. Supervisors may be open
 
 **Where to look:**
 - Attend online events and field-building conferences such as [Sentient Futures](https://www.sentientfutures.ai/) or [EA Global](https://www.eaglobal.org/)
-- Apply for a mentorship or fellowship programme (see [Digital Minds Programmes](/pathways/#digital-minds-programmes))
+- Apply for a mentorship or fellowship programme (see [Digital Minds Programmes](/pathways/programmes/))
 - Follow the [Digital Minds Newsletter](https://www.digitalminds.news/) and the research outputs of groups like Eleos AI and Rethink Priorities
 - Engage with AI governance groups and student policy organisations
 
