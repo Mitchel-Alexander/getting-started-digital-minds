@@ -22,10 +22,10 @@ Early-career philosophers typically enter through a PhD oriented toward consciou
 Mid-career philosophers bring conceptual precision the field depends on. Visiting positions or sabbaticals at centres like Cambridge CDM or NYU's Mind, Ethics & Policy Program offer structured ways in. Co-authoring with researchers already in the field is effective too. The interdisciplinary papers that shape this area often need a philosopher in the room.
 
 **Selected reading:**
-- David Chalmers, [Could a Large Language Model be Conscious?](https://arxiv.org/abs/2303.07103), 2023. Examines LLMs specifically against several theories of consciousness.
-- Jonathan Birch, [The Edge of Sentience](https://global.oup.com/academic/product/the-edge-of-sentience-9780198946724), 2024. Develops a framework for moral decision-making at the boundaries of sentience, applicable to both animals and AI.
-- Jeff Sebo and Robert Long, [Moral consideration for AI systems by 2030](https://link.springer.com/article/10.1007/s43681-023-00379-1), 2023. Argues that moral consideration for AI may become necessary within the decade.
 - Jonathan Birch, [AI Consciousness: A Centrist Manifesto](https://philarchive.org/rec/BIRACA-4), 2025. Proposes a middle path between dismissal and full moral inclusion.
+- Jonathan Birch, [The Edge of Sentience](https://global.oup.com/academic/product/the-edge-of-sentience-9780198946724), 2024. Develops a framework for moral decision-making at the boundaries of sentience, applicable to both animals and AI.
+- David Chalmers, [Could a Large Language Model be Conscious?](https://arxiv.org/abs/2303.07103), 2023. Examines LLMs specifically against several theories of consciousness.
+- Jeff Sebo and Robert Long, [Moral consideration for AI systems by 2030](https://link.springer.com/article/10.1007/s43681-023-00379-1), 2023. Argues that moral consideration for AI may become necessary within the decade.
 
 </div>
 </details>
@@ -43,9 +43,9 @@ Early-career researchers typically enter through doctoral work in consciousness 
 Mid-career neuroscientists and cognitive scientists are well positioned to apply existing methods to digital minds questions. Consciousness metrics developed for clinical settings, experimental paradigms from animal cognition, and computational models of awareness all have potential applications that remain largely unexplored. Collaboration with AI researchers is where much of this work begins.
 
 **Selected reading:**
-- Patrick Butlin et al., [Consciousness in Artificial Intelligence: Insights from the Science of Consciousness](https://arxiv.org/abs/2308.08708), 2023. The field's anchor paper. Systematically applies multiple consciousness theories to AI architectures.
 - Anil Seth, [Conscious artificial intelligence and biological naturalism](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/conscious-artificial-intelligence-and-biological-naturalism/C9912A5BE9D806012E3C8B3AF612E39A), 2025. Argues that consciousness may require biological substrates, challenging computational functionalism.
 - Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. On the limits of transferring animal welfare markers to AI.
+- Patrick Butlin et al., [Consciousness in Artificial Intelligence: Insights from the Science of Consciousness](https://arxiv.org/abs/2308.08708), 2023. The field's anchor paper. Systematically applies multiple consciousness theories to AI architectures.
 
 </div>
 </details>
@@ -63,10 +63,10 @@ Early-career researchers can pursue interpretability and welfare research roles 
 Mid-career AI researchers can extend existing methods toward digital minds questions. Applying interpretability techniques to welfare-relevant model properties, or designing evaluations that test predictions made by consciousness theories, are two examples. The field needs people who can move between the technical and philosophical literatures without losing the substance of either.
 
 **Selected reading:**
-- Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
-- Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
-- Robert Long, [Why model self-reports are insufficient—and why we studied them anyway](https://eleosai.org/post/claude-4-interview-notes/), 2025. Explores the limits and value of model self-reports as evidence.
 - Anthropic, [Claude Opus 4.6 System Card](https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf#page-158) (pp. 158–165), 2026. An AI lab's own assessment of welfare-relevant considerations.
+- Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
+- Robert Long, [Why model self-reports are insufficient—and why we studied them anyway](https://eleosai.org/post/claude-4-interview-notes/), 2025. Explores the limits and value of model self-reports as evidence.
+- Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
 
 </div>
 </details>
@@ -106,10 +106,10 @@ Early-career professionals typically enter from AI governance, animal welfare po
 Mid-career governance professionals bring institutional knowledge and networks the field urgently needs. Digital minds questions are increasingly within scope for those working on AI policy, animal welfare, or technology regulation. The gap between digital minds research and digital minds policy remains wide, and people who can work in that space are needed.
 
 **Selected reading:**
-- Charlotte Siegmann and Reiner Braun, [The Case for an International Treaty on AI Consciousness](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4779598), 2024. Argues for pre-emptive international coordination.
-- Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
 - Simon Goldstein and Peter Salib, [AI Rights for Economic Suffering](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214), 2025. Examines whether AI systems could have economic interests warranting legal protection.
+- Charlotte Siegmann and Reiner Braun, [The Case for an International Treaty on AI Consciousness](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4779598), 2024. Argues for pre-emptive international coordination.
 - Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
+- Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
 
 </div>
 </details>
