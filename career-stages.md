@@ -39,7 +39,7 @@ Most early-career researchers and professionals enter digital minds through work
 **Useful actions:**
 - Publish in relevant venues (journals like *Neuroscience of Consciousness*, *Minds and Machines*, *Philosophy & Technology*; conferences like ASSC, NeurIPS workshops)
 - Present work at digital minds workshops and seminars
-- Build relationships with researchers across disciplines. The field is small enough that direct outreach is welcomed.
+- Build relationships with peers across disciplines.
 - Contribute to consultations and policy processes on AI governance, flagging digital minds dimensions
 
 ## Mid-Career
@@ -62,7 +62,5 @@ Some actions and resources apply regardless of discipline or career stage.
 **Events and community.** [Sentient Futures conferences](https://www.sentientfutures.ai/) (Bay Area, New York, London) and the Cambridge Digital Minds Workshop are where the dedicated community convenes. [EA Global](https://www.eaglobal.org/) conferences regularly feature digital minds content. The [Association for the Scientific Study of Consciousness](https://theassc.org/) (ASSC) annual meeting is the largest relevant gathering in consciousness science.
 
 **Funding.** [Coefficient Giving](https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/career-development-and-transition-funding/) offers career development and transition funding for researchers moving into areas relevant to global catastrophic risks. Funding calls from [Open Philanthropy](https://www.openphilanthropy.org/) and the [Longview Digital Sentience Consortium](https://www.longview.org/digital-sentience-consortium/) have supported work in this area.
-
-**Outreach.** The field is small enough that cold emails are read and direct outreach is welcomed. A short, specific message referencing a particular paper or talk is more effective than a generic introduction.
 
 **Staying informed.** The [Digital Minds Newsletter](https://www.digitalminds.news/) tracks developments across the field. Following researchers at Cambridge CDM, Eleos AI, Rethink Priorities, and Anthropic's welfare team on social media surfaces working papers, job openings, and event announcements.
