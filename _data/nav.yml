@@ -17,6 +17,8 @@
 - title: Pathways
   url: /pathways/
   sections:
+    - title: Overview
+      url: /pathways/
     - title: By Discipline
       url: /pathways/disciplines/
     - title: By Career Stage
