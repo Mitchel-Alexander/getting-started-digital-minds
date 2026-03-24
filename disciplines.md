@@ -5,7 +5,9 @@ permalink: /pathways/disciplines/
 description: How different disciplines connect to digital minds, what each brings, and where to look for entry points.
 ---
 
-The questions digital minds asks do not belong to any single field. What follows is a guide to how different disciplines connect to the work, what each brings that the field needs, and where to look for entry points. If your background is not listed here, that does not mean it is irrelevant. The field is young enough that unexpected expertise regularly turns out to be load-bearing.
+The questions digital minds asks do not belong to any single field. Whether AI systems could have morally significant experiences, and what follows if they could, are questions that span philosophy, neuroscience, computer science, law, and social science. No existing discipline has the tools to answer them alone. Nearly everyone currently doing this work arrived from somewhere else, and none of them followed a predetermined path.
+
+The sections below describe what different backgrounds bring to this work and where to look for entry points. If your discipline is not listed, that does not mean it is irrelevant. The field is young enough that unexpected expertise regularly turns out to be load-bearing.
 
 <details class="discipline" id="philosophy">
 <summary>Philosophy</summary>
