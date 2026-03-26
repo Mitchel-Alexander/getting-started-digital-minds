@@ -7,8 +7,8 @@
   sections:
     - title: Overview
       anchor: overview
-    - title: What Might AI Systems Be?
-      anchor: what-might-ai-systems-be
+    - title: What's Going On Inside AI Systems?
+      anchor: whats-going-on-inside-ai-systems
     - title: What Would That Mean?
       anchor: what-would-that-mean
     - title: What Should We Do About It?
@@ -18,13 +18,13 @@
   url: /pathways/
   sections:
     - title: Overview
-      url: /pathways/
-    - title: By Discipline
-      url: /pathways/disciplines/
-    - title: By Career Stage
-      url: /pathways/career-stages/
-    - title: Programmes
-      url: /pathways/programmes/
+      anchor: overview
+    - title: Entering from Your Discipline
+      anchor: entering-from-your-discipline
+    - title: Career Stages
+      anchor: career-stages
+    - title: Digital Minds Programmes
+      anchor: digital-minds-programmes
 
 - title: Field Map
   url: https://mitchel-alexander.github.io/digital-minds-map/
