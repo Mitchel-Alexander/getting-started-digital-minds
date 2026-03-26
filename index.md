@@ -22,8 +22,8 @@ sections:
 
 # Getting Started in Digital Minds
 
-AI systems are becoming more sophisticated. Whether they could one day have minds, experiences, or morally relevant interests is an open question, and experts remain deeply divided. But if some AI systems do have morally relevant experiences, and we fail to recognise this, the consequences could be severe and widespread. Taking this possibility seriously, despite deep uncertainty about whether and when it might arise, is the central concern of digital minds as a cause area.
+Can AI systems have minds? As these systems grow more capable, the question is becoming harder to dismiss and more important to answer. Whether some AI systems might one day have experiences, feelings, or morally relevant interests is an open question. Experts remain deeply divided. But the stakes of getting it wrong are serious. If AI systems do develop morally relevant inner lives it would likely reshape how we think about responsibility, welfare, and moral consideration at scale.
 
-Digital minds brings together an interdisciplinary community of researchers and practitioners to develop the concepts, evidence, and governance frameworks that would be needed should empirical evidence indicate that some AI systems are sentient. The aim is to ensure these frameworks are in place before they are needed, rather than built in response to a crisis we failed to anticipate.
+Digital minds is the emerging research field dedicated to taking this possibility seriously. Researchers across philosophy, cognitive science, AI, ethics, and governance are working to develop the conceptual tools, empirical methods, and policy frameworks that would be needed if we discover that some AI systems are sentient. The aim is to address these questions with enough rigour and foresight that the necessary frameworks exist before they are needed, rather than being rushed into existence after the fact.
 
-This site is designed to help you become familiar with digital minds as a field. What researchers are working on, the questions shaping the agenda, how people are entering the conversation, and where to begin.
+This site is designed to help you find your way into that work. You'll find an overview of the questions shaping the research agenda, the people and organisations involved, and practical guidance on where to begin.
