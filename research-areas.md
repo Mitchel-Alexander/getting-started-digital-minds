@@ -142,21 +142,24 @@ The governance challenge is distinctive because it requires acting on questions 
 **Relevant groups:** Cambridge PRISM, Centre for the Study of Existential Risk (CSER), Future of Humanity Institute (successor programmes).
 
 
-### Rights, Legal Personhood, and Political Economy
+### Rights and Legal Personhood
 
 Should AI systems have legal standing, and if so, under what conditions? Rights have historically been extended to non-human entities through a range of mechanisms: corporations gained personhood through judicial interpretation, animals through welfare legislation, rivers and ecosystems through rights-of-nature laws. Each pathway involved different institutional actors, different justifications, and different political coalitions.
 
-This area asks which of these models, if any, could apply to AI systems, and what new frameworks might be needed. It also encompasses the broader political economy of digital minds: questions about labour, economic participation, design ethics, and the constraints on how digital minds should be created. The question of "willing servitude" — whether it is permissible to design AI systems whose primary purpose is enthusiastic compliance — connects legal theory to deeper questions about autonomy and exploitation.
+This area asks which of these models, if any, could apply to AI systems, and what new frameworks might be needed.
 
 **Start here:**
 
+- Jacy Reese Anthis, [It's time to prepare for AI personhood](https://www.theguardian.com/commentisfree/2025/sep/30/artificial-intelligence-personhood), 2025. Argues that digital minds will be participants in the social contract and cannot be governed as mere property.
 - John Danaher, [Welcoming Robots into the Moral Circle: A Defence of Robot Rights](https://link.springer.com/article/10.1007/s10676-019-09520-z), 2020. Philosophical case for extending rights to artificial agents.
 - Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
 
 **Go deeper:**
 
+- Sital Kalantry, [Legal Personhood of Potential People: AI and Embryos](https://www.californialawreview.org/online/ai-personhood), 2025. Uses the analogy between AI and embryo personhood debates to evaluate competing frameworks for legal status.
+- Katherine B. Forrest, [The Ethics and Challenges of Legal Personhood for AI](https://yalelawjournal.org/pdf/ForrestYLJForumEssay_at8hdu63.pdf), 2024. A former federal judge examines how the mutable history of legal personhood frames the challenge of extending it to AI.
 - Simon Goldstein and Peter Salib, [AI Rights for Economic Suffering](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214), 2025. Examines whether AI systems could have economic interests warranting legal protection.
-- Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
+- Joel Z. Leibo et al., [A Pragmatic View of AI Personhood](https://deepmind.google/research/publications/210560/), 2025. Proposes treating personhood as a flexible collection of rights and duties, enabling practical governance without resolving questions about consciousness.
 
 **Relevant groups:** Cambridge Digital Minds, Legal Priorities Project.
 
