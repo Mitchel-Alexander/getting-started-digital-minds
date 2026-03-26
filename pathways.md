@@ -23,9 +23,8 @@ The questions digital minds asks do not belong to any single field. Whether AI s
 
 The sections below describe what different backgrounds bring to this work and where to look for entry points. If your discipline is not listed, that does not mean it is irrelevant. The field is young enough that unexpected expertise regularly turns out to be load-bearing.
 
-<details class="discipline" id="philosophy">
-<summary>Philosophy</summary>
-<div class="discipline-body" markdown="1">
+
+### Philosophy
 
 Philosophy provides much of the field's conceptual infrastructure. Philosophers of mind set the terms for what consciousness might require and whether artificial systems could satisfy those requirements. Moral philosophers develop the frameworks for determining what follows if they do, including what grounds moral status, how to reason about moral consideration under deep uncertainty, and what obligations might arise toward entities whose inner lives we cannot verify. Epistemologists and philosophers of science contribute something equally important. How should we reason about consciousness in systems we cannot introspect? What counts as evidence, and what weight should it bear? These questions run beneath the surface of most digital minds debates, and they need people trained to make them explicit.
 
@@ -41,12 +40,8 @@ Mid-career philosophers bring conceptual precision the field depends on. Visitin
 - David Chalmers, [Could a Large Language Model be Conscious?](https://arxiv.org/abs/2303.07103), 2023. Examines LLMs specifically against several theories of consciousness.
 - Jeff Sebo and Robert Long, [Moral consideration for AI systems by 2030](https://link.springer.com/article/10.1007/s43681-023-00379-1), 2023. Argues that moral consideration for AI may become necessary within the decade.
 
-</div>
-</details>
 
-<details class="discipline" id="neuroscience-and-cognitive-science">
-<summary>Neuroscience and cognitive science</summary>
-<div class="discipline-body" markdown="1">
+### Neuroscience and Cognitive Science
 
 The leading theories of consciousness were developed with biological minds in view. Whether they extend to artificial systems is one of the field's central questions, and it cannot be answered without people who understand what those theories actually claim about brains. Neuroscientists and cognitive scientists bring experimental rigour, familiarity with the empirical study of consciousness, and a critical eye for when computational analogies hold and when they break down. The relationship between biological and artificial minds is one of the field's most productive areas of inquiry.
 
@@ -61,12 +56,8 @@ Mid-career neuroscientists and cognitive scientists are well positioned to apply
 - Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. On the limits of transferring animal welfare markers to AI.
 - Patrick Butlin et al., [Consciousness in Artificial Intelligence: Insights from the Science of Consciousness](https://arxiv.org/abs/2308.08708), 2023. The field's anchor paper. Systematically applies multiple consciousness theories to AI architectures.
 
-</div>
-</details>
 
-<details class="discipline" id="computer-science-and-ai-research">
-<summary>Computer science and AI research</summary>
-<div class="discipline-body" markdown="1">
+### Computer Science and AI Research
 
 Mechanistic interpretability, model evaluations, representation engineering, and AI safety research all develop methods that bear directly on digital minds questions. Researchers working on what AI systems are doing internally are building the toolkit that consciousness and welfare assessment will eventually require. Whether current AI architectures could satisfy the conditions that consciousness theories describe is a question that cannot be answered without people who understand those architectures in detail.
 
@@ -82,12 +73,8 @@ Mid-career AI researchers can extend existing methods toward digital minds quest
 - Robert Long, [Why model self-reports are insufficient—and why we studied them anyway](https://eleosai.org/post/claude-4-interview-notes/), 2025. Explores the limits and value of model self-reports as evidence.
 - Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
 
-</div>
-</details>
 
-<details class="discipline" id="social-science">
-<summary>Social science</summary>
-<div class="discipline-body" markdown="1">
+### Social Science
 
 How people perceive, attribute, and respond to AI consciousness is a governance-relevant empirical question, and social scientists are the ones equipped to answer it. Public attitudes shape regulatory appetite and corporate incentives. Expert disagreement shapes institutional responses. Design choices (voice, personality, embodiment) influence consciousness attribution in ways that may bear little relation to a system's actual internal states. Understanding these dynamics is essential for building governance frameworks that respond to genuine evidence rather than surface impressions.
 
@@ -104,12 +91,8 @@ Mid-career social scientists bring established methods and the ability to design
 - Lucius Caviola, Jeff Sebo, and Jonathan Birch, [What will society think about AI consciousness? Lessons from the animal case](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00147-0), 2025. Uses animal welfare attitudes as a predictor for AI consciousness discourse.
 - Jacy Reese Anthis and Janet V. T. Pauketat, [AI Consciousness and Public Attitudes](https://osf.io/preprints/psyarxiv/4wpkd), 2024. Experimental data on how people reason about AI moral status.
 
-</div>
-</details>
 
-<details class="discipline" id="law-policy-and-governance">
-<summary>Law, policy, and governance</summary>
-<div class="discipline-body" markdown="1">
+### Law, Policy, and Governance
 
 How should policymakers, AI labs, and legal systems respond to deep uncertainty about AI sentience? This discipline brings frameworks for translating moral and philosophical conclusions into institutional form. Legal personhood, standing, liability, and rights are the mechanisms through which moral status becomes actionable. Governance under uncertainty requires acting on questions that may remain scientifically unresolved for decades, drawing on precedents from environmental precaution, biosafety, and animal welfare regulation.
 
@@ -125,12 +108,8 @@ Mid-career governance professionals bring institutional knowledge and networks t
 - Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
 - Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
 
-</div>
-</details>
 
-<details class="discipline" id="journalism-and-public-communication">
-<summary>Journalism and public communication</summary>
-<div class="discipline-body" markdown="1">
+### Journalism and Public Communication
 
 How digital minds questions reach wider audiences matters for the field's long-term credibility and policy influence. These questions are easy to sensationalise and easy to dismiss. Writing that takes the uncertainty seriously, explains what is known and what is not, and resists both hype and premature scepticism is what the field needs from its public-facing communicators.
 
@@ -142,17 +121,13 @@ Journalism fellowships focused on AI and technology, such as the [Tarbell Fellow
 - Columbia Journalism Review, [How to report better on artificial intelligence](https://www.cjr.org/analysis/how-to-report-better-on-artificial-intelligence.php), 2023. Practical guidance on covering AI without sensationalism.
 - Science, [If AI becomes conscious, how will we know?](https://www.science.org/content/article/if-ai-becomes-conscious-how-will-we-know), 2023. Reporting on the scientific challenges of detecting consciousness in AI systems.
 
-</div>
-</details>
-
 
 ## Career Stages
 
 What you should do depends less on your discipline than on where you are in your career. The specific entry points differ, but the underlying logic is the same at every stage: build foundations, find the people doing the work, and start contributing before you feel ready.
 
-<details class="discipline" id="students">
-<summary>Students</summary>
-<div class="discipline-body" markdown="1">
+
+### Students
 
 The most useful thing a student can do is build strong foundations in one contributing discipline while developing literacy in at least one other. Digital minds questions sit at intersections (philosophy and AI, neuroscience and ethics, law and consciousness science) and the ability to read seriously across at least two of these areas is what distinguishes people who thrive in the field from those who find it frustrating.
 
@@ -164,12 +139,8 @@ Write a thesis or dissertation on a digital minds topic. Supervisors may be open
 - Follow the [Digital Minds Newsletter](https://www.digitalminds.news/) and the research outputs of groups like Eleos AI and Rethink Priorities
 - Engage with AI governance groups and student policy organisations
 
-</div>
-</details>
 
-<details class="discipline" id="early-career">
-<summary>Early Career</summary>
-<div class="discipline-body" markdown="1">
+### Early Career
 
 Most early-career researchers and professionals enter digital minds through work in a contributing discipline (a PhD in philosophy of mind, a policy role at an AI governance think tank, interpretability research at an AI lab) and orient part of their work toward digital minds questions. Dedicated digital minds positions are rare but growing. More commonly, people find or create the digital minds dimension within a broader role.
 
@@ -189,12 +160,8 @@ Most early-career researchers and professionals enter digital minds through work
 - Build relationships with peers across disciplines.
 - Contribute to consultations and policy processes on AI governance, flagging digital minds dimensions
 
-</div>
-</details>
 
-<details class="discipline" id="mid-career">
-<summary>Mid-Career</summary>
-<div class="discipline-body" markdown="1">
+### Mid-Career
 
 Established professionals from adjacent fields are among the most valuable potential contributors. They bring deep expertise, institutional credibility, and professional networks, along with something harder to teach: the ability to see digital minds questions from outside the assumptions that have shaped the field so far.
 
@@ -207,12 +174,8 @@ Established professionals from adjacent fields are among the most valuable poten
 - Advise or collaborate with digital minds research organisations
 - Participate in expert convenings on AI consciousness, moral status, or welfare governance
 
-</div>
-</details>
 
-<details class="discipline" id="guidance-for-all-backgrounds" open>
-<summary>Guidance for all backgrounds</summary>
-<div class="discipline-body" markdown="1">
+### Guidance for All Backgrounds
 
 Some actions and resources apply regardless of discipline or career stage.
 
@@ -221,9 +184,6 @@ Some actions and resources apply regardless of discipline or career stage.
 **Funding.** [Coefficient Giving](https://coefficientgiving.org/funds/global-catastrophic-risks-opportunities/career-development-and-transition-funding/) offers career development and transition funding for researchers moving into areas relevant to global catastrophic risks. Funding calls from [Open Philanthropy](https://www.openphilanthropy.org/) and the [Longview Digital Sentience Consortium](https://www.longview.org/digital-sentience-consortium/) have supported work in this area.
 
 **Staying informed.** The [Digital Minds Newsletter](https://www.digitalminds.news/) tracks developments across the field. Following researchers at Cambridge CDM, Eleos AI, Rethink Priorities, and Anthropic's welfare team on social media surfaces working papers, job openings, and event announcements.
-
-</div>
-</details>
 
 
 ## Digital Minds Programmes
