@@ -10,7 +10,7 @@ description: The questions the field is working on, with key readings and releva
 
 ## Overview
 
-Digital minds research is often described by discipline: philosophy, neuroscience, computer science, law. But the field's structure is better understood through the questions it asks, which follow a logical sequence.
+Digital minds research is inherently interdisciplinary, drawing on philosophy, neuroscience, computer science, and law. Because of this, the field's structure is best expressed not through its disciplines but through the questions it asks, which can be understood to follow a logical sequence.
 
 The first set of questions is empirical and philosophical: what's going on inside AI systems? Could they have experiences, and what do their internal states look like? The second set is ethical: if AI systems do (or might) have morally relevant properties, what follows for how we should treat them? The third is practical: given deep uncertainty about the answers, what should institutions, legal systems, and publics do now?
 
@@ -67,6 +67,7 @@ When we interact with an AI system, what kind of entity are we dealing with? The
 
 **Start here:**
 
+- Anthropic, [Claude's Character](https://www.anthropic.com/research/claude-character), 2024. Describes how Anthropic deliberately shaped Claude's character traits, illustrating how AI identity is designed rather than emergent.
 - William MacAskill, Tom Davidson, and Forethought, [AI Character is a Big Deal](https://forum.effectivealtruism.org/posts/7adm5hpWhFCAfM4v6/ai-character-is-a-big-deal), 2026. Argues that stable behavioural dispositions in AI systems will shape long-term outcomes across power concentration, conflict, and value alignment.
 
 **Go deeper:**
