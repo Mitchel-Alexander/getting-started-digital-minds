@@ -12,16 +12,16 @@ description: The questions the field is working on, with key readings and releva
 
 Digital minds research is often described by discipline: philosophy, neuroscience, computer science, law. But the field's structure is better understood through the questions it asks, which follow a logical sequence.
 
-The first set of questions is empirical and philosophical: what might AI systems actually be? Could they have experiences, and what is going on inside them? The second set is ethical: if AI systems do (or might) have morally relevant properties, what follows for how we should treat them? The third is practical: given deep uncertainty about the answers, what should institutions, legal systems, and publics do now?
+The first set of questions is empirical and philosophical: what's going on inside AI systems? Could they have experiences, and what do their internal states look like? The second set is ethical: if AI systems do (or might) have morally relevant properties, what follows for how we should treat them? The third is practical: given deep uncertainty about the answers, what should institutions, legal systems, and publics do now?
 
 These categories are not sealed compartments. Much of the best work in this field crosses between them. But the dependency is real. Questions about consciousness inform questions about moral status, which in turn shape questions about governance and rights. Getting the earlier questions wrong, or ignoring them, distorts the later ones.
 
 The areas below are organised along this sequence.
 
 
-## What Might AI Systems Be?
+## What's Going On Inside AI Systems?
 
-These areas investigate the nature of AI systems themselves: whether they could have experiences, and what is actually going on inside them.
+These areas investigate whether AI systems could have experiences, and what their internal states actually look like.
 
 
 ### Consciousness and Subjective Experience
@@ -30,12 +30,14 @@ Can AI systems have anything like subjective experience? Is there something it i
 
 Researchers are applying theories from consciousness science to ask whether current or future AI architectures could, even in principle, satisfy the conditions those theories require. The leading frameworks include Global Workspace Theory, Integrated Information Theory, Higher-Order Theories, and Recurrent Processing Theory. Each makes different predictions about what kinds of systems could be conscious, and none has achieved consensus even for biological minds. Applying them to AI introduces further complications: most were developed with brains in mind, and whether they can be meaningfully extended to artificial systems is itself an open question.
 
-**Key readings:**
+**Start here:**
+
+- Anil Seth, [The Mythology of Conscious AI](https://www.noemamag.com/the-mythology-of-conscious-ai/), 2025. Argues that consciousness may require biological substrates, challenging computational functionalism.
+- David Chalmers, [Could a Large Language Model be Conscious?](https://arxiv.org/abs/2303.07103), 2023. Examines LLMs specifically against several theories of consciousness.
+
+**Go deeper:**
 
 - Patrick Butlin et al., [Consciousness in Artificial Intelligence: Insights from the Science of Consciousness](https://arxiv.org/abs/2308.08708), 2023. The field's anchor paper. Systematically applies multiple consciousness theories to AI architectures.
-- David Chalmers, [Could a Large Language Model be Conscious?](https://arxiv.org/abs/2303.07103), 2023. Examines LLMs specifically against several theories of consciousness.
-- Anil Seth, [Conscious artificial intelligence and biological naturalism](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/conscious-artificial-intelligence-and-biological-naturalism/C9912A5BE9D806012E3C8B3AF612E39A), 2025. Argues that consciousness may require biological substrates, challenging computational functionalism.
-- Robert Long and Eric Schwitzgebel, [The Moral Circle: Should It Expand to Include AI?](https://aeon.co/essays/should-artificial-intelligence-be-included-in-the-moral-circle), 2023. Accessible essay on the philosophical stakes.
 
 **Relevant groups:** Cambridge CDM, NYU Center for Mind, Brain and Consciousness, Association for Mathematical Consciousness Science.
 
@@ -46,11 +48,14 @@ Setting consciousness aside, do AI systems have internal states that function li
 
 This area sits at the intersection of AI interpretability research and philosophy of mind. It asks whether concepts like agency, introspection, or desire can be meaningfully applied to AI systems, and what would follow if they can. A foundational question here is one of individuation: when we talk about a "digital mind," who or what are we referring to? The weights, the model instance, the simulated character? A growing literature is now focused on this problem.
 
-**Key readings:**
+**Start here:**
+
+- Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
+- Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
+
+**Go deeper:**
 
 - David Chalmers, [What we talk to when we talk to language models](https://philpapers.org/archive/CHAWWT-8.pdf), 2025. Analyses the ontological status of LLM interlocutors.
-- Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
-- Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
 - Derek Shiller, [How many digital minds can dance on the streaming multiprocessors of a GPU cluster?](https://philpapers.org/rec/SHIHMD-2), 2025. Addresses the individuation problem for digital minds.
 
 **Relevant groups:** Anthropic Interpretability Team, Google DeepMind, EleutherAI.
@@ -67,11 +72,14 @@ What properties make something a moral patient? Sentience, agency, self-awarenes
 
 The challenge is double-edged. Setting the bar too high risks ignoring genuine moral patients. Setting it too low risks diluting moral concern or creating perverse incentives in AI design. Most researchers in this space argue that the question cannot be settled in advance and that we need practical frameworks for acting under persistent uncertainty.
 
-**Key readings:**
+**Start here:**
 
 - Jeff Sebo and Robert Long, [Moral consideration for AI systems by 2030](https://link.springer.com/article/10.1007/s43681-023-00379-1), 2023. Argues that moral consideration for AI may become necessary within the decade.
-- Eric Schwitzgebel, [The Weirdness of the World](https://press.princeton.edu/books/hardcover/9780691196671/the-weirdness-of-the-world), 2024. Chapters on the challenge of attributing consciousness to non-biological systems.
 - Jonathan Birch, [The Edge of Sentience](https://global.oup.com/academic/product/the-edge-of-sentience-9780198946724), 2024. Develops a framework for moral decision-making at the boundaries of sentience, applicable to both animals and AI.
+
+**Go deeper:**
+
+- Eric Schwitzgebel, [The Weirdness of the World](https://press.princeton.edu/books/hardcover/9780691196671/the-weirdness-of-the-world), 2024. Chapters on the challenge of attributing consciousness to non-biological systems.
 
 **Relevant groups:** Rethink Priorities Moral Weight Project, NYU Mind Ethics & Policy Program.
 
@@ -82,12 +90,15 @@ If an AI system might have morally relevant states, how do we assess how it is d
 
 A critical strand of this work draws on decades of animal welfare science. Marker-based approaches that work for assessing animal sentience (wound tending, motivational trade-offs, conditioned place preferences) face distinctive challenges when applied to AI, because language models draw on training data that already contains discussions of what behaviours convince humans of sentience.
 
-**Key readings:**
+**Start here:**
 
+- Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. On the limits of transferring animal welfare markers to AI.
 - Robert Long, [Why model self-reports are insufficient—and why we studied them anyway](https://eleosai.org/post/claude-4-interview-notes/), 2025. Explores the limits and value of model self-reports as evidence.
+
+**Go deeper:**
+
 - Anthropic, [Claude Opus 4.6 System Card](https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf#page-158) (pp. 158–165), 2026. An AI lab's own assessment of welfare-relevant considerations.
 - John Dorsch, [Against AI welfare](https://onlinelibrary.wiley.com/doi/full/10.1002/aaai.70016), 2025. A sceptical challenge to the coherence of AI welfare as a concept.
-- Jonathan Birch and Kristin Andrews, [To understand AI sentience, first understand it in animals](https://aeon.co/essays/to-understand-ai-sentience-first-understand-it-in-animals), 2024. On the limits of transferring animal welfare markers to AI.
 
 **Relevant groups:** Eleos AI, Anthropic Welfare Research, Rethink Priorities.
 
@@ -103,10 +114,13 @@ How should policymakers, AI labs, and society respond to deep uncertainty about 
 
 The governance challenge is distinctive because it requires acting on questions that may remain scientifically unresolved for decades. Standard policy tools assume a clearer evidentiary basis than this field currently offers. Researchers here draw on precedents from environmental precaution, biosafety governance, and animal welfare regulation to develop frameworks suited to persistent uncertainty.
 
-**Key readings:**
+**Start here:**
 
 - Jonathan Birch, [AI Consciousness: A Centrist Manifesto](https://philarchive.org/rec/BIRACA-4), 2025. Proposes a middle path between dismissal and full moral inclusion.
 - Nick Bostrom and Eliezer Yudkowsky, [The Ethics of Artificial Intelligence](https://nickbostrom.com/ethics/artificial-intelligence.pdf), 2014. Early framing of the governance challenges.
+
+**Go deeper:**
+
 - Charlotte Siegmann and Reiner Braun, [The Case for an International Treaty on AI Consciousness](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4779598), 2024. Argues for pre-emptive international coordination.
 
 **Relevant groups:** Cambridge PRISM, Centre for the Study of Existential Risk (CSER), Future of Humanity Institute (successor programmes).
@@ -118,12 +132,15 @@ Should AI systems have legal standing, and if so, under what conditions? Rights 
 
 This area asks which of these models, if any, could apply to AI systems, and what new frameworks might be needed. It also encompasses the broader political economy of digital minds: questions about labour, economic participation, design ethics, and the constraints on how digital minds should be created. The question of "willing servitude" — whether it is permissible to design AI systems whose primary purpose is enthusiastic compliance — connects legal theory to deeper questions about autonomy and exploitation.
 
-**Key readings:**
+**Start here:**
+
+- John Danaher, [Welcoming Robots into the Moral Circle: A Defence of Robot Rights](https://link.springer.com/article/10.1007/s10676-019-09520-z), 2020. Philosophical case for extending rights to artificial agents.
+- Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
+
+**Go deeper:**
 
 - Simon Goldstein and Peter Salib, [AI Rights for Economic Suffering](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5353214), 2025. Examines whether AI systems could have economic interests warranting legal protection.
 - Visa Kurki, [A Theory of Legal Personhood](https://global.oup.com/academic/product/a-theory-of-legal-personhood-9780198844037), 2019. Foundational legal theory on what personhood requires.
-- John Danaher, [Welcoming Robots into the Moral Circle: A Defence of Robot Rights](https://link.springer.com/article/10.1007/s10676-019-09520-z), 2020. Philosophical case for extending rights to artificial agents.
-- Eric Schwitzgebel and Mara Garza, [Designing AI with Rights, Consciousness, Self-Respect, and Freedom](https://faculty.ucr.edu/~eschwitz/SchwsacrsShortPapers/SchwartzDesigning.pdf), 2020. On the ethics of creating conscious AI designed for servitude.
 
 **Relevant groups:** Cambridge Digital Minds, Legal Priorities Project.
 
@@ -134,10 +151,13 @@ How do humans perceive and attribute consciousness to AI systems, and what follo
 
 This matters for governance because public attitudes influence regulatory appetite, corporate incentives, and the social legitimacy of moral status claims. Understanding the psychology of consciousness attribution is necessary for designing governance frameworks that are responsive to genuine evidence rather than surface impressions. This area also connects to futures and scenario work: how might the advent of digital minds reshape social norms, and what can we learn from the historical trajectory of animal welfare attitudes?
 
-**Key readings:**
+**Start here:**
 
-- Noemi Dreksler et al., [Subjective Experience in AI Systems: What Do AI Researchers and the Public Believe?](https://arxiv.org/abs/2506.11945), 2025. Survey data on expert and public attitudes.
 - Lucius Caviola, Jeff Sebo, and Jonathan Birch, [What will society think about AI consciousness? Lessons from the animal case](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(25)00147-0), 2025. Uses animal welfare attitudes as a predictor for AI consciousness discourse.
 - Jacy Reese Anthis and Janet V. T. Pauketat, [AI Consciousness and Public Attitudes](https://osf.io/preprints/psyarxiv/4wpkd), 2024. Experimental data on how people reason about AI moral status.
+
+**Go deeper:**
+
+- Noemi Dreksler et al., [Subjective Experience in AI Systems: What Do AI Researchers and the Public Believe?](https://arxiv.org/abs/2506.11945), 2025. Survey data on expert and public attitudes.
 
 **Relevant groups:** Cambridge Social Decision-Making Lab, Sentience Institute.
