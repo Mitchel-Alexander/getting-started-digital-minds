@@ -46,19 +46,35 @@ Researchers are applying theories from consciousness science to ask whether curr
 
 Setting consciousness aside, do AI systems have internal states that function like beliefs, goals, or emotions? Early interpretability research suggests that some large models develop internal representations with valence-like properties. Whether these states are mere computational artefacts or something with moral significance is actively contested.
 
-This area sits at the intersection of AI interpretability research and philosophy of mind. It asks whether concepts like agency, introspection, or desire can be meaningfully applied to AI systems, and what would follow if they can. A foundational question here is one of individuation: when we talk about a "digital mind," who or what are we referring to? The weights, the model instance, the simulated character? A growing literature is now focused on this problem.
+This area sits at the intersection of AI interpretability research and philosophy of mind. It asks whether concepts like agency, introspection, or desire can be meaningfully applied to AI systems, and what would follow if they can.
 
 **Start here:**
 
 - Murray Shanahan, [Talking About Large Language Models](https://arxiv.org/abs/2212.03551), 2023. Examines what psychological terms like "know" or "believe" mean when applied to LLMs.
+- Natalie Lawrence, [What Counts As A Mind?](https://www.noemamag.com/what-counts-as-a-mind/), 2026. Challenges anthropocentric assumptions about cognition, exploring how intelligence and sentience may exist in unexpected forms.
+- Anthropic, [Mapping the Mind of a Large Language Model](https://www.anthropic.com/research/mapping-mind-language-model), 2024. Shows how interpretability research can identify millions of recognisable concepts inside a production LLM.
+
+**Go deeper:**
+
 - Jack Lindsey, [Emergent Introspective Awareness in Large Language Models](https://transformer-circuits.pub/2025/introspection/index.html), 2025. Interpretability evidence for self-modelling in LLMs.
+
+**Relevant groups:** Anthropic Interpretability Team, Google DeepMind, EleutherAI.
+
+
+### Identity and Character
+
+When we interact with an AI system, what kind of entity are we dealing with? These questions concern the identity, individuation, and character of digital minds — whether a model is one entity or many, what its stable dispositions are, and what we are actually talking to.
+
+**Start here:**
+
+- William MacAskill, Tom Davidson, and Forethought, [AI Character is a Big Deal](https://forum.effectivealtruism.org/posts/7adm5hpWhFCAfM4v6/ai-character-is-a-big-deal), 2026. Argues that stable behavioural dispositions in AI systems will shape long-term outcomes across power concentration, conflict, and value alignment.
 
 **Go deeper:**
 
 - David Chalmers, [What we talk to when we talk to language models](https://philpapers.org/archive/CHAWWT-8.pdf), 2025. Analyses the ontological status of LLM interlocutors.
 - Derek Shiller, [How many digital minds can dance on the streaming multiprocessors of a GPU cluster?](https://philpapers.org/rec/SHIHMD-2), 2025. Addresses the individuation problem for digital minds.
 
-**Relevant groups:** Anthropic Interpretability Team, Google DeepMind, EleutherAI.
+**Relevant groups:** Anthropic, Google DeepMind.
 
 
 ## What Would That Mean?
