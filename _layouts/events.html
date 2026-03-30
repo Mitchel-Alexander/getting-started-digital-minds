@@ -48,11 +48,14 @@ layout: default
 
     {% comment %} Upcoming and open events first {% endcomment %}
     {% for event in sorted_events %}
-      {% if event.date_start >= today or event.date_end >= today %}
+      {% assign ev_start = event.date_start | date: "%Y-%m-%d" %}
+      {% assign ev_end = event.date_end | date: "%Y-%m-%d" %}
+      {% if ev_start >= today or ev_end >= today %}
         {% assign has_deadline = false %}
         {% if event.deadline and event.deadline != "" %}
           {% assign has_deadline = true %}
-          {% if event.deadline >= today %}
+          {% assign ev_deadline = event.deadline | date: "%Y-%m-%d" %}
+          {% if ev_deadline >= today %}
             {% assign deadline_status = "open" %}
           {% else %}
             {% assign deadline_status = "closed" %}
@@ -100,7 +103,8 @@ layout: default
     {% comment %} Past events (within six months) {% endcomment %}
     {% assign has_past = false %}
     {% for event in sorted_events reversed %}
-      {% assign event_end = event.date_end | default: event.date_start %}
+      {% assign raw_end = event.date_end | default: event.date_start %}
+      {% assign event_end = raw_end | date: "%Y-%m-%d" %}
       {% if event_end < today and event_end >= six_months_ago %}
         {% assign has_past = true %}
         {% break %}
@@ -112,7 +116,8 @@ layout: default
       <summary>Past events</summary>
       <div class="past-events-body">
         {% for event in sorted_events reversed %}
-          {% assign event_end = event.date_end | default: event.date_start %}
+          {% assign raw_end = event.date_end | default: event.date_start %}
+          {% assign event_end = raw_end | date: "%Y-%m-%d" %}
           {% if event_end < today and event_end >= six_months_ago %}
         <div class="event-card event-card--past"
              data-type="{{ event.type }}"
