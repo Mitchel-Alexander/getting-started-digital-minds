@@ -43,25 +43,37 @@ layout: default
     <p class="events-count" aria-live="polite"></p>
   </div>
 
-  <div class="events-grid">
-    {% assign today = site.time | date: "%Y-%m-%d" %}
-    {% assign six_months_ago = site.time | date: "%s" | minus: 15778800 | date: "%Y-%m-%d" %}
-    {% assign sorted_events = site.data.events | sort: "date_start" %}
+  {% assign today = site.time | date: "%Y-%m-%d" %}
+  {% assign six_months_ago = site.time | date: "%s" | minus: 15778800 | date: "%Y-%m-%d" %}
+  {% assign sorted_events = site.data.events | sort: "date_start" %}
 
+  {% comment %}
+    Upcoming = still actionable:
+    - Has a deadline that is today or in the future, OR
+    - Has no deadline and the event end date is today or in the future
+  {% endcomment %}
+
+  <h2 class="events-section-title">Upcoming</h2>
+  <div class="events-grid">
     {% for event in sorted_events %}
       {% assign ev_start = event.date_start | date: "%Y-%m-%d" %}
       {% assign ev_end = event.date_end | date: "%Y-%m-%d" %}
-      {% if ev_start >= today or ev_end >= today %}
-        {% assign has_deadline = false %}
-        {% if event.deadline and event.deadline != "" %}
-          {% assign has_deadline = true %}
-          {% assign ev_deadline = event.deadline | date: "%Y-%m-%d" %}
-          {% if ev_deadline >= today %}
-            {% assign deadline_status = "open" %}
-          {% else %}
-            {% assign deadline_status = "closed" %}
-          {% endif %}
+      {% assign has_deadline = false %}
+      {% assign is_upcoming = false %}
+
+      {% if event.deadline and event.deadline != "" %}
+        {% assign has_deadline = true %}
+        {% assign ev_deadline = event.deadline | date: "%Y-%m-%d" %}
+        {% if ev_deadline >= today %}
+          {% assign is_upcoming = true %}
         {% endif %}
+      {% else %}
+        {% if ev_end >= today or ev_start >= today %}
+          {% assign is_upcoming = true %}
+        {% endif %}
+      {% endif %}
+
+      {% if is_upcoming %}
     <a href="{{ event.url }}" target="_blank" rel="noopener" class="event-card" data-type="{{ event.type }}" data-format="{{ event.format }}" data-status="upcoming">
       <span class="event-tag event-tag--{{ event.type }}">{{ event.type | capitalize }}</span>
       <h3 class="event-name">{{ event.name }}</h3>
@@ -70,8 +82,8 @@ layout: default
         <p class="event-dates">{{ event.date_start | date: "%-d %b" }}{% if event.date_end and event.date_end != event.date_start %} – {{ event.date_end | date: "%-d %b %Y" }}{% else %} {{ event.date_start | date: "%Y" }}{% endif %}</p>
         <p class="event-location">{{ event.location }}</p>
         {% if has_deadline %}
-        <p class="event-deadline {% if deadline_status == 'open' %}event-deadline--open{% else %}event-deadline--closed{% endif %}">
-          Deadline: {{ event.deadline | date: "%-d %b %Y" }}{% if deadline_status == "closed" %} (closed){% endif %}
+        <p class="event-deadline event-deadline--open">
+          Deadline: {{ event.deadline | date: "%-d %b %Y" }}
         </p>
         {% endif %}
       </div>
@@ -82,40 +94,72 @@ layout: default
     {% endfor %}
   </div>
 
-  {% comment %} Past events (within six months) {% endcomment %}
-  {% assign has_past = false %}
+  {% comment %}
+    Recently closed = no longer actionable but within 6 months:
+    - Has a deadline that has passed, OR
+    - Has no deadline and the event end date has passed
+    Either way, the relevant date must be within the last 6 months.
+  {% endcomment %}
+
+  {% assign has_recent = false %}
   {% for event in sorted_events reversed %}
-    {% assign raw_end = event.date_end | default: event.date_start %}
-    {% assign event_end = raw_end | date: "%Y-%m-%d" %}
-    {% if event_end < today and event_end >= six_months_ago %}
-      {% assign has_past = true %}
-      {% break %}
+    {% assign ev_end = event.date_end | date: "%Y-%m-%d" %}
+    {% assign ev_start = event.date_start | date: "%Y-%m-%d" %}
+    {% if event.deadline and event.deadline != "" %}
+      {% assign ev_deadline = event.deadline | date: "%Y-%m-%d" %}
+      {% if ev_deadline < today and ev_deadline >= six_months_ago %}
+        {% assign has_recent = true %}
+        {% break %}
+      {% endif %}
+    {% else %}
+      {% assign check_date = ev_end | default: ev_start %}
+      {% if check_date < today and check_date >= six_months_ago %}
+        {% assign has_recent = true %}
+        {% break %}
+      {% endif %}
     {% endif %}
   {% endfor %}
 
-  {% if has_past %}
-  <details class="past-events-toggle">
-    <summary>Past events</summary>
-    <div class="events-grid past-events-body">
-      {% for event in sorted_events reversed %}
-        {% assign raw_end = event.date_end | default: event.date_start %}
-        {% assign event_end = raw_end | date: "%Y-%m-%d" %}
-        {% if event_end < today and event_end >= six_months_ago %}
-      <a href="{{ event.url }}" target="_blank" rel="noopener" class="event-card event-card--past" data-type="{{ event.type }}" data-format="{{ event.format }}" data-status="past">
-        <span class="event-tag event-tag--{{ event.type }}">{{ event.type | capitalize }}</span>
-        <h3 class="event-name">{{ event.name }}</h3>
-        <p class="event-organiser">{{ event.organiser }}</p>
-        <div class="event-card-meta">
-          <p class="event-dates">{{ event.date_start | date: "%-d %b" }}{% if event.date_end and event.date_end != event.date_start %} – {{ event.date_end | date: "%-d %b %Y" }}{% else %} {{ event.date_start | date: "%Y" }}{% endif %}</p>
-          <p class="event-location">{{ event.location }}</p>
-        </div>
-        <p class="event-description">{{ event.description }}</p>
-        <span class="event-tag event-tag--format">{{ event.format | capitalize }}</span>
-      </a>
+  {% if has_recent %}
+  <h2 class="events-section-title events-section-title--recent">Recently closed</h2>
+  <div class="events-grid">
+    {% for event in sorted_events reversed %}
+      {% assign ev_end = event.date_end | date: "%Y-%m-%d" %}
+      {% assign ev_start = event.date_start | date: "%Y-%m-%d" %}
+      {% assign is_recent = false %}
+
+      {% if event.deadline and event.deadline != "" %}
+        {% assign ev_deadline = event.deadline | date: "%Y-%m-%d" %}
+        {% if ev_deadline < today and ev_deadline >= six_months_ago %}
+          {% assign is_recent = true %}
         {% endif %}
-      {% endfor %}
-    </div>
-  </details>
+      {% else %}
+        {% assign check_date = ev_end | default: ev_start %}
+        {% if check_date < today and check_date >= six_months_ago %}
+          {% assign is_recent = true %}
+        {% endif %}
+      {% endif %}
+
+      {% if is_recent %}
+    <a href="{{ event.url }}" target="_blank" rel="noopener" class="event-card event-card--past" data-type="{{ event.type }}" data-format="{{ event.format }}" data-status="past">
+      <span class="event-tag event-tag--{{ event.type }}">{{ event.type | capitalize }}</span>
+      <h3 class="event-name">{{ event.name }}</h3>
+      <p class="event-organiser">{{ event.organiser }}</p>
+      <div class="event-card-meta">
+        <p class="event-dates">{{ event.date_start | date: "%-d %b" }}{% if event.date_end and event.date_end != event.date_start %} – {{ event.date_end | date: "%-d %b %Y" }}{% else %} {{ event.date_start | date: "%Y" }}{% endif %}</p>
+        <p class="event-location">{{ event.location }}</p>
+        {% if event.deadline and event.deadline != "" %}
+        <p class="event-deadline event-deadline--closed">
+          Closed: {{ event.deadline | date: "%-d %b %Y" }}
+        </p>
+        {% endif %}
+      </div>
+      <p class="event-description">{{ event.description }}</p>
+      <span class="event-tag event-tag--format">{{ event.format | capitalize }}</span>
+    </a>
+      {% endif %}
+    {% endfor %}
+  </div>
   {% endif %}
 
   <div class="events-empty" style="display: none;">

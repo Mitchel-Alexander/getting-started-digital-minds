@@ -766,50 +766,21 @@ details.discipline .discipline-body ul:last-child {
   flex-grow: 1;
 }
 
-/* Past events collapsible */
-.past-events-toggle {
-  margin-top: 2rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-}
-
-.past-events-toggle summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.25rem;
-  cursor: pointer;
-  list-style: none;
+/* Events section titles */
+.events-section-title {
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #1a1a2e;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.events-section-title--recent {
+  margin-top: 2.5rem;
   color: #555;
-}
-
-.past-events-toggle summary::-webkit-details-marker {
-  display: none;
-}
-
-.past-events-toggle summary::after {
-  content: "▸";
-  font-size: 0.9rem;
-  color: #888;
-  transition: transform 0.2s;
-  flex-shrink: 0;
-  margin-left: 1rem;
-}
-
-.past-events-toggle[open] summary::after {
-  transform: rotate(90deg);
-}
-
-.past-events-toggle summary:hover {
-  background: #f8f9fb;
-  border-radius: 6px;
-}
-
-.past-events-body {
-  padding: 0 1.25rem 1.25rem;
 }
 
 /* Events empty state */
