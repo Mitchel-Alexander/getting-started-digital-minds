@@ -542,6 +542,305 @@ details.discipline .discipline-body ul:last-child {
   color: #555;
 }
 
+/* Events page */
+.events-meta {
+  margin-bottom: 1.75rem;
+}
+
+.events-updated {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.events-actions {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.events-actions a {
+  font-size: 0.85rem;
+}
+
+.events-filters {
+  margin-bottom: 1.25rem;
+}
+
+.filter-group {
+  margin-bottom: 0.75rem;
+}
+
+.filter-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4rem;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.filter-pill {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #555;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+  line-height: 1.4;
+}
+
+.filter-pill:hover {
+  border-color: #003366;
+  color: #003366;
+}
+
+.filter-pill.active {
+  background: #003366;
+  border-color: #003366;
+  color: #ffffff;
+}
+
+.events-count {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.event-card:hover {
+  border-color: #003366;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+}
+
+.event-card--past {
+  opacity: 0.7;
+}
+
+.event-card--past:hover {
+  opacity: 1;
+}
+
+.event-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-tag {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.event-tag--conference {
+  background: #e8f0fe;
+  color: #1a3f6b;
+}
+
+.event-tag--workshop {
+  background: #e6f4ea;
+  color: #1e6b3a;
+}
+
+.event-tag--fellowship {
+  background: #fce8e6;
+  color: #8b2500;
+}
+
+.event-tag--course {
+  background: #fef7e0;
+  color: #7a5900;
+}
+
+.event-tag--programme {
+  background: #f3e8fd;
+  color: #5b2d8e;
+}
+
+.event-tag--seminar {
+  background: #e0f2f1;
+  color: #00695c;
+}
+
+.event-tag--format {
+  background: #f5f5f5;
+  color: #555;
+}
+
+.event-name {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+  line-height: 1.4;
+}
+
+.event-name a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.event-name a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 51, 102, 0.3);
+}
+
+.event-organiser {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0;
+}
+
+.event-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.event-detail {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.event-detail-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+
+.event-detail-value {
+  font-size: 0.88rem;
+  color: #1a1a2e;
+}
+
+.event-deadline--open {
+  color: #1e6b3a;
+  font-weight: 600;
+}
+
+.event-deadline--closed {
+  color: #888;
+}
+
+.event-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Past events collapsible */
+.past-events-toggle {
+  margin-top: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.past-events-toggle summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.past-events-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.past-events-toggle summary::after {
+  content: "▸";
+  font-size: 0.9rem;
+  color: #888;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.past-events-toggle[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.past-events-toggle summary:hover {
+  background: #f8f9fb;
+  border-radius: 6px;
+}
+
+.past-events-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1.25rem 1.25rem;
+}
+
+/* Events empty state */
+.events-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.events-reset-link {
+  background: none;
+  border: none;
+  color: #003366;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 51, 102, 0.3);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: inherit;
+  padding: 0;
+}
+
+.events-reset-link:hover {
+  text-decoration-color: #003366;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-toggle {
@@ -605,6 +904,24 @@ details.discipline .discipline-body ul:last-child {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    padding: 1rem 1.25rem;
+  }
+
+  .event-card-details {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .filter-pills {
+    gap: 0.35rem;
+  }
+
+  .filter-pill {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.78rem;
   }
 
 }

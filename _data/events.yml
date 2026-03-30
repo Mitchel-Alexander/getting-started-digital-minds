@@ -1,0 +1,126 @@
+# Events and programmes directory
+# To add an event: copy a block below and fill in the fields.
+# status: open | upcoming | past
+# type: conference | workshop | fellowship | course | seminar | programme
+# format: in-person | online | hybrid
+# For recurring programmes, list the next cohort dates and update when new ones are announced.
+
+- name: Cambridge Digital Minds Online Course
+  url: https://digitalminds.cam/course/
+  organiser: Cambridge CDM
+  date_start: 2026-09-01
+  date_end: 2026-10-27
+  type: course
+  format: online
+  location: Online
+  deadline: 2026-08-15
+  description: Eight-week course covering consciousness theories, welfare assessment, governance, and public perception. Free, ~3.5 hours/week.
+  status: upcoming
+
+- name: Cambridge Digital Minds Fellowship
+  url: https://digitalminds.cam/fellowship/
+  organiser: Cambridge CDM
+  date_start: 2026-07-14
+  date_end: 2026-07-20
+  type: fellowship
+  format: in-person
+  location: Cambridge, UK
+  deadline: 2026-05-01
+  description: Five-day residential programme at Jesus College followed by the Digital Minds Strategy Workshop. Fully funded.
+  status: upcoming
+
+- name: Neuromatch AI Sentience Scholars Program
+  url: https://neuromatch.io/ai-sentience-scholars/
+  organiser: Neuromatch
+  date_start: 2026-06-01
+  date_end: 2026-11-30
+  type: programme
+  format: online
+  location: Online
+  deadline: 2026-05-15
+  description: Six-month mentored research programme for early-career researchers. Projects on consciousness theories, personhood, and moral status. Includes stipend.
+  status: upcoming
+
+- name: Future Impact Group Fellowship
+  url: https://futureimpact.group/fellowship
+  organiser: Future Impact Group
+  date_start: 2026-06-01
+  date_end: 2026-08-24
+  type: fellowship
+  format: online
+  location: Online
+  deadline: 2026-05-01
+  description: Twelve-week part-time research fellowship with AI Sentience track. Eight or more hours/week with mentored project work.
+  status: upcoming
+
+- name: Sentient Futures Fellowship
+  url: https://www.sentientfutures.ai/
+  organiser: Sentient Futures
+  date_start: 2026-06-01
+  date_end: 2026-08-01
+  type: fellowship
+  format: online
+  location: Online
+  deadline:
+  description: Programme exploring intersections of AI, animal welfare, and technology. Learner and facilitator tracks.
+  status: upcoming
+
+- name: PIVOTAL Research Mentorship
+  url: https://www.pivotal-research.org/mentors
+  organiser: PIVOTAL Research
+  date_start: 2026-07-01
+  date_end: 2026-09-30
+  type: programme
+  format: online
+  location: Online
+  deadline:
+  description: Quarterly mentorship programme with mentors working on AI governance and digital minds policy.
+  status: upcoming
+
+- name: Sentient Futures London 2026
+  url: https://www.sentientfutures.ai/
+  organiser: Sentient Futures
+  date_start: 2026-06-20
+  date_end: 2026-06-21
+  type: conference
+  format: in-person
+  location: London, UK
+  deadline:
+  description: Conference bringing together researchers and practitioners working on sentience, welfare, and technology.
+  status: upcoming
+
+- name: ASSC 29
+  url: https://theassc.org/
+  organiser: Association for the Scientific Study of Consciousness
+  date_start: 2026-06-23
+  date_end: 2026-06-27
+  type: conference
+  format: in-person
+  location: Tokyo, Japan
+  deadline: 2026-03-15
+  description: The largest annual gathering in consciousness science. Increasingly features work on AI consciousness and digital minds.
+  status: upcoming
+
+- name: GovAI Summer Fellowship
+  url: https://www.governance.ai/
+  organiser: Centre for the Governance of AI
+  date_start: 2026-06-15
+  date_end: 2026-08-15
+  type: fellowship
+  format: in-person
+  location: Oxford, UK
+  deadline:
+  description: Research fellowship in AI governance. Digital minds questions increasingly within scope.
+  status: upcoming
+
+- name: ERA Cambridge Fellowship
+  url: https://www.existentialriskalliance.org/
+  organiser: Existential Risk Alliance
+  date_start: 2026-10-01
+  date_end: 2026-12-01
+  type: fellowship
+  format: in-person
+  location: Cambridge, UK
+  deadline:
+  description: Fellowship programme for researchers working on existential risk, including AI governance and digital minds.
+  status: upcoming

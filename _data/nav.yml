@@ -26,6 +26,10 @@
     - title: Digital Minds Programmes
       anchor: digital-minds-programmes
 
+- title: Events
+  url: /events/
+  sections: []
+
 - title: Field Map
   url: https://mitchel-alexander.github.io/digital-minds-map/
   external: true

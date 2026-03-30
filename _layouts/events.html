@@ -1,0 +1,210 @@
+---
+layout: default
+---
+<article class="page events-page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.description %}
+  <p class="page-description">{{ page.description }}</p>
+  {% endif %}
+
+  <div class="events-meta">
+    <p class="events-updated">Last updated: {{ site.time | date: "%-d %B %Y" }}</p>
+    <p class="events-actions">
+      <a href="mailto:mitchelalexanderpass@gmail.com?subject=Event suggestion for Getting Started in Digital Minds">Suggest an event</a>
+      · <a href="https://www.digitalminds.news/">Subscribe to the Digital Minds Newsletter</a>
+    </p>
+  </div>
+
+  <div class="events-filters" role="group" aria-label="Filter events">
+    <div class="filter-group">
+      <span class="filter-label">Type</span>
+      <div class="filter-pills" data-filter="type">
+        <button class="filter-pill active" data-value="all">All</button>
+        <button class="filter-pill" data-value="conference">Conference</button>
+        <button class="filter-pill" data-value="workshop">Workshop</button>
+        <button class="filter-pill" data-value="fellowship">Fellowship</button>
+        <button class="filter-pill" data-value="course">Course</button>
+        <button class="filter-pill" data-value="programme">Programme</button>
+        <button class="filter-pill" data-value="seminar">Seminar</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">Format</span>
+      <div class="filter-pills" data-filter="format">
+        <button class="filter-pill active" data-value="all">All</button>
+        <button class="filter-pill" data-value="in-person">In-person</button>
+        <button class="filter-pill" data-value="online">Online</button>
+        <button class="filter-pill" data-value="hybrid">Hybrid</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="events-count" aria-live="polite"></p>
+
+  <div class="events-list">
+    {% assign today = site.time | date: "%Y-%m-%d" %}
+    {% assign six_months_ago = site.time | date: "%s" | minus: 15778800 | date: "%Y-%m-%d" %}
+    {% assign sorted_events = site.data.events | sort: "date_start" %}
+
+    {% comment %} Upcoming and open events first {% endcomment %}
+    {% for event in sorted_events %}
+      {% if event.date_start >= today or event.date_end >= today %}
+        {% assign has_deadline = false %}
+        {% if event.deadline and event.deadline != "" %}
+          {% assign has_deadline = true %}
+          {% if event.deadline >= today %}
+            {% assign deadline_status = "open" %}
+          {% else %}
+            {% assign deadline_status = "closed" %}
+          {% endif %}
+        {% endif %}
+    <div class="event-card"
+         data-type="{{ event.type }}"
+         data-format="{{ event.format }}"
+         data-status="upcoming">
+      <div class="event-card-header">
+        <div class="event-tags">
+          <span class="event-tag event-tag--{{ event.type }}">{{ event.type | capitalize }}</span>
+          <span class="event-tag event-tag--format">{{ event.format | capitalize }}</span>
+        </div>
+        <h3 class="event-name"><a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }} ↗</a></h3>
+        <p class="event-organiser">{{ event.organiser }}</p>
+      </div>
+      <div class="event-card-details">
+        <div class="event-detail">
+          <span class="event-detail-label">Dates</span>
+          <span class="event-detail-value">
+            {{ event.date_start | date: "%-d %b %Y" }}{% if event.date_end and event.date_end != event.date_start %} – {{ event.date_end | date: "%-d %b %Y" }}{% endif %}
+          </span>
+        </div>
+        {% if event.location %}
+        <div class="event-detail">
+          <span class="event-detail-label">Location</span>
+          <span class="event-detail-value">{{ event.location }}</span>
+        </div>
+        {% endif %}
+        {% if has_deadline %}
+        <div class="event-detail">
+          <span class="event-detail-label">Deadline</span>
+          <span class="event-detail-value {% if deadline_status == 'open' %}event-deadline--open{% else %}event-deadline--closed{% endif %}">
+            {{ event.deadline | date: "%-d %b %Y" }}{% if deadline_status == "closed" %} (closed){% endif %}
+          </span>
+        </div>
+        {% endif %}
+      </div>
+      <p class="event-description">{{ event.description }}</p>
+    </div>
+      {% endif %}
+    {% endfor %}
+
+    {% comment %} Past events (within six months) {% endcomment %}
+    {% assign has_past = false %}
+    {% for event in sorted_events reversed %}
+      {% assign event_end = event.date_end | default: event.date_start %}
+      {% if event_end < today and event_end >= six_months_ago %}
+        {% assign has_past = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if has_past %}
+    <details class="past-events-toggle">
+      <summary>Past events</summary>
+      <div class="past-events-body">
+        {% for event in sorted_events reversed %}
+          {% assign event_end = event.date_end | default: event.date_start %}
+          {% if event_end < today and event_end >= six_months_ago %}
+        <div class="event-card event-card--past"
+             data-type="{{ event.type }}"
+             data-format="{{ event.format }}"
+             data-status="past">
+          <div class="event-card-header">
+            <div class="event-tags">
+              <span class="event-tag event-tag--{{ event.type }}">{{ event.type | capitalize }}</span>
+              <span class="event-tag event-tag--format">{{ event.format | capitalize }}</span>
+            </div>
+            <h3 class="event-name"><a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }} ↗</a></h3>
+            <p class="event-organiser">{{ event.organiser }}</p>
+          </div>
+          <div class="event-card-details">
+            <div class="event-detail">
+              <span class="event-detail-label">Dates</span>
+              <span class="event-detail-value">
+                {{ event.date_start | date: "%-d %b %Y" }}{% if event.date_end and event.date_end != event.date_start %} – {{ event.date_end | date: "%-d %b %Y" }}{% endif %}
+              </span>
+            </div>
+            {% if event.location %}
+            <div class="event-detail">
+              <span class="event-detail-label">Location</span>
+              <span class="event-detail-value">{{ event.location }}</span>
+            </div>
+            {% endif %}
+          </div>
+          <p class="event-description">{{ event.description }}</p>
+        </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </details>
+    {% endif %}
+  </div>
+
+  <div class="events-empty" style="display: none;">
+    <p>No events match your filters. <button class="events-reset-link">Show all events</button></p>
+  </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var filters = { type: 'all', format: 'all' };
+  var cards = document.querySelectorAll('.event-card');
+  var emptyMsg = document.querySelector('.events-empty');
+  var countEl = document.querySelector('.events-count');
+
+  // Filter pill clicks
+  document.querySelectorAll('.filter-pills').forEach(function (group) {
+    var dimension = group.getAttribute('data-filter');
+    group.addEventListener('click', function (e) {
+      var pill = e.target.closest('.filter-pill');
+      if (!pill) return;
+      group.querySelectorAll('.filter-pill').forEach(function (p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      filters[dimension] = pill.getAttribute('data-value');
+      applyFilters();
+    });
+  });
+
+  // Reset link
+  var resetLink = document.querySelector('.events-reset-link');
+  if (resetLink) {
+    resetLink.addEventListener('click', function () {
+      filters = { type: 'all', format: 'all' };
+      document.querySelectorAll('.filter-pill[data-value="all"]').forEach(function (p) {
+        p.closest('.filter-pills').querySelectorAll('.filter-pill').forEach(function (pp) { pp.classList.remove('active'); });
+        p.classList.add('active');
+      });
+      applyFilters();
+    });
+  }
+
+  function applyFilters() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var typeMatch = filters.type === 'all' || card.getAttribute('data-type') === filters.type;
+      var formatMatch = filters.format === 'all' || card.getAttribute('data-format') === filters.format;
+      var show = typeMatch && formatMatch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (emptyMsg) {
+      emptyMsg.style.display = visible === 0 ? '' : 'none';
+    }
+    if (countEl) {
+      var total = cards.length;
+      countEl.textContent = visible === total ? total + ' events' : visible + ' of ' + total + ' events';
+    }
+  }
+
+  applyFilters();
+});
+</script>
