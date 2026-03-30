@@ -71,8 +71,8 @@
   date_start: 2026-07-01
   date_end: 2026-09-30
   type: programme
-  format: online
-  location: Online
+  format: in-person
+  location: London, UK
   deadline:
   description: Quarterly mentorship programme with mentors working on AI governance and digital minds policy.
   status: upcoming
@@ -107,8 +107,8 @@
   date_start: 2026-06-15
   date_end: 2026-08-15
   type: fellowship
-  format: in-person
-  location: Oxford, UK
+  format: hybrid
+  location: London, UK / Washington, DC (preferred); open to candidates elsewhere
   deadline:
   description: Research fellowship in AI governance. Digital minds questions increasingly within scope.
   status: upcoming
