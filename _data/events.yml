@@ -5,6 +5,17 @@
 # format: in-person | online | hybrid
 # For recurring programmes, list the next cohort dates and update when new ones are announced.
 
+- name: "AI & Consciousness"
+  url: https://luma.com/0dkylo8k
+  organiser: Jose A. Fernandez Calvo
+  date_start: 2026-04-07
+  type: seminar
+  format: in-person
+  location: Miami, USA
+  deadline:
+  description: Philosophical panel exploring whether AI can possess consciousness, examining metaphysical, materialist, and cognitive perspectives through presentations and fireside discussion.
+  status: upcoming
+
 - name: Cambridge Digital Minds Online Course
   url: https://digitalminds.cam/course/
   organiser: Cambridge CDM
