@@ -544,8 +544,10 @@ details.discipline .discipline-body ul:last-child {
 
 /* Events page — wide layout */
 .events-page {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .events-header {

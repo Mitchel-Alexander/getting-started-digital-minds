@@ -11,7 +11,7 @@ sections:
   - title: "Pathways"
     description: "How people enter the field. Adjacent routes, dedicated programmes, and career guidance by discipline and stage."
     url: "/pathways/"
-  - title: "Events & Programmes"
+  - title: "Events and Opportunities"
     description: "Conferences, workshops, fellowships, courses, and deadlines. A browsable directory of what is happening and what is open."
     url: "/events/"
   - title: "Field Map"
