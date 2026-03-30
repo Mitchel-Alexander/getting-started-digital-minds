@@ -981,6 +981,7 @@ details.discipline .discipline-body ul:last-child {
   padding: 1rem 1.1rem;
   text-decoration: none;
   color: #1a1a2e;
+  cursor: pointer;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
@@ -1099,6 +1100,147 @@ details.discipline .discipline-body ul:last-child {
 
 .directory-reset-link:hover {
   text-decoration-color: #003366;
+}
+
+/* Organisation modal */
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 31, 46, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-backdrop.open {
+  display: flex;
+}
+
+.modal {
+  background: #ffffff;
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem 2.25rem;
+  border-radius: 8px;
+  position: relative;
+  border-top: 4px solid #003366;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.modal-close:hover {
+  color: #1a1a2e;
+}
+
+.modal-logo {
+  max-width: 200px;
+  max-height: 48px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.modal-org-name {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+
+.modal-zone {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.modal-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.82rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.modal-meta-sep {
+  margin: 0 0.3rem;
+  color: #ccc;
+}
+
+.modal-description {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.modal-section {
+  margin-bottom: 1.25rem;
+}
+
+.modal-section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.modal-people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-people-list li {
+  font-size: 0.85rem;
+  color: #333;
+  padding: 0.15rem 0;
+}
+
+.modal-people-list a {
+  color: #003366;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 51, 102, 0.3);
+}
+
+.modal-people-list a:hover {
+  text-decoration-color: #003366;
+}
+
+.modal-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #003366;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #003366;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.modal-link:hover {
+  background: #003366;
+  color: #ffffff;
 }
 
 /* Mobile */

@@ -66,7 +66,8 @@ layout: default
   <div class="directory-grid">
     {% assign orgs = site.data.organisations %}
     {% for org in orgs %}
-    <a href="{{ org.url }}" target="_blank" rel="noopener" class="org-card"
+    <div class="org-card"
+       data-index="{{ forloop.index0 }}"
        data-zone="{{ org.zone }}"
        data-subgroup="{{ org.subgroup }}"
        data-org_type="{{ org.org_type }}"
@@ -97,7 +98,7 @@ layout: default
       {% if org.key_figures %}
       <p class="org-figures">{{ org.key_figures | map: 'name' | join: '; ' | truncate: 80 }}</p>
       {% endif %}
-    </a>
+    </div>
     {% endfor %}
   </div>
 
@@ -105,6 +106,14 @@ layout: default
     <p>No organisations match your search. <button class="directory-reset-link">Show all</button></p>
   </div>
 </article>
+
+<!-- Organisation modal -->
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -115,6 +124,36 @@ document.addEventListener('DOMContentLoaded', function () {
   var emptyMsg = document.querySelector('.directory-empty');
   var countEl = document.querySelector('.directory-count');
   var searchInput = document.getElementById('org-search');
+
+  // Organisation data for modal
+  var orgData = [
+    {% for org in site.data.organisations %}
+    {
+      name: {{ org.name | jsonify }},
+      url: {{ org.url | jsonify }},
+      zone: {{ org.zone | jsonify }},
+      zone_secondary: {{ org.zone_secondary | default: "" | jsonify }},
+      description: {{ org.description | jsonify }},
+      org_type: {{ org.org_type | jsonify }},
+      geography: {{ org.geography | jsonify }},
+      logo: {{ org.logo | default: "" | jsonify }},
+      founding_year: {{ org.founding_year | default: "" | jsonify }},
+      key_figures: [
+        {% if org.key_figures %}{% for fig in org.key_figures %}
+        { name: {{ fig.name | jsonify }}, url: {{ fig.url | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {% endfor %}{% endif %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  var zoneLabels = {
+    'digital-minds': 'Digital Minds Research',
+    'empirical-foundations': 'Empirical Foundations',
+    'philosophical-foundations': 'Philosophical Foundations',
+    'governance-advocacy': 'Governance & Advocacy',
+    'support': 'Funders, Training & Community'
+  };
 
   // Research zone tabs match data-zone; support tabs match data-subgroup
   var researchZones = ['digital-minds', 'empirical-foundations', 'philosophical-foundations', 'governance-advocacy'];
@@ -184,9 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (activeTab === 'all') return true;
     var zone = card.getAttribute('data-zone');
     var subgroup = card.getAttribute('data-subgroup');
-    // Research tabs match on zone
     if (researchZones.indexOf(activeTab) !== -1) return zone === activeTab;
-    // Support tabs match on subgroup
     if (supportSubgroups.indexOf(activeTab) !== -1) return subgroup === activeTab;
     return false;
   }
@@ -216,6 +253,80 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
+
+  // Modal
+  var backdrop = document.getElementById('modal-backdrop');
+  var modalBody = document.getElementById('modal-body');
+  var modal = document.getElementById('modal');
+
+  function openModal(index) {
+    var o = orgData[index];
+    if (!o) return;
+
+    var logoHtml = o.logo
+      ? '<img class="modal-logo" src="{{ "/" | relative_url }}assets/logos/' + o.logo + '.png" alt="">'
+      : '';
+
+    var zoneLabel = zoneLabels[o.zone] || '';
+    var alsoLabel = o.zone_secondary ? ' · also: ' + (zoneLabels[o.zone_secondary] || o.zone_secondary) : '';
+
+    var metaItems = [];
+    metaItems.push('<span>' + o.org_type.replace(/-/g, ' ').replace(/^\w/, function(c){ return c.toUpperCase(); }) + '</span>');
+    metaItems.push('<span>' + o.geography + '</span>');
+    if (o.founding_year) metaItems.push('<span>Est. ' + o.founding_year + '</span>');
+
+    var figuresHtml = '';
+    if (o.key_figures && o.key_figures.length > 0 && o.key_figures[0].name) {
+      var items = o.key_figures.map(function(fig) {
+        if (fig.url) {
+          return '<li><a href="' + fig.url + '" target="_blank" rel="noopener">' + fig.name + '</a></li>';
+        }
+        return '<li>' + fig.name + '</li>';
+      }).join('');
+      figuresHtml = '<div class="modal-section"><div class="modal-section-label">People</div><ul class="modal-people-list">' + items + '</ul></div>';
+    }
+
+    modalBody.innerHTML =
+      logoHtml +
+      '<div class="modal-org-name">' + o.name + '</div>' +
+      '<div class="modal-zone">' + zoneLabel + alsoLabel + '</div>' +
+      '<div class="modal-meta">' + metaItems.join('<span class="modal-meta-sep">&middot;</span>') + '</div>' +
+      '<div class="modal-description">' + o.description + '</div>' +
+      figuresHtml +
+      '<a class="modal-link" href="' + o.url + '" target="_blank" rel="noopener">Visit website &rarr;</a>';
+
+    // Set accent colour from the card's zone
+    var zoneAccents = {
+      'digital-minds': '#4a148c',
+      'empirical-foundations': '#0d47a1',
+      'philosophical-foundations': '#b45309',
+      'governance-advocacy': '#1a5e3a',
+      'support': '#555'
+    };
+    modal.style.borderTopColor = zoneAccents[o.zone] || '#003366';
+    backdrop.classList.add('open');
+  }
+
+  // Card click opens modal
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      var index = parseInt(card.getAttribute('data-index'), 10);
+      openModal(index);
+    });
+  });
+
+  // Close modal
+  document.getElementById('modal-close').addEventListener('click', function () {
+    backdrop.classList.remove('open');
+  });
+
+  backdrop.addEventListener('click', function (e) {
+    if (e.target === backdrop) backdrop.classList.remove('open');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') backdrop.classList.remove('open');
+  });
 
   applyFilters();
 });
