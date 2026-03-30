@@ -542,12 +542,11 @@ details.discipline .discipline-body ul:last-child {
   color: #555;
 }
 
-/* Events page — wide layout */
-.events-page {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+/* Events page — break out of .content wrapper */
+.content:has(.events-page) {
+  max-width: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .events-header {
