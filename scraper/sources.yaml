@@ -1,0 +1,129 @@
+# GDiDM Events Scraper — Source Configuration
+# Each source maps an organisation to one or more URLs to scrape.
+# page_type: static (requests + BS4) | dynamic (Playwright, JS-rendered)
+
+sources:
+  - name: Cambridge Digital Minds
+    abbreviation: CDM
+    tier: 1
+    urls:
+      - url: https://digitalminds.cam/
+        page_type: static
+        notes: Main page — lists fellowship, course, and workshop announcements
+      - url: https://digitalminds.cam/fellowship/
+        page_type: static
+        notes: Fellowship details page with dates and deadlines
+      - url: https://digitalminds.cam/course/
+        page_type: static
+        notes: Online course details page
+
+  - name: PRISM
+    abbreviation: PRISM
+    tier: 1
+    urls:
+      - url: https://www.prism-global.com/
+        page_type: static
+        notes: Main page — news, events, essay prize announcements
+
+  - name: Rethink Priorities
+    abbreviation: RP
+    tier: 1
+    urls:
+      - url: https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/
+        page_type: static
+        notes: Digital minds research area page — may list workshops or reports
+
+  - name: Center for AI Safety
+    abbreviation: CAIS
+    tier: 1
+    urls:
+      - url: https://www.safe.ai/
+        page_type: static
+        notes: Main page — programmes and workshops at safety/welfare intersection
+
+  - name: Sentient Futures
+    abbreviation: SF
+    tier: 1
+    urls:
+      - url: https://www.sentientfutures.ai/
+        page_type: static
+        notes: Fellowship and annual London conference
+
+  - name: Neuromatch
+    abbreviation: NM
+    tier: 1
+    urls:
+      - url: https://neuromatch.io/ai-sentience-scholars/
+        page_type: static
+        notes: AI Sentience Scholars Program page
+
+  - name: Future Impact Group
+    abbreviation: FIG
+    tier: 1
+    urls:
+      - url: https://futureimpact.group/fellowship
+        page_type: static
+        notes: Fellowship programme with AI sentience track
+      - url: https://futureimpact.group/ai-sentience
+        page_type: static
+        notes: AI sentience track details
+
+  - name: Association for the Scientific Study of Consciousness
+    abbreviation: ASSC
+    tier: 1
+    urls:
+      - url: https://theassc.org/
+        page_type: static
+        notes: Annual conference — largest consciousness science gathering
+
+  - name: Centre for the Governance of AI
+    abbreviation: GovAI
+    tier: 1
+    urls:
+      - url: https://www.governance.ai/
+        page_type: static
+        notes: Summer fellowship; digital minds increasingly in scope
+
+  - name: PIVOTAL Research
+    abbreviation: PIVOTAL
+    tier: 1
+    urls:
+      - url: https://www.pivotal-research.org/
+        page_type: static
+        notes: Mentorship programme, AI governance focus
+      - url: https://www.pivotal-research.org/mentors
+        page_type: static
+        notes: Mentors page with programme details
+
+  - name: Eleos AI Research
+    abbreviation: ELEOS
+    tier: 1
+    urls:
+      - url: https://eleosai.org/
+        page_type: static
+        notes: Main page — leading AI welfare nonprofit
+      - url: https://eleosai.org/research
+        page_type: static
+        notes: Research page — may announce workshops or reports
+
+  - name: Center for Mind, Ethics, and Policy
+    abbreviation: CMEP
+    tier: 1
+    urls:
+      - url: https://nonhumanminds.org/events/
+        page_type: dynamic
+        notes: Events page — Google Sites, JS-rendered
+      - url: https://nonhumanminds.org/opportunities/
+        page_type: dynamic
+        notes: Opportunities page — jobs, research positions
+
+  - name: California Institute for Machine Consciousness
+    abbreviation: CIMC
+    tier: 1
+    urls:
+      - url: https://cimc.ai/
+        page_type: static
+        notes: Main page — Machine Consciousness Salons, MC0001 conference
+      - url: https://machine-consciousness.ai/
+        page_type: static
+        notes: Conference/event site

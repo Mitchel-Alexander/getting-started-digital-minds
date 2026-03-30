@@ -16,40 +16,40 @@
   description: Philosophical panel exploring whether AI can possess consciousness, examining metaphysical, materialist, and cognitive perspectives through presentations and fireside discussion.
   status: upcoming
 
-- name: Cambridge Digital Minds Online Course
+- name: Introduction to Digital Minds — Online Course
   url: https://digitalminds.cam/course/
   organiser: Cambridge CDM
-  date_start: 2026-09-01
-  date_end: 2026-10-27
+  date_start:
+  date_end:
   type: course
   format: online
   location: Online
-  deadline: 2026-08-15
-  description: Eight-week course covering consciousness theories, welfare assessment, governance, and public perception. Free, ~3.5 hours/week.
+  deadline:
+  description: Eight-week free online course exploring AI consciousness, moral status, and digital minds. Developed with experts from Cambridge, NYU, Oxford, PRISM, and Eleos AI. Launching 2026; expression of interest open.
   status: upcoming
 
 - name: Cambridge Digital Minds Fellowship
   url: https://digitalminds.cam/fellowship/
   organiser: Cambridge CDM
-  date_start: 2026-07-14
-  date_end: 2026-07-20
+  date_start: 2026-08-03
+  date_end: 2026-08-09
   type: fellowship
   format: in-person
   location: Cambridge, UK
-  deadline: 2026-03-27
-  description: Five-day residential programme at Jesus College followed by the Digital Minds Strategy Workshop. Fully funded.
+  deadline:
+  description: Five-day intensive residential fellowship at Jesus College for researchers working on AI consciousness, AI welfare, and digital minds. Fully funded with travel, accommodation, and stipend. Applications closed.
   status: upcoming
 
-- name: Neuromatch AI Sentience Scholars Program
+- name: AI Sentience Scholars Program — 2026 Cohort
   url: https://neuromatch.io/ai-sentience-scholars/
   organiser: Neuromatch
   date_start: 2026-06-01
-  date_end: 2026-11-30
+  date_end: 2026-12-31
   type: programme
   format: online
-  location: Online
-  deadline: 2026-05-15
-  description: Six-month mentored research programme for early-career researchers. Projects on consciousness theories, personhood, and moral status. Includes stipend.
+  location: Online (with in-person convening Nov–Dec 2026)
+  deadline: 2026-04-28
+  description: Six-month part-time research and training programme for early-career researchers investigating AI sentience, consciousness, and ethics. Includes mentored projects, publication support, and up to USD 8,000 in research support.
   status: upcoming
 
 - name: Future Impact Group Fellowship
@@ -88,28 +88,28 @@
   description: Quarterly mentorship programme with mentors working on AI governance and digital minds policy.
   status: upcoming
 
-- name: Sentient Futures London 2026
-  url: https://www.sentientfutures.ai/
+- name: Sentient Futures Summit London 2026
+  url: https://www.sentientfutures.ai/sfslondon2026
   organiser: Sentient Futures
-  date_start: 2026-06-20
-  date_end: 2026-06-21
+  date_start: 2026-05-22
+  date_end: 2026-05-24
   type: conference
   format: in-person
   location: London, UK
   deadline:
-  description: Conference bringing together researchers and practitioners working on sentience, welfare, and technology.
+  description: Three-day summit on AI, consciousness, animal welfare, and sentient minds. Day 1 is a conventional conference; days 2–3 are unconference format. Scholarships and volunteer tickets available.
   status: upcoming
 
-- name: ASSC 29
+- name: ASSC29
   url: https://theassc.org/
   organiser: Association for the Scientific Study of Consciousness
-  date_start: 2026-06-23
-  date_end: 2026-06-27
+  date_start: 2026-06-30
+  date_end: 2026-07-03
   type: conference
   format: in-person
-  location: Tokyo, Japan
-  deadline: 2026-03-15
-  description: The largest annual gathering in consciousness science. Increasingly features work on AI consciousness and digital minds.
+  location: Santiago de Chile
+  deadline:
+  description: Annual meeting of the ASSC, the leading academic society for consciousness research. Increasingly features work on AI consciousness and digital minds.
   status: upcoming
 
 - name: GovAI Summer Fellowship
@@ -134,4 +134,52 @@
   location: Cambridge, UK
   deadline:
   description: Fellowship programme for researchers working on existential risk, including AI governance and digital minds.
+  status: upcoming
+
+- name: "MC0001 — The Founding Assembly for Machine Consciousness Research"
+  url: https://machine-consciousness.ai/
+  organiser: California Institute for Machine Consciousness (CIMC)
+  date_start: 2026-05-29
+  date_end: 2026-05-31
+  type: conference
+  format: in-person
+  location: Berkeley, California, USA
+  deadline:
+  description: First coordinated conference on constructing artificial conscious systems. Covers foundational theory, technical implementation, ethics, and AI art. Speakers include Karl Friston, Michael Levin, and Joscha Bach.
+  status: upcoming
+
+- name: "If Consciousness Is Biological, Can AI Be Conscious? — Ned Block"
+  url: https://nonhumanminds.org/event/canaibeconscious/
+  organiser: Center for Mind, Ethics, and Policy (CMEP)
+  date_start: 2026-04-10
+  date_end:
+  type: seminar
+  format: online
+  location: Online
+  deadline:
+  description: Public talk by Ned Block exploring whether AI can be conscious if consciousness is biological. Part of the CMEP seminar series on consciousness, sentience, and moral status.
+  status: upcoming
+
+- name: 2026 Mind, Ethics, and Policy Summit
+  url: https://nonhumanminds.org/opportunities/
+  organiser: Center for Mind, Ethics, and Policy (CMEP)
+  date_start: 2026-04-10
+  date_end: 2026-04-11
+  type: workshop
+  format: in-person
+  location: New York, USA
+  deadline:
+  description: Two-day summit on consciousness, sentience, moral status, and policy for nonhuman minds including AI. Lightning talks, group discussions, and breakout sessions. At capacity.
+  status: upcoming
+
+- name: AI Sentience Scholars — Application Support Webinar
+  url: https://neuromatch.io/ai-sentience-scholars/
+  organiser: Neuromatch
+  date_start: 2026-04-01
+  date_end:
+  type: seminar
+  format: online
+  location: Online
+  deadline:
+  description: Information webinar covering the AI Sentience Scholars program structure, mentorship model, project options, and selection process.
   status: upcoming

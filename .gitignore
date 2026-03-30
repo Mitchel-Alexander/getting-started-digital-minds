@@ -1,0 +1,3 @@
+scraper/pages/
+scraper/scraped_events.json
+scraper/scrape_log.json
