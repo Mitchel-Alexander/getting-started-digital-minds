@@ -542,7 +542,16 @@ details.discipline .discipline-body ul:last-child {
   color: #555;
 }
 
-/* Events page */
+/* Events page — wide layout */
+.events-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-header {
+  max-width: 720px;
+}
+
 .events-meta {
   margin-bottom: 1.75rem;
 }
@@ -619,51 +628,48 @@ details.discipline .discipline-body ul:last-child {
   margin-bottom: 1rem;
 }
 
-.events-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+/* Card grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.85rem;
 }
 
 .event-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: #1a1a2e;
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .event-card:hover {
   border-color: #003366;
   box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+  text-decoration: none;
 }
 
 .event-card--past {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .event-card--past:hover {
   opacity: 1;
 }
 
-.event-card-header {
-  margin-bottom: 0.75rem;
-}
-
-.event-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 0.5rem;
-}
-
 .event-tag {
   display: inline-block;
-  padding: 0.15rem 0.6rem;
-  font-size: 0.75rem;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  border-radius: 12px;
+  border-radius: 10px;
   line-height: 1.5;
   letter-spacing: 0.01em;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
 }
 
 .event-tag--conference {
@@ -699,78 +705,69 @@ details.discipline .discipline-body ul:last-child {
 .event-tag--format {
   background: #f5f5f5;
   color: #555;
+  margin-top: auto;
+  font-size: 0.68rem;
+  font-weight: 500;
 }
 
 .event-name {
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin: 0 0 0.2rem 0;
-  line-height: 1.4;
-}
-
-.event-name a {
+  line-height: 1.35;
   color: #003366;
-  text-decoration: none;
-}
-
-.event-name a:hover {
-  text-decoration: underline;
-  text-decoration-color: rgba(0, 51, 102, 0.3);
 }
 
 .event-organiser {
-  font-size: 0.88rem;
-  color: #555;
-  margin: 0;
-}
-
-.event-card-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
-.event-detail {
-  display: flex;
-  align-items: baseline;
-  gap: 0.4rem;
-}
-
-.event-detail-label {
   font-size: 0.78rem;
-  font-weight: 600;
   color: #888;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  flex-shrink: 0;
+  margin: 0 0 0.6rem 0;
 }
 
-.event-detail-value {
-  font-size: 0.88rem;
+.event-card-meta {
+  margin-bottom: 0.5rem;
+}
+
+.event-card-meta p {
+  margin: 0 0 0.15rem 0;
+  font-size: 0.78rem;
   color: #1a1a2e;
+  line-height: 1.4;
+}
+
+.event-dates {
+  font-weight: 600;
+}
+
+.event-location {
+  color: #555 !important;
+}
+
+.event-deadline {
+  font-size: 0.75rem !important;
 }
 
 .event-deadline--open {
-  color: #1e6b3a;
+  color: #1e6b3a !important;
   font-weight: 600;
 }
 
 .event-deadline--closed {
-  color: #888;
+  color: #888 !important;
 }
 
 .event-description {
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   color: #555;
-  margin: 0;
-  line-height: 1.5;
+  margin: 0 0 0.6rem 0;
+  line-height: 1.45;
+  flex-grow: 1;
 }
 
 /* Past events collapsible */
 .past-events-toggle {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
 }
@@ -811,9 +808,6 @@ details.discipline .discipline-body ul:last-child {
 }
 
 .past-events-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   padding: 0 1.25rem 1.25rem;
 }
 
@@ -906,13 +900,8 @@ details.discipline .discipline-body ul:last-child {
     grid-template-columns: 1fr;
   }
 
-  .event-card {
-    padding: 1rem 1.25rem;
-  }
-
-  .event-card-details {
-    flex-direction: column;
-    gap: 0.3rem;
+  .events-grid {
+    grid-template-columns: 1fr;
   }
 
   .filter-pills {
@@ -924,4 +913,16 @@ details.discipline .discipline-body ul:last-child {
     font-size: 0.78rem;
   }
 
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .events-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
