@@ -16,6 +16,9 @@ sources:
       - url: https://digitalminds.cam/course/
         page_type: static
         notes: Online course details page
+      - url: https://digitalminds.cam/workshop
+        page_type: static
+        notes: Strategy Workshop details page (Aug 8-9 2026)
 
   - name: PRISM
     abbreviation: PRISM
@@ -24,6 +27,12 @@ sources:
       - url: https://www.prism-global.com/
         page_type: static
         notes: Main page — news, events, essay prize announcements
+      - url: https://www.prism-global.com/news
+        page_type: static
+        notes: News feed with event and opportunity announcements
+      - url: https://www.prism-global.com/meetup
+        page_type: static
+        notes: Recurring Conscious AI meetup seminar series
 
   - name: Rethink Priorities
     abbreviation: RP
@@ -32,6 +41,9 @@ sources:
       - url: https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/
         page_type: static
         notes: Digital minds research area page — may list workshops or reports
+      - url: https://rethinkpriorities.org/announcements/
+        page_type: static
+        notes: Announcements feed — funding, programmes, webinars
 
   - name: Center for AI Safety
     abbreviation: CAIS
@@ -40,6 +52,12 @@ sources:
       - url: https://www.safe.ai/
         page_type: static
         notes: Main page — programmes and workshops at safety/welfare intersection
+      - url: https://www.safe.ai/fellowship
+        page_type: static
+        notes: AI and Society Fellowship programme page
+      - url: https://www.safe.ai/work/field-building
+        page_type: static
+        notes: Programmes hub — fellowships, courses, competitions, scholarships
 
   - name: Sentient Futures
     abbreviation: SF
@@ -48,6 +66,12 @@ sources:
       - url: https://www.sentientfutures.ai/
         page_type: static
         notes: Fellowship and annual London conference
+      - url: https://www.sentientfutures.ai/sfslondon2026
+        page_type: static
+        notes: Summit London 2026 detail page (May 22-24)
+      - url: https://www.sentientfutures.ai/projectincubator
+        page_type: static
+        notes: Recurring 8-week project incubator programme
 
   - name: Neuromatch
     abbreviation: NM
@@ -73,8 +97,11 @@ sources:
     tier: 1
     urls:
       - url: https://theassc.org/
-        page_type: static
-        notes: Annual conference — largest consciousness science gathering
+        page_type: dynamic
+        notes: Annual conference — largest consciousness science gathering. JS-heavy site, needs Playwright.
+      - url: https://theassc.org/assc-29/
+        page_type: dynamic
+        notes: ASSC 29 conference detail page (Jun 30 - Jul 3 2026, Santiago)
 
   - name: Centre for the Governance of AI
     abbreviation: GovAI
@@ -83,6 +110,9 @@ sources:
       - url: https://www.governance.ai/
         page_type: static
         notes: Summer fellowship; digital minds increasingly in scope
+      - url: https://www.governance.ai/opportunities
+        page_type: static
+        notes: Fellowships and research positions page
 
   - name: PIVOTAL Research
     abbreviation: PIVOTAL
@@ -94,6 +124,9 @@ sources:
       - url: https://www.pivotal-research.org/mentors
         page_type: static
         notes: Mentors page with programme details
+      - url: https://www.pivotal-research.org/fellowship
+        page_type: static
+        notes: Fellowship programme detail page (9-week, London)
 
   - name: Eleos AI Research
     abbreviation: ELEOS
