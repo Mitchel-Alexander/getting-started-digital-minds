@@ -16,18 +16,25 @@ layout: default
       <input class="directory-search" type="search" id="org-search" placeholder="Search organisations..." autocomplete="off">
     </div>
 
-    <div class="directory-filters">
-      <div class="filter-group">
-        <span class="filter-label">Category</span>
-        <div class="filter-pills" data-filter="zone">
-          <button class="filter-pill active" data-value="all">All</button>
-          <button class="filter-pill" data-value="digital-minds">Digital Minds Research</button>
-          <button class="filter-pill" data-value="empirical-foundations">Empirical Foundations</button>
-          <button class="filter-pill" data-value="philosophical-foundations">Philosophical Foundations</button>
-          <button class="filter-pill" data-value="governance-advocacy">Governance & Advocacy</button>
-          <button class="filter-pill" data-value="support">Funders, Training & Community</button>
-        </div>
+    <div class="directory-tabs">
+      <div class="tab-row">
+        <span class="tab-row-label">Research</span>
+        <button class="zone-tab active" data-filter="all">All</button>
+        <button class="zone-tab" data-filter="digital-minds">Digital Minds Research</button>
+        <button class="zone-tab" data-filter="empirical-foundations">Empirical Foundations</button>
+        <button class="zone-tab" data-filter="philosophical-foundations">Philosophical Foundations</button>
+        <button class="zone-tab" data-filter="governance-advocacy">Governance & Advocacy</button>
       </div>
+      <div class="tab-row">
+        <span class="tab-row-label">Field Support</span>
+        <button class="zone-tab" data-filter="funders">Funders</button>
+        <button class="zone-tab" data-filter="onboarding">Training & Education</button>
+        <button class="zone-tab" data-filter="field-building">Field Building</button>
+        <button class="zone-tab" data-filter="community-media">Community & Media</button>
+      </div>
+    </div>
+
+    <div class="directory-filters">
       <div class="filter-group">
         <span class="filter-label">Type</span>
         <div class="filter-pills" data-filter="org_type">
@@ -61,6 +68,7 @@ layout: default
     {% for org in orgs %}
     <a href="{{ org.url }}" target="_blank" rel="noopener" class="org-card"
        data-zone="{{ org.zone }}"
+       data-subgroup="{{ org.subgroup }}"
        data-org_type="{{ org.org_type }}"
        data-geography="{{ org.geography }}"
        data-name="{{ org.name | downcase }}"
@@ -100,14 +108,18 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var filters = { zone: 'all', org_type: 'all', geography: 'all' };
+  var activeTab = 'all';
+  var filters = { org_type: 'all', geography: 'all' };
   var searchTerm = '';
   var cards = document.querySelectorAll('.org-card');
   var emptyMsg = document.querySelector('.directory-empty');
   var countEl = document.querySelector('.directory-count');
   var searchInput = document.getElementById('org-search');
 
-  // Region mapping for geography filter
+  // Research zone tabs match data-zone; support tabs match data-subgroup
+  var researchZones = ['digital-minds', 'empirical-foundations', 'philosophical-foundations', 'governance-advocacy'];
+  var supportSubgroups = ['funders', 'onboarding', 'field-building', 'community-media'];
+
   var regionMap = {
     'europe': ['Germany', 'France', 'Netherlands', 'Belgium', 'Switzerland', 'Italy', 'Spain', 'Sweden', 'Norway', 'Denmark', 'Austria', 'Ireland', 'Portugal', 'Finland', 'Poland', 'Czech Republic', 'Hungary', 'Romania', 'Greece'],
     'asia-pacific': ['Japan', 'China', 'Hong Kong', 'South Korea', 'Taiwan', 'Singapore', 'India', 'Australia', 'New Zealand']
@@ -120,6 +132,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (filterVal === 'asia-pacific' && regionMap['asia-pacific'].indexOf(cardGeo) !== -1) return true;
     return false;
   }
+
+  // Tab clicks
+  document.querySelectorAll('.zone-tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.zone-tab').forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      activeTab = tab.getAttribute('data-filter');
+      applyFilters();
+    });
+  });
 
   // Filter pill clicks
   document.querySelectorAll('.directory-filters .filter-pills').forEach(function (group) {
@@ -144,9 +166,12 @@ document.addEventListener('DOMContentLoaded', function () {
   var resetLink = document.querySelector('.directory-reset-link');
   if (resetLink) {
     resetLink.addEventListener('click', function () {
-      filters = { zone: 'all', org_type: 'all', geography: 'all' };
+      activeTab = 'all';
+      filters = { org_type: 'all', geography: 'all' };
       searchTerm = '';
       searchInput.value = '';
+      document.querySelectorAll('.zone-tab').forEach(function (t) { t.classList.remove('active'); });
+      document.querySelector('.zone-tab[data-filter="all"]').classList.add('active');
       document.querySelectorAll('.filter-pill[data-value="all"]').forEach(function (p) {
         p.closest('.filter-pills').querySelectorAll('.filter-pill').forEach(function (pp) { pp.classList.remove('active'); });
         p.classList.add('active');
@@ -155,16 +180,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function tabMatches(card) {
+    if (activeTab === 'all') return true;
+    var zone = card.getAttribute('data-zone');
+    var subgroup = card.getAttribute('data-subgroup');
+    // Research tabs match on zone
+    if (researchZones.indexOf(activeTab) !== -1) return zone === activeTab;
+    // Support tabs match on subgroup
+    if (supportSubgroups.indexOf(activeTab) !== -1) return subgroup === activeTab;
+    return false;
+  }
+
   function applyFilters() {
     var visible = 0;
     cards.forEach(function (card) {
-      var zoneMatch = filters.zone === 'all' || card.getAttribute('data-zone') === filters.zone;
+      var tabMatch = tabMatches(card);
       var typeMatch = filters.org_type === 'all' || card.getAttribute('data-org_type') === filters.org_type;
       var geoMatch = geoMatches(card.getAttribute('data-geography'), filters.geography);
       var searchMatch = !searchTerm ||
         card.getAttribute('data-name').indexOf(searchTerm) !== -1 ||
         card.getAttribute('data-description').indexOf(searchTerm) !== -1;
-      var show = zoneMatch && typeMatch && geoMatch && searchMatch;
+      var show = tabMatch && typeMatch && geoMatch && searchMatch;
       card.style.display = show ? '' : 'none';
       if (show) visible++;
     });
@@ -173,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (countEl) {
       var total = cards.length;
-      if (searchTerm || filters.zone !== 'all' || filters.org_type !== 'all' || filters.geography !== 'all') {
+      if (searchTerm || activeTab !== 'all' || filters.org_type !== 'all' || filters.geography !== 'all') {
         countEl.textContent = visible + ' of ' + total + ' organisations';
       } else {
         countEl.textContent = total + ' organisations';

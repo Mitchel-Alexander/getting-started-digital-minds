@@ -857,6 +857,7 @@
   org_type: media
   function: media-comms
   geography: international
+  subgroup: community-media
 - name: Am I? (podcast)
   url: https://www.youtube.com/playlist?list=PL2z8DaMofPIDBVYhVQbysrZVWtUVb5VPF
   zone: support
@@ -866,6 +867,7 @@
   org_type: media
   function: media-comms
   geography: international
+  subgroup: community-media
 - name: Astral Codex Ten (blog)
   url: https://www.astralcodexten.com/
   zone: support
@@ -880,6 +882,7 @@
   key_figures:
   - name: Scott Alexander (Author)
     url: https://www.astralcodexten.com/
+  subgroup: community-media
 - name: Coefficient Giving (formerly Open Philanthropy)
   url: https://coefficientgiving.org/
   zone: support
@@ -895,6 +898,7 @@
   key_figures:
   - name: Alexander Berger (CEO)
     url: https://coefficientgiving.org/team/alexander-berger/
+  subgroup: funders
 - name: Digital Minds Newsletter
   url: https://www.digitalminds.news/
   zone: support
@@ -914,6 +918,7 @@
     url: https://www.prism-global.com/will-millership
   - name: Bradford Saad (Co-editor)
     url: https://sites.google.com/a/brown.edu/brad-saad/
+  subgroup: community-media
 - name: Don't Worry About the Vase (blog)
   url: https://thezvi.substack.com/
   zone: support
@@ -927,6 +932,7 @@
   key_figures:
   - name: Zvi Mowshowitz (Author)
     url: https://thezvi.substack.com/
+  subgroup: community-media
 - name: EA Forum — Artificial Sentience Topic
   url: https://forum.effectivealtruism.org/topics/artificial-sentience
   zone: support
@@ -938,6 +944,7 @@
   org_type: community
   function: media-comms
   geography: international
+  subgroup: community-media
 - name: Experience Machines (blog)
   url: https://experiencemachines.substack.com/
   zone: support
@@ -950,6 +957,7 @@
   key_figures:
   - name: Robert Long
     url: https://robertlong.online/
+  subgroup: community-media
 - name: Exploring Machine Consciousness (podcast)
   url: https://www.prism-global.com/podcast
   zone: support
@@ -963,6 +971,7 @@
   key_figures:
   - name: Will Millership (Host)
     url: https://www.prism-global.com/will-millership
+  subgroup: community-media
 - name: Foresight Institute
   url: https://foresight.org/
   zone: support
@@ -978,6 +987,7 @@
   key_figures:
   - name: Christine Peterson (Co-Founder)
     url: https://foresight.org/
+  subgroup: funders
 - name: Future Impact Group — AI Sentience Track
   url: https://futureimpact.group/ai-sentience
   zone: support
@@ -989,6 +999,7 @@
   function: community-onboarding
   geography: international
   logo: future-impact-group-ai-sentience-track
+  subgroup: onboarding
 - name: Future of Citizenship (blog)
   url: https://futureofcitizenship.substack.com/
   zone: support
@@ -1002,6 +1013,7 @@
   key_figures:
   - name: Heather Alexander
     url: https://futureofcitizenship.net/
+  subgroup: community-media
 - name: Longview Philanthropy — Digital Sentience Fund
   url: https://www.longview.org/fund/digital-sentience-fund/
   zone: support
@@ -1017,6 +1029,7 @@
   key_figures:
   - name: Natalie Cargill (Founder, Co-CEO)
     url: https://www.nataliecargill.com/
+  subgroup: funders
 - name: MATS (ML Alignment Theory Scholars)
   url: https://www.matsprogram.org/
   zone: support
@@ -1030,6 +1043,7 @@
   geography: USA
   logo: mats-ml-alignment-theory-scholars
   founding_year: '2021'
+  subgroup: onboarding
 - name: Macroscopic Ventures
   url: https://macroscopic.org/
   zone: support
@@ -1041,6 +1055,7 @@
   function: funding
   geography: USA
   logo: macroscopic-ventures
+  subgroup: funders
 - name: Mind-Body Solution (podcast)
   url: https://www.mindbodysolution.org/
   zone: support
@@ -1054,6 +1069,7 @@
   key_figures:
   - name: Tevin Naidu (Host)
     url: https://www.mindbodysolution.org/
+  subgroup: community-media
 - name: Navigation Fund
   url: https://www.navigationfund.org/
   zone: support
@@ -1065,6 +1081,7 @@
   function: funding
   geography: international
   logo: navigation-fund
+  subgroup: funders
 - name: Neuromatch — AI Sentience Scholars
   url: https://neuromatch.io/ai-sentience-scholars/
   zone: support
@@ -1078,6 +1095,7 @@
   geography: international
   logo: neuromatch-ai-sentience-scholars
   founding_year: '2026'
+  subgroup: onboarding
 - name: Noema Magazine
   url: https://www.noemamag.com/
   zone: support
@@ -1093,6 +1111,7 @@
   key_figures:
   - name: Nathan Gardels (Editor-in-Chief)
     url: https://www.noemamag.com/author/nathan-gardels/
+  subgroup: community-media
 - name: PIVOTAL Research
   url: https://www.pivotal-research.org/
   zone: support
@@ -1105,6 +1124,7 @@
   function: community-onboarding
   geography: UK
   logo: pivotal-research
+  subgroup: onboarding
 - name: PRISM — Partnership for Research Into Sentient Machines
   url: https://www.prism-global.com/
   zone: support
@@ -1121,6 +1141,7 @@
   key_figures:
   - name: Will Millership (Founder, Executive Director)
     url: https://www.prism-global.com/will-millership
+  subgroup: field-building
 - name: SPAR (Student Program for AI Risks)
   url: https://sparai.org/
   zone: support
@@ -1133,6 +1154,7 @@
   function: community-onboarding
   geography: international
   logo: spar-student-program-for-ai-risks
+  subgroup: onboarding
 - name: Sentient Futures (formerly AI for Animals)
   url: https://www.sentientfutures.ai/
   zone: support
@@ -1148,6 +1170,7 @@
   key_figures:
   - name: Constance Li (Founder, Executive Director)
     url: https://www.sentientfutures.ai/about
+  subgroup: field-building
 - name: Templeton Foundations (JTF / TWCF)
   url: https://www.templeton.org
   zone: support
@@ -1163,3 +1186,4 @@
   geography: USA
   logo: templeton-foundations-jtf-twcf
   founding_year: '1987'
+  subgroup: funders
