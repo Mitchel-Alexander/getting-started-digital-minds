@@ -937,8 +937,8 @@ details.discipline .discipline-body ul:last-child {
 }
 
 .zone-tab[data-filter="philosophical-foundations"].active {
-  color: #b45309;
-  border-bottom-color: #b45309;
+  color: #0f766e;
+  border-bottom-color: #0f766e;
 }
 
 .zone-tab[data-filter="governance-advocacy"].active {
