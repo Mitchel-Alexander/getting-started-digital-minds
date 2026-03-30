@@ -807,6 +807,206 @@ details.discipline .discipline-body ul:last-child {
   text-decoration-color: #003366;
 }
 
+/* Directory page — wide layout */
+.content:has(.directory-page) {
+  max-width: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.directory-header {
+  max-width: 720px;
+  margin-bottom: 0.5rem;
+}
+
+.directory-count-summary {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.directory-controls {
+  margin-bottom: 1.25rem;
+}
+
+.directory-search-wrap {
+  position: relative;
+  margin-bottom: 1rem;
+  max-width: 320px;
+}
+
+.directory-search-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.directory-search {
+  width: 100%;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  border: none;
+  border-bottom: 1.5px solid #e0e0e0;
+  background: transparent;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.directory-search:focus {
+  border-bottom-color: #003366;
+}
+
+.directory-search::placeholder {
+  color: #888;
+}
+
+.directory-count {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+/* Directory grid */
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.85rem;
+}
+
+.org-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: #1a1a2e;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.org-card:hover {
+  border-color: #003366;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+  text-decoration: none;
+}
+
+.org-logo {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.6rem;
+  opacity: 0.8;
+  filter: grayscale(100%) sepia(40%) hue-rotate(190deg) saturate(180%);
+  mix-blend-mode: multiply;
+}
+
+.org-logo-placeholder {
+  height: 10px;
+}
+
+.org-zone-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  border-radius: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  align-self: flex-start;
+  margin-bottom: 0.4rem;
+}
+
+.org-zone-tag--digital-minds {
+  background: #e0f0f4;
+  color: #1a5f7a;
+}
+
+.org-zone-tag--empirical-foundations {
+  background: #e0eaf4;
+  color: #1d6fa4;
+}
+
+.org-zone-tag--philosophical-foundations {
+  background: #e4e8f4;
+  color: #4a6fa5;
+}
+
+.org-zone-tag--governance-advocacy {
+  background: #e8eaef;
+  color: #4a5a72;
+}
+
+.org-zone-tag--support {
+  background: #f0ede8;
+  color: #7a6540;
+}
+
+.org-name {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem 0;
+  line-height: 1.3;
+  color: #003366;
+}
+
+.org-meta {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.org-meta-sep {
+  margin: 0 0.25rem;
+}
+
+.org-description {
+  font-size: 0.76rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.45;
+  flex-grow: 1;
+}
+
+.org-figures {
+  font-size: 0.7rem;
+  color: #888;
+  margin: 0.4rem 0 0 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+/* Directory empty state */
+.directory-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.directory-reset-link {
+  background: none;
+  border: none;
+  color: #003366;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 51, 102, 0.3);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: inherit;
+  padding: 0;
+}
+
+.directory-reset-link:hover {
+  text-decoration-color: #003366;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-toggle {
@@ -876,6 +1076,15 @@ details.discipline .discipline-body ul:last-child {
     grid-template-columns: 1fr;
   }
 
+  .directory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content:has(.directory-page) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .filter-pills {
     gap: 0.35rem;
   }
@@ -891,10 +1100,16 @@ details.discipline .discipline-body ul:last-child {
   .events-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .directory-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .events-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .directory-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }

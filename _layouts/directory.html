@@ -1,0 +1,186 @@
+---
+layout: default
+---
+<article class="page directory-page">
+  <div class="directory-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="page-description">{{ page.description }}</p>
+    {% endif %}
+    <p class="directory-count-summary">{{ site.data.organisations | size }} organisations across research, governance, funding, training, and community.</p>
+  </div>
+
+  <div class="directory-controls">
+    <div class="directory-search-wrap">
+      <span class="directory-search-icon" aria-hidden="true">&#9906;</span>
+      <input class="directory-search" type="search" id="org-search" placeholder="Search organisations..." autocomplete="off">
+    </div>
+
+    <div class="directory-filters">
+      <div class="filter-group">
+        <span class="filter-label">Category</span>
+        <div class="filter-pills" data-filter="zone">
+          <button class="filter-pill active" data-value="all">All</button>
+          <button class="filter-pill" data-value="digital-minds">Digital Minds Research</button>
+          <button class="filter-pill" data-value="empirical-foundations">Empirical Foundations</button>
+          <button class="filter-pill" data-value="philosophical-foundations">Philosophical Foundations</button>
+          <button class="filter-pill" data-value="governance-advocacy">Governance & Advocacy</button>
+          <button class="filter-pill" data-value="support">Funders, Training & Community</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div class="filter-pills" data-filter="org_type">
+          <button class="filter-pill active" data-value="all">All</button>
+          <button class="filter-pill" data-value="university-centre">University Centre</button>
+          <button class="filter-pill" data-value="nonprofit">Nonprofit</button>
+          <button class="filter-pill" data-value="lab-team">Lab Team</button>
+          <button class="filter-pill" data-value="funding-body">Funder</button>
+          <button class="filter-pill" data-value="community">Community</button>
+          <button class="filter-pill" data-value="media">Media</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Region</span>
+        <div class="filter-pills" data-filter="geography">
+          <button class="filter-pill active" data-value="all">All</button>
+          <button class="filter-pill" data-value="USA">USA</button>
+          <button class="filter-pill" data-value="UK">UK</button>
+          <button class="filter-pill" data-value="europe">Europe</button>
+          <button class="filter-pill" data-value="asia-pacific">Asia-Pacific</button>
+          <button class="filter-pill" data-value="international">International</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="directory-count" aria-live="polite"></p>
+  </div>
+
+  <div class="directory-grid">
+    {% assign orgs = site.data.organisations %}
+    {% for org in orgs %}
+    <a href="{{ org.url }}" target="_blank" rel="noopener" class="org-card"
+       data-zone="{{ org.zone }}"
+       data-org_type="{{ org.org_type }}"
+       data-geography="{{ org.geography }}"
+       data-name="{{ org.name | downcase }}"
+       data-description="{{ org.description | downcase | truncate: 200 }}">
+      {% if org.logo %}
+      <img class="org-logo" src="{{ '/assets/logos/' | append: org.logo | append: '.png' | relative_url }}" alt="" loading="lazy">
+      {% else %}
+      <div class="org-logo-placeholder"></div>
+      {% endif %}
+      <span class="org-zone-tag org-zone-tag--{{ org.zone }}">
+        {% case org.zone %}
+          {% when 'digital-minds' %}Digital Minds
+          {% when 'empirical-foundations' %}Empirical Foundations
+          {% when 'philosophical-foundations' %}Philosophical Foundations
+          {% when 'governance-advocacy' %}Governance & Advocacy
+          {% when 'support' %}Funders, Training & Community
+        {% endcase %}
+      </span>
+      <h3 class="org-name">{{ org.name }}</h3>
+      <div class="org-meta">
+        <span class="org-type">{{ org.org_type | replace: '-', ' ' | capitalize }}</span>
+        <span class="org-meta-sep">&middot;</span>
+        <span class="org-geography">{{ org.geography }}</span>
+      </div>
+      <p class="org-description">{{ org.description | truncate: 180 }}</p>
+      {% if org.key_figures %}
+      <p class="org-figures">{{ org.key_figures | map: 'name' | join: '; ' | truncate: 80 }}</p>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="directory-empty" style="display: none;">
+    <p>No organisations match your search. <button class="directory-reset-link">Show all</button></p>
+  </div>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var filters = { zone: 'all', org_type: 'all', geography: 'all' };
+  var searchTerm = '';
+  var cards = document.querySelectorAll('.org-card');
+  var emptyMsg = document.querySelector('.directory-empty');
+  var countEl = document.querySelector('.directory-count');
+  var searchInput = document.getElementById('org-search');
+
+  // Region mapping for geography filter
+  var regionMap = {
+    'europe': ['Germany', 'France', 'Netherlands', 'Belgium', 'Switzerland', 'Italy', 'Spain', 'Sweden', 'Norway', 'Denmark', 'Austria', 'Ireland', 'Portugal', 'Finland', 'Poland', 'Czech Republic', 'Hungary', 'Romania', 'Greece'],
+    'asia-pacific': ['Japan', 'China', 'Hong Kong', 'South Korea', 'Taiwan', 'Singapore', 'India', 'Australia', 'New Zealand']
+  };
+
+  function geoMatches(cardGeo, filterVal) {
+    if (filterVal === 'all') return true;
+    if (filterVal === cardGeo) return true;
+    if (filterVal === 'europe' && regionMap['europe'].indexOf(cardGeo) !== -1) return true;
+    if (filterVal === 'asia-pacific' && regionMap['asia-pacific'].indexOf(cardGeo) !== -1) return true;
+    return false;
+  }
+
+  // Filter pill clicks
+  document.querySelectorAll('.directory-filters .filter-pills').forEach(function (group) {
+    var dimension = group.getAttribute('data-filter');
+    group.addEventListener('click', function (e) {
+      var pill = e.target.closest('.filter-pill');
+      if (!pill) return;
+      group.querySelectorAll('.filter-pill').forEach(function (p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      filters[dimension] = pill.getAttribute('data-value');
+      applyFilters();
+    });
+  });
+
+  // Search
+  searchInput.addEventListener('input', function () {
+    searchTerm = this.value.toLowerCase().trim();
+    applyFilters();
+  });
+
+  // Reset
+  var resetLink = document.querySelector('.directory-reset-link');
+  if (resetLink) {
+    resetLink.addEventListener('click', function () {
+      filters = { zone: 'all', org_type: 'all', geography: 'all' };
+      searchTerm = '';
+      searchInput.value = '';
+      document.querySelectorAll('.filter-pill[data-value="all"]').forEach(function (p) {
+        p.closest('.filter-pills').querySelectorAll('.filter-pill').forEach(function (pp) { pp.classList.remove('active'); });
+        p.classList.add('active');
+      });
+      applyFilters();
+    });
+  }
+
+  function applyFilters() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var zoneMatch = filters.zone === 'all' || card.getAttribute('data-zone') === filters.zone;
+      var typeMatch = filters.org_type === 'all' || card.getAttribute('data-org_type') === filters.org_type;
+      var geoMatch = geoMatches(card.getAttribute('data-geography'), filters.geography);
+      var searchMatch = !searchTerm ||
+        card.getAttribute('data-name').indexOf(searchTerm) !== -1 ||
+        card.getAttribute('data-description').indexOf(searchTerm) !== -1;
+      var show = zoneMatch && typeMatch && geoMatch && searchMatch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (emptyMsg) {
+      emptyMsg.style.display = visible === 0 ? '' : 'none';
+    }
+    if (countEl) {
+      var total = cards.length;
+      if (searchTerm || filters.zone !== 'all' || filters.org_type !== 'all' || filters.geography !== 'all') {
+        countEl.textContent = visible + ' of ' + total + ' organisations';
+      } else {
+        countEl.textContent = total + ' organisations';
+      }
+    }
+  }
+
+  applyFilters();
+});
+</script>

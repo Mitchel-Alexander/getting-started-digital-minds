@@ -16,8 +16,7 @@ sections:
     url: "/events/"
   - title: "Field Map"
     description: "An interactive directory of the organisations and people working on digital minds."
-    url: "https://mitchel-alexander.github.io/digital-minds-map/"
-    external: true
+    url: "/field-map/"
   - title: "Tips & Resources"
     description: "Practical guidance on publishing, building connections, making the case for digital minds work, and the skills that transfer."
     url: "/tips-resources/"
