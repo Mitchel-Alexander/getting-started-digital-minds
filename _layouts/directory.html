@@ -10,21 +10,25 @@ layout: default
     <p class="directory-count-summary">{{ site.data.organisations | size }} organisations across research, governance, training, and field building.</p>
   </div>
 
-  <div class="directory-controls">
-    <div class="directory-search-wrap">
-      <span class="directory-search-icon" aria-hidden="true">&#9906;</span>
-      <input class="directory-search" type="search" id="org-search" placeholder="Search organisations..." autocomplete="off">
-    </div>
-    <p class="directory-count" aria-live="polite"></p>
-  </div>
+  <nav class="directory-toc" aria-label="Section navigation">
+    <ul>
+      <li><a href="#digital-minds">Digital Minds Research</a></li>
+      <li><a href="#empirical-foundations">Empirical Foundations</a></li>
+      <li><a href="#philosophical-foundations">Philosophical Foundations</a></li>
+      <li><a href="#governance-advocacy">Governance & Advocacy</a></li>
+      <li><a href="#support">Training & Field Building</a></li>
+      <li><a href="#media">Media</a></li>
+    </ul>
+  </nav>
 
   {% assign zones = "digital-minds,empirical-foundations,philosophical-foundations,governance-advocacy,support,media" | split: "," %}
+  {% assign global_index = 0 %}
 
   {% for zone in zones %}
     {% assign zone_orgs = site.data.organisations | where: "zone", zone %}
     {% if zone_orgs.size > 0 %}
     <div class="directory-section" data-zone="{{ zone }}">
-      <h2 class="directory-section-heading directory-section-heading--{{ zone }}">
+      <h2 class="directory-section-heading directory-section-heading--{{ zone }}" id="{{ zone }}">
         {% case zone %}
           {% when 'digital-minds' %}Digital Minds Research
           {% when 'empirical-foundations' %}Empirical Foundations
@@ -37,7 +41,7 @@ layout: default
       <div class="directory-grid">
         {% for org in zone_orgs %}
         <div class="org-card"
-           data-index="{{ forloop.index0 }}"
+           data-index="{{ global_index }}"
            data-zone="{{ org.zone }}"
            data-name="{{ org.name | downcase }}"
            data-description="{{ org.description | downcase | truncate: 200 }}">
@@ -64,15 +68,12 @@ layout: default
           </div>
           <p class="org-description">{{ org.description | truncate: 180 }}</p>
         </div>
+        {% assign global_index = global_index | plus: 1 %}
         {% endfor %}
       </div>
     </div>
     {% endif %}
   {% endfor %}
-
-  <div class="directory-empty" style="display: none;">
-    <p>No organisations match your search. <button class="directory-reset-link">Show all</button></p>
-  </div>
 </article>
 
 <!-- Organisation modal -->
@@ -85,19 +86,16 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var searchTerm = '';
   var cards = document.querySelectorAll('.org-card');
-  var sections = document.querySelectorAll('.directory-section');
-  var emptyMsg = document.querySelector('.directory-empty');
-  var countEl = document.querySelector('.directory-count');
-  var searchInput = document.getElementById('org-search');
 
-  // Organisation data for modal — keyed by zone then index
-  var orgDataByZone = {
-    {% for zone_key in "digital-minds,empirical-foundations,philosophical-foundations,governance-advocacy,support,media" | split: "," %}
-    {% assign zone_orgs = site.data.organisations | where: "zone", zone_key %}
-    {{ zone_key | jsonify }}: [
+  // Flat organisation data array matching rendering order
+  var orgData = [
+    {% assign zones = "digital-minds,empirical-foundations,philosophical-foundations,governance-advocacy,support,media" | split: "," %}
+    {% assign first_org = true %}
+    {% for zone in zones %}
+      {% assign zone_orgs = site.data.organisations | where: "zone", zone %}
       {% for org in zone_orgs %}
+      {% unless first_org %},{% endunless %}
       {
         name: {{ org.name | jsonify }},
         url: {{ org.url | jsonify }},
@@ -113,11 +111,11 @@ document.addEventListener('DOMContentLoaded', function () {
           { title: {{ link.title | jsonify }}, url: {{ link.url | jsonify }}, author: {{ link.author | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
           {% endfor %}{% endif %}
         ]
-      }{% unless forloop.last %},{% endunless %}
+      }
+      {% assign first_org = false %}
       {% endfor %}
-    ]{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  };
+  ];
 
   var zoneLabels = {
     'digital-minds': 'Digital Minds Research',
@@ -128,64 +126,13 @@ document.addEventListener('DOMContentLoaded', function () {
     'media': 'Media'
   };
 
-  // Search
-  searchInput.addEventListener('input', function () {
-    searchTerm = this.value.toLowerCase().trim();
-    applySearch();
-  });
-
-  // Reset
-  var resetLink = document.querySelector('.directory-reset-link');
-  if (resetLink) {
-    resetLink.addEventListener('click', function () {
-      searchTerm = '';
-      searchInput.value = '';
-      applySearch();
-    });
-  }
-
-  function applySearch() {
-    var visible = 0;
-    cards.forEach(function (card) {
-      var match = !searchTerm ||
-        card.getAttribute('data-name').indexOf(searchTerm) !== -1 ||
-        card.getAttribute('data-description').indexOf(searchTerm) !== -1;
-      card.style.display = match ? '' : 'none';
-      if (match) visible++;
-    });
-
-    // Hide section headings when all cards in section are hidden
-    sections.forEach(function (section) {
-      var sectionCards = section.querySelectorAll('.org-card');
-      var anyVisible = false;
-      sectionCards.forEach(function (c) {
-        if (c.style.display !== 'none') anyVisible = true;
-      });
-      section.style.display = anyVisible ? '' : 'none';
-    });
-
-    if (emptyMsg) {
-      emptyMsg.style.display = visible === 0 ? '' : 'none';
-    }
-    if (countEl) {
-      var total = cards.length;
-      if (searchTerm) {
-        countEl.textContent = visible + ' of ' + total + ' organisations';
-      } else {
-        countEl.textContent = total + ' organisations';
-      }
-    }
-  }
-
   // Modal
   var backdrop = document.getElementById('modal-backdrop');
   var modalBody = document.getElementById('modal-body');
   var modal = document.getElementById('modal');
 
-  function openModal(zone, index) {
-    var zoneData = orgDataByZone[zone];
-    if (!zoneData) return;
-    var o = zoneData[index];
+  function openModal(index) {
+    var o = orgData[index];
     if (!o) return;
 
     var logoHtml = o.logo
@@ -233,9 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Card click opens modal
   cards.forEach(function (card) {
     card.addEventListener('click', function () {
-      var zone = card.getAttribute('data-zone');
       var index = parseInt(card.getAttribute('data-index'), 10);
-      openModal(zone, index);
+      openModal(index);
     });
   });
 
@@ -251,7 +197,5 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') backdrop.classList.remove('open');
   });
-
-  applySearch();
 });
 </script>

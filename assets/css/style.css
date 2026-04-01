@@ -825,51 +825,43 @@ details.discipline .discipline-body ul:last-child {
   margin-bottom: 0;
 }
 
-.directory-controls {
-  margin-bottom: 1.25rem;
+.directory-toc {
+  background: #f8f9fb;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 720px;
 }
 
-.directory-search-wrap {
-  position: relative;
-  margin-bottom: 1rem;
-  max-width: 320px;
-}
-
-.directory-search-icon {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
-  font-size: 0.9rem;
-  pointer-events: none;
-}
-
-.directory-search {
-  width: 100%;
-  padding: 0.4rem 0 0.4rem 1.5rem;
-  border: none;
-  border-bottom: 1.5px solid #e0e0e0;
-  background: transparent;
-  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
-  font-size: 0.9rem;
+.directory-toc::before {
+  content: "On this page";
+  display: block;
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 0.95rem;
   color: #1a1a2e;
-  outline: none;
-  transition: border-color 0.15s;
-}
-
-.directory-search:focus {
-  border-bottom-color: #003366;
-}
-
-.directory-search::placeholder {
-  color: #888;
-}
-
-.directory-count {
-  font-size: 0.85rem;
-  color: #888;
   margin-bottom: 0.5rem;
+}
+
+.directory-toc ul {
+  list-style: none;
+  padding-left: 0.25rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.directory-toc li {
+  margin-bottom: 0.25rem;
+}
+
+.directory-toc a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.directory-toc a:hover {
+  text-decoration: underline;
 }
 
 /* Directory section headings */
@@ -1027,30 +1019,6 @@ details.discipline .discipline-body ul:last-child {
   margin: 0.4rem 0 0 0;
   line-height: 1.4;
   font-style: italic;
-}
-
-/* Directory empty state */
-.directory-empty {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-.directory-reset-link {
-  background: none;
-  border: none;
-  color: #003366;
-  text-decoration: underline;
-  text-decoration-color: rgba(0, 51, 102, 0.3);
-  cursor: pointer;
-  font-size: 0.95rem;
-  font-family: inherit;
-  padding: 0;
-}
-
-.directory-reset-link:hover {
-  text-decoration-color: #003366;
 }
 
 /* Organisation modal */
