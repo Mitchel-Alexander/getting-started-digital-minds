@@ -872,98 +872,44 @@ details.discipline .discipline-body ul:last-child {
   margin-bottom: 0.5rem;
 }
 
-/* Directory tabs */
-.directory-tabs {
-  margin-bottom: 1rem;
+/* Directory section headings */
+.directory-section {
+  margin-bottom: 2rem;
 }
 
-.tab-row {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  border-bottom: 1.5px solid #e0e0e0;
-  padding-bottom: 0;
-}
-
-.tab-row + .tab-row {
-  margin-top: 0.25rem;
-}
-
-.tab-row-label {
-  font-size: 0.72rem;
+.directory-section-heading {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #999;
-  min-width: 5.5rem;
-  flex-shrink: 0;
-  padding: 0.5rem 0;
-}
-
-.zone-tab {
-  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: #555;
-  background: none;
-  border: none;
-  border-bottom: 2.5px solid transparent;
-  padding: 0.5rem 0.75rem;
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
-  white-space: nowrap;
-  margin-bottom: -1.5px;
-}
-
-.zone-tab:hover {
   color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e0e0e0;
 }
 
-.zone-tab.active {
-  color: #003366;
-  border-bottom-color: #003366;
-  font-weight: 600;
-}
-
-/* Zone-specific active colors */
-.zone-tab[data-filter="digital-minds"].active {
-  color: #4a148c;
+.directory-section-heading--digital-minds {
+  border-bottom-color: #4a148c;
   border-bottom-color: #4a148c;
 }
 
-.zone-tab[data-filter="empirical-foundations"].active {
-  color: #0d47a1;
+.directory-section-heading--empirical-foundations {
   border-bottom-color: #0d47a1;
 }
 
-.zone-tab[data-filter="philosophical-foundations"].active {
-  color: #0f766e;
+.directory-section-heading--philosophical-foundations {
   border-bottom-color: #0f766e;
 }
 
-.zone-tab[data-filter="governance-advocacy"].active {
-  color: #1a5e3a;
+.directory-section-heading--governance-advocacy {
   border-bottom-color: #1a5e3a;
 }
 
-.zone-tab[data-filter="funders"].active {
-  color: #8b2500;
-  border-bottom-color: #8b2500;
+.directory-section-heading--support {
+  border-bottom-color: #555;
 }
 
-.zone-tab[data-filter="onboarding"].active {
-  color: #0277bd;
-  border-bottom-color: #0277bd;
-}
-
-.zone-tab[data-filter="field-building"].active {
-  color: #6a1b9a;
-  border-bottom-color: #6a1b9a;
-}
-
-.zone-tab[data-filter="community-media"].active {
-  color: #ad1457;
-  border-bottom-color: #ad1457;
+.directory-section-heading--media {
+  border-bottom-color: #8b5e3c;
 }
 
 /* Directory grid */
@@ -1348,29 +1294,8 @@ details.discipline .discipline-body ul:last-child {
     padding-right: 1rem;
   }
 
-  .tab-row {
-    flex-wrap: wrap;
-    gap: 0.15rem;
-  }
-
-  .tab-row-label {
-    width: 100%;
-    min-width: unset;
-    margin-bottom: -0.25rem;
-  }
-
-  .zone-tab {
-    font-size: 0.78rem;
-    padding: 0.4rem 0.5rem;
-  }
-
-  .filter-pills {
-    gap: 0.35rem;
-  }
-
-  .filter-pill {
-    padding: 0.25rem 0.6rem;
-    font-size: 0.78rem;
+  .directory-section-heading {
+    font-size: 1.05rem;
   }
 
 }

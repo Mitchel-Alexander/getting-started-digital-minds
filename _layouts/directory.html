@@ -15,87 +15,60 @@ layout: default
       <span class="directory-search-icon" aria-hidden="true">&#9906;</span>
       <input class="directory-search" type="search" id="org-search" placeholder="Search organisations..." autocomplete="off">
     </div>
-
-    <div class="directory-tabs">
-      <div class="tab-row">
-        <span class="tab-row-label">Research</span>
-        <button class="zone-tab active" data-filter="all">All</button>
-        <button class="zone-tab" data-filter="digital-minds">Digital Minds Research</button>
-        <button class="zone-tab" data-filter="empirical-foundations">Empirical Foundations</button>
-        <button class="zone-tab" data-filter="philosophical-foundations">Philosophical Foundations</button>
-        <button class="zone-tab" data-filter="governance-advocacy">Governance & Advocacy</button>
-      </div>
-      <div class="tab-row">
-        <span class="tab-row-label">Field Support</span>
-        <button class="zone-tab" data-filter="onboarding">Training & Education</button>
-        <button class="zone-tab" data-filter="field-building">Field Building</button>
-        <button class="zone-tab" data-filter="media">Media</button>
-      </div>
-    </div>
-
-    <div class="directory-filters">
-      <div class="filter-group">
-        <span class="filter-label">Type</span>
-        <div class="filter-pills" data-filter="org_type">
-          <button class="filter-pill active" data-value="all">All</button>
-          <button class="filter-pill" data-value="university-centre">University Centre</button>
-          <button class="filter-pill" data-value="nonprofit">Nonprofit</button>
-          <button class="filter-pill" data-value="lab-team">Lab Team</button>
-          <button class="filter-pill" data-value="community">Community</button>
-        </div>
-      </div>
-      <div class="filter-group">
-        <span class="filter-label">Region</span>
-        <div class="filter-pills" data-filter="geography">
-          <button class="filter-pill active" data-value="all">All</button>
-          <button class="filter-pill" data-value="USA">USA</button>
-          <button class="filter-pill" data-value="UK">UK</button>
-          <button class="filter-pill" data-value="europe">Europe</button>
-          <button class="filter-pill" data-value="asia-pacific">Asia-Pacific</button>
-          <button class="filter-pill" data-value="international">International</button>
-        </div>
-      </div>
-    </div>
-
     <p class="directory-count" aria-live="polite"></p>
   </div>
 
-  <div class="directory-grid">
-    {% assign orgs = site.data.organisations %}
-    {% for org in orgs %}
-    <div class="org-card"
-       data-index="{{ forloop.index0 }}"
-       data-zone="{{ org.zone }}"
-       data-subgroup="{{ org.subgroup }}"
-       data-org_type="{{ org.org_type }}"
-       data-geography="{{ org.geography }}"
-       data-name="{{ org.name | downcase }}"
-       data-description="{{ org.description | downcase | truncate: 200 }}">
-      {% if org.logo %}
-      <img class="org-logo" src="{{ '/assets/logos/' | append: org.logo | append: '.png' | relative_url }}" alt="" loading="lazy">
-      {% else %}
-      <div class="org-logo-placeholder"></div>
-      {% endif %}
-      <span class="org-zone-tag org-zone-tag--{{ org.zone }}">
-        {% case org.zone %}
-          {% when 'digital-minds' %}Digital Minds
+  {% assign zones = "digital-minds,empirical-foundations,philosophical-foundations,governance-advocacy,support,media" | split: "," %}
+
+  {% for zone in zones %}
+    {% assign zone_orgs = site.data.organisations | where: "zone", zone %}
+    {% if zone_orgs.size > 0 %}
+    <div class="directory-section" data-zone="{{ zone }}">
+      <h2 class="directory-section-heading directory-section-heading--{{ zone }}">
+        {% case zone %}
+          {% when 'digital-minds' %}Digital Minds Research
           {% when 'empirical-foundations' %}Empirical Foundations
           {% when 'philosophical-foundations' %}Philosophical Foundations
           {% when 'governance-advocacy' %}Governance & Advocacy
           {% when 'support' %}Training & Field Building
           {% when 'media' %}Media
         {% endcase %}
-      </span>
-      <h3 class="org-name">{{ org.name }}</h3>
-      <div class="org-meta">
-        <span class="org-type">{{ org.org_type | replace: '-', ' ' | capitalize }}</span>
-        <span class="org-meta-sep">&middot;</span>
-        <span class="org-geography">{{ org.geography }}</span>
+      </h2>
+      <div class="directory-grid">
+        {% for org in zone_orgs %}
+        <div class="org-card"
+           data-index="{{ forloop.index0 }}"
+           data-zone="{{ org.zone }}"
+           data-name="{{ org.name | downcase }}"
+           data-description="{{ org.description | downcase | truncate: 200 }}">
+          {% if org.logo %}
+          <img class="org-logo" src="{{ '/assets/logos/' | append: org.logo | append: '.png' | relative_url }}" alt="" loading="lazy">
+          {% else %}
+          <div class="org-logo-placeholder"></div>
+          {% endif %}
+          <span class="org-zone-tag org-zone-tag--{{ org.zone }}">
+            {% case org.zone %}
+              {% when 'digital-minds' %}Digital Minds
+              {% when 'empirical-foundations' %}Empirical Foundations
+              {% when 'philosophical-foundations' %}Philosophical Foundations
+              {% when 'governance-advocacy' %}Governance & Advocacy
+              {% when 'support' %}Training & Field Building
+              {% when 'media' %}Media
+            {% endcase %}
+          </span>
+          <h3 class="org-name">{{ org.name }}</h3>
+          <div class="org-meta">
+            <span class="org-type">{{ org.org_type | replace: '-', ' ' | capitalize }}</span>
+            <span class="org-meta-sep">&middot;</span>
+            <span class="org-geography">{{ org.geography }}</span>
+          </div>
+          <p class="org-description">{{ org.description | truncate: 180 }}</p>
+        </div>
+        {% endfor %}
       </div>
-      <p class="org-description">{{ org.description | truncate: 180 }}</p>
     </div>
-    {% endfor %}
-  </div>
+    {% endif %}
+  {% endfor %}
 
   <div class="directory-empty" style="display: none;">
     <p>No organisations match your search. <button class="directory-reset-link">Show all</button></p>
@@ -112,35 +85,39 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var activeTab = 'all';
-  var filters = { org_type: 'all', geography: 'all' };
   var searchTerm = '';
   var cards = document.querySelectorAll('.org-card');
+  var sections = document.querySelectorAll('.directory-section');
   var emptyMsg = document.querySelector('.directory-empty');
   var countEl = document.querySelector('.directory-count');
   var searchInput = document.getElementById('org-search');
 
-  // Organisation data for modal
-  var orgData = [
-    {% for org in site.data.organisations %}
-    {
-      name: {{ org.name | jsonify }},
-      url: {{ org.url | jsonify }},
-      zone: {{ org.zone | jsonify }},
-      zone_secondary: {{ org.zone_secondary | default: "" | jsonify }},
-      description: {{ org.description | jsonify }},
-      org_type: {{ org.org_type | jsonify }},
-      geography: {{ org.geography | jsonify }},
-      logo: {{ org.logo | default: "" | jsonify }},
-      founding_year: {{ org.founding_year | default: "" | jsonify }},
-      selected_links: [
-        {% if org.selected_links %}{% for link in org.selected_links %}
-        { title: {{ link.title | jsonify }}, url: {{ link.url | jsonify }}, author: {{ link.author | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
-        {% endfor %}{% endif %}
-      ]
-    }{% unless forloop.last %},{% endunless %}
+  // Organisation data for modal — keyed by zone then index
+  var orgDataByZone = {
+    {% for zone_key in "digital-minds,empirical-foundations,philosophical-foundations,governance-advocacy,support,media" | split: "," %}
+    {% assign zone_orgs = site.data.organisations | where: "zone", zone_key %}
+    {{ zone_key | jsonify }}: [
+      {% for org in zone_orgs %}
+      {
+        name: {{ org.name | jsonify }},
+        url: {{ org.url | jsonify }},
+        zone: {{ org.zone | jsonify }},
+        zone_secondary: {{ org.zone_secondary | default: "" | jsonify }},
+        description: {{ org.description | jsonify }},
+        org_type: {{ org.org_type | jsonify }},
+        geography: {{ org.geography | jsonify }},
+        logo: {{ org.logo | default: "" | jsonify }},
+        founding_year: {{ org.founding_year | default: "" | jsonify }},
+        selected_links: [
+          {% if org.selected_links %}{% for link in org.selected_links %}
+          { title: {{ link.title | jsonify }}, url: {{ link.url | jsonify }}, author: {{ link.author | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
+          {% endfor %}{% endif %}
+        ]
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  ];
+  };
 
   var zoneLabels = {
     'digital-minds': 'Digital Minds Research',
@@ -151,98 +128,48 @@ document.addEventListener('DOMContentLoaded', function () {
     'media': 'Media'
   };
 
-  // Research zone tabs match data-zone; support tabs match data-subgroup; media matches data-zone
-  var researchZones = ['digital-minds', 'empirical-foundations', 'philosophical-foundations', 'governance-advocacy', 'media'];
-  var supportSubgroups = ['onboarding', 'field-building'];
-
-  var regionMap = {
-    'europe': ['Germany', 'France', 'Netherlands', 'Belgium', 'Switzerland', 'Italy', 'Spain', 'Sweden', 'Norway', 'Denmark', 'Austria', 'Ireland', 'Portugal', 'Finland', 'Poland', 'Czech Republic', 'Hungary', 'Romania', 'Greece'],
-    'asia-pacific': ['Japan', 'China', 'Hong Kong', 'South Korea', 'Taiwan', 'Singapore', 'India', 'Australia', 'New Zealand']
-  };
-
-  function geoMatches(cardGeo, filterVal) {
-    if (filterVal === 'all') return true;
-    if (filterVal === cardGeo) return true;
-    if (filterVal === 'europe' && regionMap['europe'].indexOf(cardGeo) !== -1) return true;
-    if (filterVal === 'asia-pacific' && regionMap['asia-pacific'].indexOf(cardGeo) !== -1) return true;
-    return false;
-  }
-
-  // Tab clicks
-  document.querySelectorAll('.zone-tab').forEach(function (tab) {
-    tab.addEventListener('click', function () {
-      document.querySelectorAll('.zone-tab').forEach(function (t) { t.classList.remove('active'); });
-      tab.classList.add('active');
-      activeTab = tab.getAttribute('data-filter');
-      applyFilters();
-    });
-  });
-
-  // Filter pill clicks
-  document.querySelectorAll('.directory-filters .filter-pills').forEach(function (group) {
-    var dimension = group.getAttribute('data-filter');
-    group.addEventListener('click', function (e) {
-      var pill = e.target.closest('.filter-pill');
-      if (!pill) return;
-      group.querySelectorAll('.filter-pill').forEach(function (p) { p.classList.remove('active'); });
-      pill.classList.add('active');
-      filters[dimension] = pill.getAttribute('data-value');
-      applyFilters();
-    });
-  });
-
   // Search
   searchInput.addEventListener('input', function () {
     searchTerm = this.value.toLowerCase().trim();
-    applyFilters();
+    applySearch();
   });
 
   // Reset
   var resetLink = document.querySelector('.directory-reset-link');
   if (resetLink) {
     resetLink.addEventListener('click', function () {
-      activeTab = 'all';
-      filters = { org_type: 'all', geography: 'all' };
       searchTerm = '';
       searchInput.value = '';
-      document.querySelectorAll('.zone-tab').forEach(function (t) { t.classList.remove('active'); });
-      document.querySelector('.zone-tab[data-filter="all"]').classList.add('active');
-      document.querySelectorAll('.filter-pill[data-value="all"]').forEach(function (p) {
-        p.closest('.filter-pills').querySelectorAll('.filter-pill').forEach(function (pp) { pp.classList.remove('active'); });
-        p.classList.add('active');
-      });
-      applyFilters();
+      applySearch();
     });
   }
 
-  function tabMatches(card) {
-    if (activeTab === 'all') return true;
-    var zone = card.getAttribute('data-zone');
-    var subgroup = card.getAttribute('data-subgroup');
-    if (researchZones.indexOf(activeTab) !== -1) return zone === activeTab;
-    if (supportSubgroups.indexOf(activeTab) !== -1) return subgroup === activeTab;
-    return false;
-  }
-
-  function applyFilters() {
+  function applySearch() {
     var visible = 0;
     cards.forEach(function (card) {
-      var tabMatch = tabMatches(card);
-      var typeMatch = filters.org_type === 'all' || card.getAttribute('data-org_type') === filters.org_type;
-      var geoMatch = geoMatches(card.getAttribute('data-geography'), filters.geography);
-      var searchMatch = !searchTerm ||
+      var match = !searchTerm ||
         card.getAttribute('data-name').indexOf(searchTerm) !== -1 ||
         card.getAttribute('data-description').indexOf(searchTerm) !== -1;
-      var show = tabMatch && typeMatch && geoMatch && searchMatch;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
+      card.style.display = match ? '' : 'none';
+      if (match) visible++;
     });
+
+    // Hide section headings when all cards in section are hidden
+    sections.forEach(function (section) {
+      var sectionCards = section.querySelectorAll('.org-card');
+      var anyVisible = false;
+      sectionCards.forEach(function (c) {
+        if (c.style.display !== 'none') anyVisible = true;
+      });
+      section.style.display = anyVisible ? '' : 'none';
+    });
+
     if (emptyMsg) {
       emptyMsg.style.display = visible === 0 ? '' : 'none';
     }
     if (countEl) {
       var total = cards.length;
-      if (searchTerm || activeTab !== 'all' || filters.org_type !== 'all' || filters.geography !== 'all') {
+      if (searchTerm) {
         countEl.textContent = visible + ' of ' + total + ' organisations';
       } else {
         countEl.textContent = total + ' organisations';
@@ -255,8 +182,10 @@ document.addEventListener('DOMContentLoaded', function () {
   var modalBody = document.getElementById('modal-body');
   var modal = document.getElementById('modal');
 
-  function openModal(index) {
-    var o = orgData[index];
+  function openModal(zone, index) {
+    var zoneData = orgDataByZone[zone];
+    if (!zoneData) return;
+    var o = zoneData[index];
     if (!o) return;
 
     var logoHtml = o.logo
@@ -289,7 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
       selectedHtml +
       '<a class="modal-link" href="' + o.url + '" target="_blank" rel="noopener">Visit website &rarr;</a>';
 
-    // Set accent colour from the card's zone
     var zoneAccents = {
       'digital-minds': '#4a148c',
       'empirical-foundations': '#0d47a1',
@@ -305,8 +233,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Card click opens modal
   cards.forEach(function (card) {
     card.addEventListener('click', function () {
+      var zone = card.getAttribute('data-zone');
       var index = parseInt(card.getAttribute('data-index'), 10);
-      openModal(index);
+      openModal(zone, index);
     });
   });
 
@@ -323,6 +252,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'Escape') backdrop.classList.remove('open');
   });
 
-  applyFilters();
+  applySearch();
 });
 </script>
