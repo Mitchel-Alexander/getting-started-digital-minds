@@ -7,8 +7,8 @@
   sections:
     - title: Overview
       anchor: overview
-    - title: What's Going On Inside AI Systems?
-      anchor: whats-going-on-inside-ai-systems
+    - title: Could AI Systems Be Conscious?
+      anchor: could-ai-systems-be-conscious
     - title: What Would That Mean?
       anchor: what-would-that-mean
     - title: What Should We Do About It?
@@ -19,10 +19,12 @@
   sections:
     - title: Overview
       anchor: overview
-    - title: Entering from Your Discipline
-      anchor: entering-from-your-discipline
-    - title: Career Stages
-      anchor: career-stages
+    - title: What Your Background Brings
+      anchor: what-your-background-brings
+    - title: Getting Started
+      anchor: getting-started
+    - title: Building Your Presence
+      anchor: building-your-presence
     - title: Digital Minds Programmes
       anchor: digital-minds-programmes
 
@@ -36,12 +38,4 @@
 
 - title: Tips & Resources
   url: /tips-resources/
-  sections:
-    - title: Building Connections
-      anchor: building-connections
-    - title: Making the Case
-      anchor: making-the-case-for-digital-minds
-    - title: Skills
-      anchor: skills-for-digital-minds-work
-    - title: Publishing
-      anchor: publishing
+  sections: []

@@ -19,7 +19,7 @@ These categories are not sealed compartments. Much of the best work in this fiel
 The areas below are organised along this sequence.
 
 
-## What's Going On Inside AI Systems?
+## Could AI Systems Be Conscious?
 
 These areas investigate whether AI systems could have experiences, and what their internal states actually look like.
 
