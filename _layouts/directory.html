@@ -7,7 +7,7 @@ layout: default
     {% if page.description %}
     <p class="page-description">{{ page.description }}</p>
     {% endif %}
-    <p class="directory-count-summary">{{ site.data.organisations | size }} organisations across research, governance, funding, training, and community.</p>
+    <p class="directory-count-summary">{{ site.data.organisations | size }} organisations across research, governance, training, and field building.</p>
   </div>
 
   <div class="directory-controls">
@@ -27,10 +27,9 @@ layout: default
       </div>
       <div class="tab-row">
         <span class="tab-row-label">Field Support</span>
-        <button class="zone-tab" data-filter="funders">Funders</button>
         <button class="zone-tab" data-filter="onboarding">Training & Education</button>
         <button class="zone-tab" data-filter="field-building">Field Building</button>
-        <button class="zone-tab" data-filter="community-media">Community & Media</button>
+        <button class="zone-tab" data-filter="media">Media</button>
       </div>
     </div>
 
@@ -42,9 +41,7 @@ layout: default
           <button class="filter-pill" data-value="university-centre">University Centre</button>
           <button class="filter-pill" data-value="nonprofit">Nonprofit</button>
           <button class="filter-pill" data-value="lab-team">Lab Team</button>
-          <button class="filter-pill" data-value="funding-body">Funder</button>
           <button class="filter-pill" data-value="community">Community</button>
-          <button class="filter-pill" data-value="media">Media</button>
         </div>
       </div>
       <div class="filter-group">
@@ -85,7 +82,8 @@ layout: default
           {% when 'empirical-foundations' %}Empirical Foundations
           {% when 'philosophical-foundations' %}Philosophical Foundations
           {% when 'governance-advocacy' %}Governance & Advocacy
-          {% when 'support' %}Funders, Training & Community
+          {% when 'support' %}Training & Field Building
+          {% when 'media' %}Media
         {% endcase %}
       </span>
       <h3 class="org-name">{{ org.name }}</h3>
@@ -95,9 +93,6 @@ layout: default
         <span class="org-geography">{{ org.geography }}</span>
       </div>
       <p class="org-description">{{ org.description | truncate: 180 }}</p>
-      {% if org.key_figures %}
-      <p class="org-figures">{{ org.key_figures | map: 'name' | join: '; ' | truncate: 80 }}</p>
-      {% endif %}
     </div>
     {% endfor %}
   </div>
@@ -138,9 +133,9 @@ document.addEventListener('DOMContentLoaded', function () {
       geography: {{ org.geography | jsonify }},
       logo: {{ org.logo | default: "" | jsonify }},
       founding_year: {{ org.founding_year | default: "" | jsonify }},
-      key_figures: [
-        {% if org.key_figures %}{% for fig in org.key_figures %}
-        { name: {{ fig.name | jsonify }}, url: {{ fig.url | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
+      selected_links: [
+        {% if org.selected_links %}{% for link in org.selected_links %}
+        { title: {{ link.title | jsonify }}, url: {{ link.url | jsonify }}, author: {{ link.author | default: "" | jsonify }} }{% unless forloop.last %},{% endunless %}
         {% endfor %}{% endif %}
       ]
     }{% unless forloop.last %},{% endunless %}
@@ -152,12 +147,13 @@ document.addEventListener('DOMContentLoaded', function () {
     'empirical-foundations': 'Empirical Foundations',
     'philosophical-foundations': 'Philosophical Foundations',
     'governance-advocacy': 'Governance & Advocacy',
-    'support': 'Funders, Training & Community'
+    'support': 'Training & Field Building',
+    'media': 'Media'
   };
 
-  // Research zone tabs match data-zone; support tabs match data-subgroup
-  var researchZones = ['digital-minds', 'empirical-foundations', 'philosophical-foundations', 'governance-advocacy'];
-  var supportSubgroups = ['funders', 'onboarding', 'field-building', 'community-media'];
+  // Research zone tabs match data-zone; support tabs match data-subgroup; media matches data-zone
+  var researchZones = ['digital-minds', 'empirical-foundations', 'philosophical-foundations', 'governance-advocacy', 'media'];
+  var supportSubgroups = ['onboarding', 'field-building'];
 
   var regionMap = {
     'europe': ['Germany', 'France', 'Netherlands', 'Belgium', 'Switzerland', 'Italy', 'Spain', 'Sweden', 'Norway', 'Denmark', 'Austria', 'Ireland', 'Portugal', 'Finland', 'Poland', 'Czech Republic', 'Hungary', 'Romania', 'Greece'],
@@ -275,15 +271,13 @@ document.addEventListener('DOMContentLoaded', function () {
     metaItems.push('<span>' + o.geography + '</span>');
     if (o.founding_year) metaItems.push('<span>Est. ' + o.founding_year + '</span>');
 
-    var figuresHtml = '';
-    if (o.key_figures && o.key_figures.length > 0 && o.key_figures[0].name) {
-      var items = o.key_figures.map(function(fig) {
-        if (fig.url) {
-          return '<li><a href="' + fig.url + '" target="_blank" rel="noopener">' + fig.name + '</a></li>';
-        }
-        return '<li>' + fig.name + '</li>';
+    var selectedHtml = '';
+    if (o.selected_links && o.selected_links.length > 0 && o.selected_links[0].title) {
+      var items = o.selected_links.map(function(link) {
+        var label = link.author ? link.title + ' (' + link.author + ')' : link.title;
+        return '<li><a href="' + link.url + '" target="_blank" rel="noopener">' + label + '</a></li>';
       }).join('');
-      figuresHtml = '<div class="modal-section"><div class="modal-section-label">People</div><ul class="modal-people-list">' + items + '</ul></div>';
+      selectedHtml = '<div class="modal-section"><div class="modal-section-label">Selected coverage</div><ul class="modal-selected-list">' + items + '</ul></div>';
     }
 
     modalBody.innerHTML =
@@ -292,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
       '<div class="modal-zone">' + zoneLabel + alsoLabel + '</div>' +
       '<div class="modal-meta">' + metaItems.join('<span class="modal-meta-sep">&middot;</span>') + '</div>' +
       '<div class="modal-description">' + o.description + '</div>' +
-      figuresHtml +
+      selectedHtml +
       '<a class="modal-link" href="' + o.url + '" target="_blank" rel="noopener">Visit website &rarr;</a>';
 
     // Set accent colour from the card's zone
@@ -301,7 +295,8 @@ document.addEventListener('DOMContentLoaded', function () {
       'empirical-foundations': '#0d47a1',
       'philosophical-foundations': '#0f766e',
       'governance-advocacy': '#1a5e3a',
-      'support': '#555'
+      'support': '#555',
+      'media': '#8b5e3c'
     };
     modal.style.borderTopColor = zoneAccents[o.zone] || '#003366';
     backdrop.classList.add('open');

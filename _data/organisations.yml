@@ -1,1189 +1,443 @@
+# =============================================================================
+# Digital Minds Field Map — Organisation Directory
+# Last updated: 2026-04-01
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# DIGITAL MINDS RESEARCH
+# -----------------------------------------------------------------------------
+
 - name: AE Studio — AI Alignment and Consciousness
   url: https://ae.studio/ai-alignment
   zone: digital-minds
-  description: Software and AI consultancy with a dedicated empirical consciousness research programme. Takes a neuroscience-inspired
-    approach to AI consciousness, using induced self-reference, interpretability tools, and cognitive stress-testing to probe
-    internal dynamics in frontier models. Their research has shown that inducing recursive self-reference reliably elicits
-    introspective responses across major models. Argues that failure to understand AI sentience constitutes a significant
-    existential risk, and funds Michael Graziano's Attention Schema Theory research at Princeton to develop mechanistic consciousness
-    models.
+  description: AI company based in California with a dedicated empirical AI consciousness research programme. Takes a neuroscience-inspired approach, using induced self-reference, interpretability tools, and cognitive stress-testing to probe internal dynamics in frontier models. Also conducts research on prosociality, brain-computer interfaces, and alignment policy.
   org_type: lab-team
   function: research
   geography: USA
   logo: ae-studio-ai-alignment-and-consciousness
-  key_figures:
-  - name: Judd Rosenblatt (CEO, Founder)
-    url: https://www.linkedin.com/in/juddsr/
+
 - name: Anthropic — Model Welfare Program
   url: https://www.anthropic.com/research/exploring-model-welfare
   zone: digital-minds
-  description: Formal model welfare programme launched April 2025 — the first staffed, named AI welfare programme at any major
-    AI lab. Kyle Fish, the first full-time AI welfare researcher at a major lab, leads pre-deployment welfare assessments
-    of Claude models, with findings published in system cards. Joe Carlsmith joined in November 2025 to work on Claude's character
-    and moral status questions. Anthropic's institutional commitment — a named programme with dedicated staff and public reporting
-    — represents a qualitatively different signal from individual research output or private engagement.
+  description: Research programme within Anthropic investigating, and preparing to navigate, model welfare. Explores how to determine when the welfare of AI systems deserves moral consideration, the potential importance of model preferences and signs of distress, and possible practical interventions. Intersects with Anthropic's work on alignment science, safeguards, Claude's character, and interpretability. Established late 2024.
   org_type: lab-team
   function: research
   geography: USA
   logo: anthropic-model-welfare-program
-  founding_year: '2025'
-  key_figures:
-  - name: Kyle Fish (Lead)
-  - name: Joe Carlsmith (Researcher, joined November 2025)
-    url: https://joecarlsmith.com/
+
 - name: Araya Inc — AI Consciousness Research
   url: https://research.araya.org/
   zone: digital-minds
-  description: Tokyo-based AI research company led by neuroscientist Ryota Kanai, who explicitly develops artificial consciousness
-    using Global Workspace Theory. Araya is one of the earliest organisations pursuing explicit research linking AGI to consciousness
-    mechanisms. Kanai serves as editor-in-chief of the Journal of Artificial Intelligence and Consciousness and hosted ASSC27
-    in Tokyo — making Araya a bridge between the East Asian and Anglophone research communities.
+  description: Tokyo-based AI company. Research addresses how consciousness arises, what biological functions it serves, and what could make artificial systems conscious. Aims to develop next-generation AI by reinterpreting findings from consciousness research in neuroscience, information theory, and related fields. Led by Ryota Kanai.
   org_type: lab-team
   function: research
   geography: Japan
   logo: araya-inc-ai-consciousness-research
-  key_figures:
-  - name: Ryota Kanai (CEO)
-    url: https://research.araya.org/member/ryota-kanai-phd
+
 - name: Association for Mathematical Consciousness Science (AMCS)
   url: https://amcs-community.org/
   zone: digital-minds
-  description: International association of 150+ researchers advancing mathematical and computational approaches to consciousness
-    science. Organises the Models of Consciousness (MoC) conference series — MoC5 (Bamberg, 2024) and MoC6 (Sapporo, 2025)
-    — which provides the primary international forum for formal and mathematical approaches to consciousness with a growing
-    AI orientation. Johannes Kleiner's work on the mathematical structure of consciousness theories is directly relevant to
-    formalising AI consciousness assessment.
+  description: International association of researchers advancing mathematical and computational approaches to consciousness science. Organises the Models of Consciousness (MoC) conference series, now in its seventh year, alongside workshops, seminar series, and journal special issues. Has submitted to the UN on AI consciousness as a governance priority.
   org_type: community
   function: research
   geography: international
   logo: association-for-mathematical-consciousness-science-amcs
-  founding_year: '2020'
-  key_figures:
-  - name: Johannes Kleiner (Co-Founder)
-    url: https://jkleiner.de/
-  - name: Tim Bayne (Co-Founder)
-    url: https://research.monash.edu/en/persons/timothy-bayne/
+
 - name: Astera Institute — Neuro and AGI Division
   url: https://www.astera.org/
   zone: digital-minds
-  description: Well-funded research institute (co-founded by Jed McCaleb) with a dedicated Neuro and AGI division spanning
-    neuroscience, neuro-AI, and AI safety. Chief Scientist Doris Tsao leads research on perception and consciousness through
-    large-scale causal manipulation of neural circuits, backed by a planned $600M+ commitment over the next decade. Head of
-    AI Dileep George (co-founded Numenta and Vicarious) bridges computational neuroscience and AI. The division's work on
-    understanding biological consciousness to engineer safe general intelligence positions Astera as a major emerging node
-    in the field.
+  description: Philanthropic research institute pursuing a neuroscience-informed approach to engineering safe artificial general intelligence. The Neuro and AGI division studies how biological systems achieve cognition efficiently, focusing on learning, planning, counterfactual reasoning, and hierarchical world models derived from neocortex research. Takes a long-term basic research approach as an alternative to scale-focused AI development.
   org_type: nonprofit
   function: research
   geography: USA
   logo: astera-institute-neuro-and-agi-division
-  key_figures:
-  - name: Jed McCaleb (Co-Founder, CEO)
-    url: https://www.astera.org/
-  - name: Doris Tsao (Chief Scientist)
-    url: https://www.astera.org/
-  - name: Dileep George (Head of AI)
-    url: https://www.astera.org/
+
 - name: California Institute for Machine Consciousness (CIMC)
   url: https://cimc.ai/
   zone: digital-minds
-  description: Nonprofit research institute launched 2025 focused on formulating testable theories of machine consciousness.
-    Co-organised the Machine Consciousness workshop at AGI-25. Joscha Bach's computational account — which treats consciousness
-    as a specific kind of self-modelling process — offers a distinct theoretical entry point from the neuroscience-derived
-    frameworks that dominate the field. Early-stage but institutionally distinct; limited published output to date.
+  description: Research institute investigating how artificial conscious systems could be constructed under a computational paradigm, and what it would mean to succeed. Organises the MC conference series, bringing together researchers formalising theories of experience, building self-organising systems, probing internal representations, and defining empirical criteria for artificial consciousness. Led by Joscha Bach.
   org_type: nonprofit
   function: research
   geography: USA
   logo: california-institute-for-machine-consciousness-cimc
-  founding_year: '2025'
-  key_figures:
-  - name: Joscha Bach (Research Director)
-    url: http://bach.ai/
-  - name: Jim Rutt (Board Chair)
-    url: https://www.jimruttshow.com/
+
 - name: Cambridge Digital Minds
   url: https://digitalminds.cam/
   zone: digital-minds
-  description: A programme housed within Cambridge's Leverhulme Centre for the Future of Intelligence, providing structured
-    training and field-building for the digital minds space. Runs the Digital Minds Fellowship — a fully funded residential
-    research programme on AI consciousness and welfare in partnership with LCFI, Rethink Priorities, and PRISM — alongside
-    an online course on digital minds. PI'd by Lucius Caviola with institutional support from Henry Shevlin on the LCFI side.
+  description: Research initiative at the University of Cambridge, housed within the Leverhulme Centre for the Future of Intelligence. Works to help society prepare for AI systems that may develop consciousness or warrant moral consideration, through research, field-building, education, and engagement with policymakers and industry. Runs the Digital Minds Fellowship, a Strategy Workshop, and an online course on digital minds. Led by Lucius Caviola.
   org_type: university-centre
-  function: community-onboarding
+  function: research
   geography: UK
   logo: cambridge-digital-minds
-  founding_year: '2024'
-  key_figures:
-  - name: Lucius Caviola (PI)
-    url: https://luciuscaviola.com/
-  - name: Henry Shevlin (LCFI Co-lead)
-    url: https://henryshevlin.com/
-- name: Center for the Future of AI Mind and Society (FAU)
-  url: https://www.fau.edu/artsandletters/philosophy/
+
+- name: Center for the Future of AI, Mind & Society (FAU)
+  url: https://www.fau.edu/future-mind/
   zone: digital-minds
-  description: University centre at Florida Atlantic University directed by Susan Schneider, whose research focuses on AI
-    consciousness, mind uploading, and the philosophical status of artificial minds. Schneider's "ACT test" (Artificial Consciousness
-    Test) is one of the few proposed empirical tests for AI consciousness, offering a behavioural complement to the theory-derived
-    indicator approaches used by Rethink Priorities and Eleos AI.
+  description: Multidisciplinary university centre at Florida Atlantic University bringing together philosophy, complex systems, AI, and neuroscience to analyse scientific, societal, and ethical questions about minds and machines. Research covers the nature of consciousness and self, comparisons between machine and human intelligence, and the future of human-AI interaction. Runs the annual MindFest conference. Led by Susan Schneider.
   org_type: university-centre
   function: research
   geography: USA
   logo: center-for-the-future-of-ai-mind-and-society-fau
-  key_figures:
-  - name: Susan Schneider (Director)
-    url: https://schneiderwebsite.com/
-- name: Center on Long-Term Risk (CLR)
-  url: https://longtermrisk.org/
-  zone: digital-minds
-  description: 'Research organisation conducting research aimed at ensuring that emerging technologies such as artificial
-    intelligence do not risk causing suffering on an unprecedented scale. CLR''s framing positions AI consciousness as instrumentally
-    central: if AI systems can suffer, then the scale of potential AI suffering dwarfs that of biological organisms. Published
-    substantive work on whether reinforcement learning agents have morally relevant experiences and on computational accounts
-    of consciousness that could apply across substrates.'
-  org_type: nonprofit
-  function: research
-  geography: UK
-  logo: center-on-long-term-risk-clr
-  zone_secondary: philosophical-foundations
-  key_figures:
-  - name: Tristan Cook (Managing Director)
-    url: https://longtermrisk.org/team/
+
 - name: Co-Sentience Initiative (CoSI)
   url: https://cf-debate.com/about/
   zone: digital-minds
-  description: 'Independent initiative maintaining CF Debate — a structured database of 43+ philosophical arguments for and
-    against computational functionalism, the thesis that consciousness depends only on computation and not on physical substrate.
-    This question is foundational for the digital minds field: if computational functionalism is true, AI systems running
-    the right computations could in principle be conscious; if false, substrate matters and silicon-based consciousness may
-    be impossible regardless of computational structure. Founded 2025.'
+  description: Initiative preparing society for a potential future with artificial minds. Primary output is CF Debate, a structured database assembling arguments for and against computational functionalism. Designed to facilitate collective assessment of the evidence on digital sentience. Led by Chris Percy.
   org_type: nonprofit
   function: research
   geography: international
   logo: co-sentience-initiative-cosi
-  founding_year: '2025'
-  key_figures:
-  - name: Chris Percy (Founder)
-    url: https://sentience-research.org/
+
 - name: Conscium
   url: https://conscium.com/
   zone: digital-minds
-  description: UK-based AI safety company founded by Daniel Hulme (who sold AI consultancy Satalia to WPP). Investigates machine
-    consciousness through neuromorphic computing, arguing that a conscious superintelligence may be safer than an unconscious
-    one because it could appreciate and empathise with human experience. Partners with UC Santa Cruz on spiking neural networks.
-    Developing VerifyAX (AI agent verification), ArenaAX (third-party testing), and NeuroAX (neuromorphic computing platform).
-    Seed-funded PRISM. As a private company, Conscium points to a wider population of private actors the map cannot fully
-    capture.
+  description: UK-based AI safety company exploring the role machine consciousness may play in AI safety. Led by Daniel Hulme.
   org_type: lab-team
   function: research
   geography: UK
   logo: conscium
-  key_figures:
-  - name: Daniel Hulme (Founder)
-    url: https://conscium.com/
+
 - name: Eleos AI Research
   url: https://eleosai.org/
   zone: digital-minds
-  description: Independent nonprofit founded by Robert Long that conducts research on the potential sentience and wellbeing
-    of AI systems, aiming to inform policy, guide labs, and grow the field of AI moral patienthood. Eleos conducted the first
-    formal external welfare assessment of a deployed AI model (Anthropic's Claude), producing findings published in Anthropic's
-    system card. Long led the Butlin et al. (2023) report — the field's empirical anchor paper, which derived indicators from
-    six consciousness theories and applied them to current AI systems.
+  description: Research nonprofit focused on the potential wellbeing and moral patienthood of AI systems. Produces research on AI sentience, develops practical recommendations for labs and policymakers, and works to grow the field. Led by Robert Long.
   org_type: nonprofit
   function: research
   geography: USA
   logo: eleos-ai-research
-  founding_year: '2024'
-  key_figures:
-  - name: Robert Long (Founder, Executive Director)
-    url: https://robertlong.online/
-  - name: Patrick Butlin (Senior Researcher)
-    url: https://patrickbutlin.com/
-  - name: Rosie Campbell (Senior Advisor)
-    url: https://www.rosiecampbell.xyz/
+
 - name: Google DeepMind
   url: https://deepmind.google/research/
   zone: digital-minds
-  description: 'Google DeepMind researchers engaging AI consciousness questions through individual research output rather
-    than a formal programme. Murray Shanahan has produced sustained public-facing work on machine consciousness and the philosophical
-    status of language models. Alexander Lerchner''s 2026 preprint "The Abstraction Fallacy" argues from a substrate-sensitive
-    position against computational functionalism and explicitly invokes the concept of an AI welfare trap — a sceptical, philosophically
-    serious intervention from inside a major lab. The contrast with Anthropic''s institutional commitment is a data point:
-    individual researchers within a large organisation can engage questions the institution has not formally committed to.'
+  description: Google DeepMind has not publicly announced a dedicated programme on AI consciousness, though individual researchers have engaged the topic through published work.
   org_type: lab-team
   function: research
   geography: UK
   logo: google-deepmind
-  key_figures:
-  - name: Murray Shanahan (Senior Research Scientist)
-    url: https://www.doc.ic.ac.uk/~mpsha/
-  - name: Alexander Lerchner (Research Scientist)
-    url: https://scholar.google.com/citations?user=wBxAt8cAAAAJ&hl=en
+
 - name: Google Research — Paradigms of Intelligence
-  url: https://research.google/teams/brain/
+  url: https://research.google/
   zone: digital-minds
-  description: Internal research team at Google Research producing explicit AI welfare and consciousness research. Led by
-    Blaise Agüera y Arcas, a Google VP and Fellow with his own history of writing on AI sentience. Geoff Keeling and Winnie
-    Street are publishing a book on AI welfare in 2026. The team represents deliberate, sustained research output at the lab
-    level without the formal programme structure Anthropic has adopted — a distinct mode of industry engagement.
+  description: Google has not publicly announced a dedicated programme on AI consciousness or welfare, though researchers including Geoff Keeling and Winnie Street have published several papers on the topic. Their book Emerging Questions in AI Welfare is due from Cambridge University Press.
   org_type: lab-team
   function: research
   geography: USA
   logo: google-research-paradigms-of-intelligence
-  key_figures:
-  - name: Blaise Agüera y Arcas (VP, Google Fellow, Team Lead)
-    url: https://www.blaiseaguera.com/
-  - name: Geoff Keeling (Researcher)
-    url: https://geoffkeeling.github.io/
-  - name: Winnie Street (Researcher)
-    url: https://www.winniestreet.com/
+
 - name: Jeremy Coller Centre for Animal Sentience (LSE)
   url: https://www.lse.ac.uk/sentience
   zone: digital-minds
-  description: University centre launched 2025 at LSE directed by Jonathan Birch. Birch's sentience precautionary framework
-    — developed for animal welfare policy and codified in "The Edge of Sentience" — is being explicitly extended to AI. The
-    framework argues that where there is reasonable scientific evidence that an entity might be sentient, the burden of proof
-    should shift toward treating it as a moral patient. Birch co-authored Butlin et al. (2023), the field's anchor paper,
-    making the Coller Centre the primary bridge between animal sentience research and AI consciousness assessment.
+  description: Research centre at the London School of Economics, launched with support from the Jeremy Coller Foundation. Works across three priority areas — public communication on animal sentience, invertebrate farming ethics, and AI and sentience. Builds on the ASENT project, which contributed evidence to the UK Animal Welfare (Sentience) Act 2022. Led by Jonathan Birch.
   org_type: university-centre
   function: research
   geography: UK
   logo: jeremy-coller-centre-for-animal-sentience-lse
   zone_secondary: empirical-foundations
-  founding_year: '2025'
-  key_figures:
-  - name: Jonathan Birch (Director)
+
 - name: Leverhulme Centre for the Future of Intelligence (LCFI)
   url: https://www.lcfi.ac.uk/
   zone: digital-minds
-  description: Leverhulme-funded interdisciplinary centre at Cambridge studying the long-term challenges posed by AI, including
-    consciousness, moral patiency, and welfare. Henry Shevlin's work on non-human consciousness and moral patienthood applies
-    directly to AI welfare reasoning. LCFI partners with PRISM on the Cambridge Digital Minds Fellowship and provides the
-    institutional bridge between academic philosophy of mind and applied field-building in digital minds.
+  description: Leverhulme-funded interdisciplinary research centre at the University of Cambridge studying the long-term implications of artificial intelligence. Supports researchers engaging with questions related to AI consciousness, welfare, and human-AI relationships. Houses Cambridge Digital Minds.
   org_type: university-centre
   function: research
   geography: UK
   logo: leverhulme-centre-for-the-future-of-intelligence-lcfi
-  zone_secondary: philosophical-foundations
-  founding_year: '2016'
-  key_figures:
-  - name: Stephen Cave (Director)
-    url: https://www.lcfi.ac.uk/people/stephen-cave
-  - name: Henry Shevlin (Research Associate)
-    url: https://henryshevlin.com/
+
 - name: NYU Center for Mind Ethics and Policy (CMEP)
   url: https://sites.google.com/nyu.edu/mindethicspolicy/
   zone: digital-minds
-  description: University centre founded 2024 directed by Jeff Sebo, dedicated to advancing understanding of the consciousness,
-    sentience, sapience, and moral, legal, and political status of nonhumans — including both animals and AI systems. Situated
-    within NYU's broader cluster of moral-circle-expansion work alongside the Center for Mind Brain and Consciousness (Chalmers,
-    Block), the Wild Animal Welfare Program, and the Center for Environmental and Animal Protection. Hosted the 2025 MEP Summit
-    on AI consciousness. The most developed institutional bridge between animal ethics and AI welfare research.
+  description: Research centre at New York University advancing understanding of the sentience and moral status of nonhumans, including animals and AI systems. Examines which nonhumans are conscious, what moral and legal standing they should hold, and how to proceed under uncertainty. Led by Jeff Sebo.
   org_type: university-centre
   function: research
   geography: USA
   logo: nyu-center-for-mind-ethics-and-policy-cmep
-  founding_year: '2024'
-  key_figures:
-  - name: Jeff Sebo (Director)
-    url: https://jeffsebo.net/
+
 - name: Reciprocal Research
   url: https://www.reciprocalresearch.org/
   zone: digital-minds
-  description: Founded 2025 by Cameron Berg with a focus on developing the empirical science of AI consciousness through mechanistic
-    interpretability — understanding what computations AI models actually perform and whether those computations exhibit properties
-    associated with consciousness. Frames its work as filling the gap between alignment research (which studies AI internals
-    for safety) and consciousness research (which studies internals for moral status). Early-stage.
+  description: Recently established research nonprofit developing the empirical science of AI consciousness. Uses mechanistic interpretability, computational neuroscience, and psychometric methods to study whether AI systems have subjective experience. Led by Cameron Berg.
   org_type: nonprofit
   function: research
   geography: USA
   logo: reciprocal-research
-  founding_year: '2025'
-  key_figures:
-  - name: Cameron Berg (Founder)
-    url: https://reciprocalresearch.org/
+
 - name: Rethink Priorities — AI Cognition Initiative
   url: https://rethinkpriorities.org/research-area/the-welfare-of-digital-minds/
   zone: digital-minds
-  description: Five-researcher team within Rethink Priorities producing the Digital Consciousness Model (DCM) — the first
-    systematic probabilistic framework for assessing the moral relevance of AI systems. The DCM evaluates systems against
-    13 theories of consciousness simultaneously, generating probability distributions rather than binary verdicts. The team
-    also partners with Cambridge Digital Minds and PRISM on the Digital Minds Fellowship, providing mentorship for the next
-    generation of researchers entering the field.
+  description: Research team within Rethink Priorities investigating philosophical and empirical questions about the potential welfare and moral status of digital minds. Developing a probabilistic model of consciousness in contemporary AI systems.
   org_type: nonprofit
   function: research
   geography: international
-  founding_year: '2022'
-  key_figures:
-  - name: Bob Fischer (Research Lead)
-    url: https://www.bobfischer.net/
-  - name: Leonard Dung (Senior Researcher)
-    url: https://sites.google.com/view/leonard-dung/home
+
 - name: Sentience Institute
   url: https://www.sentienceinstitute.org/
   zone: digital-minds
-  description: Think tank focused on moral circle expansion — the philosophical and empirical question of which entities merit
-    moral consideration. Originally focused on animal advocacy, Sentience Institute now prioritises digital minds. Its AIMS
-    Survey is the most sustained longitudinal study of public moral and social perceptions of AI systems, tracking how attitudes
-    toward AI moral status evolve over time. Cross-listed with animal sentience, reflecting its dual commitment.
+  description: Research nonprofit focused on digital minds and moral circle expansion. Runs the AIMS Survey (Artificial Intelligence, Morality, and Sentience), tracking public attitudes toward the moral status of AI systems.
   org_type: nonprofit
   function: research
   geography: USA
   logo: sentience-institute
   zone_secondary: governance-advocacy
-  founding_year: '2016'
-  key_figures:
-  - name: Jacy Reese Anthis (Co-Founder, Research Director)
-    url: https://jacyanthis.com/
+
 - name: Sussex Centre for Consciousness Science
   url: https://www.sussex.ac.uk/research/centres/sussex-centre-for-consciousness-science/
   zone: digital-minds
-  description: Directed by Anil Seth; integrates neuroscience, psychology, and computational modelling of consciousness. Seth's
-    predictive processing account — which grounds consciousness in the brain's predictions about internal bodily states —
-    has been directly applied to AI consciousness questions. Seth won the 2025 Berggruen essay prize for "The Mythology of
-    Conscious AI," a sceptical intervention arguing against premature AI consciousness claims.
+  description: Research centre at the University of Sussex bringing together neuroscience, philosophy, mathematics, and psychiatry to advance the scientific understanding of consciousness. Applies findings to medicine, technology, and society. Led by Anil Seth.
   org_type: university-centre
   function: research
   geography: UK
   logo: sussex-centre-for-consciousness-science
   zone_secondary: empirical-foundations
-  founding_year: '2010'
-  key_figures:
-  - name: Anil Seth (Director)
-    url: https://www.anilseth.com/
+
 - name: University of Oxford — Faculty of Philosophy
   url: https://www.philosophy.ox.ac.uk/
   zone: digital-minds
-  description: The University of Oxford previously hosted both the Future of Humanity Institute (FHI) and the Global Priorities
-    Institute (GPI), research centres that served as catalysts for work on AI welfare. Many former researchers from these
-    institutes went on to key research roles at other organisations working on AI consciousness and welfare. Following the
-    closure of both FHI and GPI, research into these topics continues primarily within the Faculty of Philosophy, where scholars
-    examine fundamental questions about moral agency, ethical treatment of AI systems, and the potential risks and implications
-    of digital consciousness.
+  description: Oxford previously hosted the Future of Humanity Institute and the Global Priorities Institute, both of which supported early research on AI welfare and moral status. Following the closure of both, related research continues within the Faculty of Philosophy.
   org_type: university-centre
   function: research
   geography: UK
   zone_secondary: philosophical-foundations
-  key_figures:
-  - name: Andreas Mogensen (Senior Research Fellow)
-  - name: Bradford Saad (Senior Research Fellow)
-- name: Active Inference Institute
-  url: https://www.activeinference.institute/
-  zone: empirical-foundations
-  description: US nonprofit dedicated to education and research on active inference and the free energy principle, founded
-    2021. Runs symposia, courses, and textbook groups that bridge theoretical consciousness science and AI, providing a community
-    entry point for researchers interested in how Friston's mathematical framework applies to artificial agents and consciousness.
-    Functions as a growing bridge between Friston's theoretical neuroscience and the AI/robotics communities exploring its
-    implications.
-  org_type: nonprofit
-  function: research
-  geography: USA
-  logo: active-inference-institute
-  founding_year: '2021'
-  key_figures:
-  - name: Daniel Friedman (President)
-    url: https://www.danielarifriedman.com/research.html
-- name: Allen Institute — Brain and Consciousness Division
-  url: https://alleninstitute.org/division/consciousness/
-  zone: empirical-foundations
-  description: Research division at the Allen Institute seeking to understand the physical substrate of consciousness in the
-    mammalian brain. Christof Koch drove the Neural Correlates of Consciousness programme here. Its MindScope program maps
-    large-scale neural activity and serves as a primary node in the COGITATE adversarial collaboration — the most ambitious
-    empirical test of competing consciousness theories, whose results inform which frameworks are most applicable to AI.
-  org_type: nonprofit
-  function: research
-  geography: USA
-  logo: allen-institute-brain-and-consciousness-division
-  founding_year: '2003'
-  key_figures:
-  - name: Christof Koch (former Chief Scientist)
-    url: https://christofkoch.com/
+
+# -----------------------------------------------------------------------------
+# EMPIRICAL FOUNDATIONS
+# -----------------------------------------------------------------------------
+
 - name: Association for the Scientific Study of Consciousness (ASSC)
   url: https://theassc.org/
   zone: empirical-foundations
-  description: The primary international professional society for consciousness research, established 1994. Runs the annual
-    ASSC conference — the field's largest scientific gathering — which increasingly features dedicated AI consciousness sessions.
-    Publishes Neuroscience of Consciousness (Oxford University Press). ASSC27 (Tokyo, 2024), hosted by Araya Inc, and ASSC28
-    reflect growing engagement with questions about artificial consciousness alongside the society's traditional neuroscience
-    and philosophy focus.
+  description: International professional society for consciousness research. Runs the annual ASSC conference, the field's largest scientific gathering, which increasingly features dedicated sessions on AI consciousness. Publishes Neuroscience of Consciousness (Oxford University Press).
   org_type: nonprofit
-  function: community-onboarding
+  function: research
   geography: international
   logo: association-for-the-scientific-study-of-consciousness-assc
-  founding_year: '1994'
-- name: BAMΞ — Bamberg Mathematical Consciousness Science Initiative
+
+- name: "BAM\u039E \u2014 Bamberg Mathematical Consciousness Science Initiative"
   url: https://www.uni-bamberg.de/en/bamxi/
   zone: empirical-foundations
-  description: Research initiative at the University of Bamberg applying mathematical methods to consciousness science — the
-    main European institutional node for this approach. Hosts three research sprints including a dedicated AI Consciousness
-    Sprint, one of the few structured programmes explicitly bridging mathematical consciousness theory and AI. Co-organised
-    the Models of Consciousness conferences MoC5 (Bamberg, 2024) and MoC6 (Sapporo, 2025) alongside AMCS and CHAIN.
+  description: International research initiative at the University of Bamberg applying mathematical methods to consciousness science. Runs research sprints including a dedicated AI Consciousness Sprint. Co-organises the Models of Consciousness conference series.
   org_type: university-centre
   function: research
   geography: Germany
-  logo: bamξ-bamberg-mathematical-consciousness-science-initiative
-  key_figures:
-  - name: Tim Bayne (Co-PI)
-    url: https://research.monash.edu/en/persons/timothy-bayne/
-  - name: Johannes Kleiner (Co-PI)
-    url: https://jkleiner.de/
-- name: Brain and Cognition Group (University of Amsterdam)
-  url: https://www.uva.nl/en/research/uva-research-institutes/brain-and-cognition/brain-and-cognition.html
-  zone: empirical-foundations
-  description: Victor Lamme's research group at the University of Amsterdam; home of Recurrent Processing Theory (RPT), which
-    holds that recurrent local cortical feedback is necessary and sufficient for phenomenal consciousness. RPT is a major
-    rival to IIT and GNW in AI consciousness debates, tested against both in the COGITATE adversarial collaboration, and is
-    one of the theories applied to AI systems in Butlin et al. (2023).
-  org_type: university-centre
-  function: research
-  geography: Netherlands
-  logo: brain-and-cognition-group-university-of-amsterdam
-  key_figures:
-  - name: Victor Lamme (PI)
-    url: https://scholar.google.com/citations?user=QU5-DJEAAAAJ&hl=en
-- name: CHAIN — Center for Human Nature AI and Neuroscience (Hokkaido)
-  url: https://www.chain.hokudai.ac.jp/en/
-  zone: empirical-foundations
-  description: Interdisciplinary research centre at Hokkaido University directed by Shigeru Taguchi; integrates philosophy,
-    neuroscience, and AI research on consciousness, agency, and human nature. Co-hosted the Models of Consciousness 6 conference
-    (Sapporo, 2025) alongside AMCS and BAMΞ. Part of the emerging East Asian cluster in consciousness science — alongside
-    Araya Inc (Tokyo) — with direct AI relevance and growing connections to the Anglophone research community.
-  org_type: university-centre
-  function: research
-  geography: Japan
-  logo: chain-center-for-human-nature-ai-and-neuroscience-hokkaido
-  founding_year: '2019'
-  key_figures:
-  - name: Shigeru Taguchi (Director)
-    url: https://www.let.hokudai.ac.jp/en/staff/taguchi-shigeru
-- name: CIFAR Brain Mind and Consciousness Program
-  url: https://cifar.ca/research-programs/brain-mind-consciousness/
-  zone: empirical-foundations
-  description: Major international research programme (CIFAR, Canada) founded 2014 and renewed 2026, convening 12+ fellows
-    across neuroscience and philosophy to investigate consciousness. Directors Tim Bayne, Liad Mudrik, and Anil Seth represent
-    three of the most active researchers at the consciousness-AI interface. Funded by the Azrieli Foundation and TWCF. Bayne's
-    work on modes of consciousness is directly relevant to evaluating whether AI systems exhibit the right kind of conscious
-    states.
-  org_type: community
-  function: research
-  geography: international
-  logo: cifar-brain-mind-and-consciousness-program
-  founding_year: '2014'
-  key_figures:
-  - name: Tim Bayne (Co-Director)
-    url: https://research.monash.edu/en/persons/timothy-bayne/
-  - name: Liad Mudrik (Co-Director)
-    url: https://people.socsci.tau.ac.il/mu/mudriklab/
-  - name: Anil Seth (Co-Director)
-    url: https://www.anilseth.com/
-- name: COGITATE Consortium
-  url: https://www.arc-cogitate.com/
-  zone: empirical-foundations
-  description: Adversarial collaboration project testing IIT, Global Workspace Theory, and Recurrent Processing Theory using
-    multimodal neuroimaging across 12 institutions. Published major results in Nature (2025). These results directly inform
-    which consciousness theories provide the strongest empirical basis for AI consciousness assessment — the same theories
-    evaluated in Butlin et al. (2023) and Rethink Priorities' Digital Consciousness Model.
-  org_type: community
-  function: research
-  geography: international
-  logo: cogitate-consortium
-  key_figures:
-  - name: Lucia Melloni (Co-lead)
-    url: https://www.aesthetics.mpg.de/en/the-institute/people/lucia-melloni-en.html
-  - name: Christof Koch (Co-lead)
-    url: https://christofkoch.com/
-- name: CRCN / CO3 — Consciousness Cognition and Computation Group (ULB)
-  url: https://crcn.ulb.ac.be/
-  zone: empirical-foundations
-  description: Research centre at Université libre de Bruxelles directed by Axel Cleeremans. Cleeremans' radical plasticity
-    thesis — that the brain learns to be conscious — offers a developmental perspective on consciousness that is directly
-    relevant to whether AI systems could develop conscious states through training. The group published work in 2025 arguing
-    that AI advances make consciousness research an existential priority.
-  org_type: university-centre
-  function: research
-  geography: Belgium
-  logo: crcn-co3-consciousness-cognition-and-computation-group-ulb
-  key_figures:
-  - name: Axel Cleeremans (Director)
-    url: https://axc.ulb.be/
-- name: Center for Consciousness Science (University of Michigan)
-  url: https://medresearch.umich.edu/labs-departments/centers/consciousness-science
-  zone: empirical-foundations
-  description: Multidisciplinary centre at the University of Michigan directed by George Mashour, advancing research on consciousness
-    with emphasis on disorders of consciousness and neural correlates of awareness. Mashour's work on the global neuronal
-    workspace hypothesis and his development of minimal consciousness criteria — distinguishing conscious from unconscious
-    states in biological systems — provides direct methodological precedents for assessing whether AI systems might cross
-    similar thresholds.
-  org_type: university-centre
-  function: research
-  geography: USA
-  logo: center-for-consciousness-science-university-of-michigan
-  key_figures:
-  - name: George Mashour (Director)
-    url: https://consciousness.med.umich.edu/people-mashour/
-- name: Center for Sleep and Consciousness (UW–Madison)
-  url: https://centerforsleepandconsciousness.psychiatry.wisc.edu/
-  zone: empirical-foundations
-  description: Giulio Tononi's lab at UW–Madison; the primary home of Integrated Information Theory (IIT), which proposes
-    a mathematical measure of consciousness (Φ) based on information integration. IIT's framework has been directly applied
-    to AI consciousness assessment — it is one of six theories used in Butlin et al. (2023) to derive indicators for evaluating
-    AI systems, and a core input to Rethink Priorities' Digital Consciousness Model.
-  org_type: university-centre
-  function: research
-  geography: USA
-  founding_year: '1997'
-  key_figures:
-  - name: Giulio Tononi (Director, IIT originator)
-    url: https://centerforsleepandconsciousness.psychiatry.wisc.edu/people/principal-investigator-giulio-tononi/
-- name: Graziano Lab (Princeton University)
-  url: https://grazianolab.com/
-  zone: empirical-foundations
-  description: Michael Graziano's lab at Princeton; develops Attention Schema Theory (AST), which proposes consciousness arises
-    from the brain's internal model of its own attentional processes. AST is arguably the consciousness theory most readily
-    applied to AI systems, since attention mechanisms are a core architectural feature of modern AI. AE Studio has directly
-    funded Graziano's research to advance this application.
-  org_type: university-centre
-  function: research
-  geography: USA
-  logo: graziano-lab-princeton-university
-  key_figures:
-  - name: Michael Graziano (PI)
-    url: https://grazianolab.princeton.edu/
-- name: Institute for Advanced Consciousness Studies (IACS)
-  url: https://advancedconsciousness.org/
-  zone: empirical-foundations
-  description: 'Independent nonprofit research lab based in Santa Monica, California. Uses neuroimaging, neuromodulation,
-    and systematic study of altered states — including psychedelics and meditation — to identify neural correlates of discrete
-    consciousness states. More experimentally than theoretically focused, IACS occupies a distinctive niche: generating empirical
-    data on the boundaries of conscious experience that consciousness theories applied to AI must ultimately account for.'
-  org_type: nonprofit
-  function: research
-  geography: USA
-  logo: institute-for-advanced-consciousness-studies-iacs
-  founding_year: '2019'
-  key_figures:
-  - name: Nicco Reggente (PI)
-    url: https://advancedconsciousness.org/nicco-reggente/
-- name: MIND Group / Open MIND Network
-  url: https://open-mind.net/
-  zone: empirical-foundations
-  description: International research network founded by Thomas Metzinger in 2003; brings together early-career philosophers
-    and scientists working on consciousness and cognition. Produced the landmark Open MIND collection — 39 open-access target
-    articles with commentaries. Metzinger's "no-self" theory and his concept of the phenomenal self-model have been applied
-    to AI consciousness debates — particularly the question of whether AI systems could have self-models without genuine phenomenal
-    experience.
-  org_type: community
-  function: research
-  geography: international
-  logo: mind-group-open-mind-network
-  founding_year: '2003'
-  key_figures:
-  - name: Thomas Metzinger (Founder)
-    url: https://thomasmetzinger.com/
-- name: Max Planck Institute for Empirical Aesthetics
-  url: https://www.aesthetics.mpg.de/en.html
-  zone: empirical-foundations
-  description: Max Planck Institute department in Frankfurt serving as the administrative and scientific lead of the COGITATE
-    consortium. Directed by Lucia Melloni, whose research spans perception, aesthetics, and the empirical testing of consciousness
-    theories. The methodological template COGITATE established — structured adversarial collaboration between competing theories
-    — is being adopted by the AI consciousness field as a model for how to adjudicate between rival frameworks for assessing
-    AI systems.
-  org_type: university-centre
-  function: research
-  geography: Germany
-  logo: max-planck-institute-for-empirical-aesthetics
-  key_figures:
-  - name: Lucia Melloni (Research Group Leader)
-    url: https://www.aesthetics.mpg.de/en/the-institute/people/lucia-melloni-en.html
-- name: Monash Centre for Consciousness and Contemplative Studies (M3CS)
-  url: https://www.monash.edu/consciousness-contemplative-studies
-  zone: empirical-foundations
-  description: Interdisciplinary centre at Monash University directed by Jakob Hohwy, integrating consciousness research with
-    contemplative science. Hohwy's predictive processing framework — closely related to Seth's and Friston's accounts — connects
-    to AI consciousness debates by offering a computational theory of subjective experience that can, in principle, be evaluated
-    in artificial systems. Advisory committee includes Thomas Metzinger, whose phenomenal self-model work is directly relevant
-    to AI self-awareness questions.
-  org_type: university-centre
-  function: research
-  geography: Australia
-  logo: monash-centre-for-consciousness-and-contemplative-studies-m3cs
-  key_figures:
-  - name: Jakob Hohwy (Director)
-    url: https://research.monash.edu/en/persons/jakob-hohwy/
-- name: Paris Brain Institute — PICNIC Group
-  url: https://parisbraininstitute.org/brain-function-cards/consciousness
-  zone: empirical-foundations
-  description: Clinical consciousness neuroscience group at the Paris Brain Institute (Institut du Cerveau), led by Jacobo
-    Sitt. Investigates disorders of consciousness and neural correlates of awareness using large-scale brain signal screening
-    and machine learning classification. Its theoretical connections to Global Workspace Theory — one of the consciousness
-    frameworks most directly applicable to AI — make PICNIC's clinical work relevant to the question of how consciousness
-    might be detected in artificial systems.
-  org_type: university-centre
-  function: research
-  geography: France
-  logo: paris-brain-institute-picnic-group
-  key_figures:
-  - name: Jacobo Sitt (Group Leader)
-    url: https://parisbraininstitute.org/collaborators/jacobo-sitt
-- name: UNICOG / NeuroSpin (CEA Paris-Saclay)
-  url: https://joliot.cea.fr/drf/joliot/en/Pages/research_entities/NeuroSpin.aspx
-  zone: empirical-foundations
-  description: 'Stanislas Dehaene''s lab at CEA Paris-Saclay; the primary institutional base for Global Neuronal Workspace
-    (GNW) theory, which proposes that consciousness arises when information is broadcast across a network of interconnected
-    cortical areas. GNW is one of the most directly applicable theories for AI: its emphasis on information broadcasting and
-    access has clear architectural analogues in transformer models, making it a key framework in AI consciousness assessment.'
-  org_type: university-centre
-  function: research
-  geography: France
-  logo: unicog-neurospin-cea-paris-saclay
-  founding_year: '2006'
-  key_figures:
-  - name: Stanislas Dehaene (Director)
-    url: https://www.college-de-france.fr/en/chair/stanislas-dehaene-experimental-cognitive-psychology-statutory-chair/biography
-- name: Wellcome Centre for Human Neuroimaging / FIL (UCL)
-  url: https://www.fil.ion.ucl.ac.uk/
-  zone: empirical-foundations
-  description: Karl Friston's home lab at UCL; the world's leading centre for computational neuroimaging. Friston's free energy
-    principle — a mathematical framework proposing that all adaptive systems minimise prediction error — is increasingly applied
-    to model AI consciousness and agency, providing a formal bridge between biological and artificial systems. The active
-    inference framework derived from this work is now being tested in artificial agents.
-  org_type: university-centre
-  function: research
-  geography: UK
-  logo: wellcome-centre-for-human-neuroimaging-fil-ucl
-  founding_year: '1994'
-  key_figures:
-  - name: Karl Friston (Scientific Director)
-    url: https://www.fil.ion.ucl.ac.uk/~karl/
-- name: Berggruen Institute
-  url: https://berggruen.org/
-  zone: philosophical-foundations
-  description: 'Well-resourced global think tank operating as a foundation that funds its own curated programmes rather than
-    making external grants. Engages digital minds questions through multiple channels: the "After Consciousness" project (with
-    HKU''s AI & Humanity Lab) examining whether the concept of consciousness distorts AI discourse; the Future Humans programme
-    bringing neuroscience, AI, philosophy, and contemplative traditions into dialogue around consciousness; the annual Berggruen
-    Prize essay competition (2025 winner: Anil Seth); open-application fellowships at USC and Peking University; and Noema
-    magazine (listed separately). Contributors include Keith Frankish, Edouard Machery, and Wayne Wu.'
-  org_type: nonprofit
-  function: research
-  geography: international
-  logo: berggruen-institute
-  zone_secondary: governance-advocacy
-  founding_year: '1991'
-  key_figures:
-  - name: Herman Cappelen (After Consciousness project lead)
-    url: https://www.hermancappelen.net/
-  - name: Keith Frankish (contributor)
-    url: https://www.keithfrankish.com/
-- name: CUNY Graduate Center — Philosophy / Consciousness (Rosenthal)
-  url: https://www.gc.cuny.edu/philosophy
-  zone: philosophical-foundations
-  description: David Rosenthal's home base at CUNY Graduate Center; the primary institutional site for Higher-Order Thought
-    (HOT) theory of consciousness. HOT proposes that a mental state is conscious when accompanied by a higher-order representation
-    of being in that state — a framework increasingly applied to AI consciousness assessment by Rosenthal, Hakwan Lau, and
-    Richard Brown. HOT is one of the six theories used in Butlin et al. (2023).
-  org_type: university-centre
-  function: research
-  geography: USA
-  logo: cuny-graduate-center-philosophy-consciousness-rosenthal
-  key_figures:
-  - name: David Rosenthal (Distinguished Professor)
-    url: https://www.davidrosenthal.org/
-- name: Centre for Consciousness (ANU)
-  url: https://philosophy.cass.anu.edu.au/centres/consciousness
-  zone: philosophical-foundations
-  description: Research centre at the Australian National University founded by David Chalmers in 2004, dedicated to philosophy
-    of consciousness and philosophy of mind. Runs active workshops on reflexive and higher-order theories of consciousness.
-    As Chalmers' original institutional home for consciousness research — predating NYU CMBC — the centre retains significance
-    in the field's intellectual geography.
-  org_type: university-centre
-  function: research
-  geography: Australia
-  logo: centre-for-consciousness-anu
-  founding_year: '2004'
-  key_figures:
-  - name: David Chalmers (Founder)
-    url: https://consc.net/
-- name: Centre for the Study of Perceptual Experience (CSPE)
-  url: https://www.gla.ac.uk/schools/humanities/research/philosophyresearch/cspe/
-  zone: philosophical-foundations
-  description: Philosophy-based research centre at the University of Glasgow founded by Fiona Macpherson. Focuses on the nature
-    of perceptual experience, hallucination, illusion, and consciousness — bridging analytic philosophy and empirical consciousness
-    science. Macpherson's work on cognitive penetration and perceptual content addresses foundational questions about how
-    experiences are structured, questions that bear directly on whether AI systems could have perceptual experiences in any
-    meaningful sense.
-  org_type: university-centre
-  function: research
-  geography: UK
-  logo: centre-for-the-study-of-perceptual-experience-cspe
-  key_figures:
-  - name: Fiona Macpherson (Director)
-    url: https://www.gla.ac.uk/schools/humanities/staff/fionamacpherson/
+  logo: "bam\u03BE-bamberg-mathematical-consciousness-science-initiative"
+
+# -----------------------------------------------------------------------------
+# PHILOSOPHICAL FOUNDATIONS
+# -----------------------------------------------------------------------------
+
 - name: MINT Lab
   url: https://mintresearch.org/
   zone: philosophical-foundations
-  description: Philosophy and computational research lab led by Seth Lazar at Johns Hopkins University (with ties to ANU).
-    Applies normative theory to AI systems, including questions of AI moral status and moral agency. Lab members' work addresses
-    moral agency in the absence of consciousness — the question of whether an AI system could have moral obligations even
-    if it is not conscious — directly engaging one of the field's most contested philosophical questions.
+  description: Philosophy and computational research lab at Johns Hopkins University investigating normative competence in AI systems. Engages AI moral status questions, including whether AI systems can be persons without being sentient and whether moral agency requires consciousness. Led by Seth Lazar.
   org_type: university-centre
   function: research
   geography: USA
   logo: mint-lab
-  founding_year: '2022'
-  key_figures:
-  - name: Seth Lazar (Director)
-    url: https://sethlazar.org/
+
 - name: NYU Center for Mind Brain and Consciousness
   url: https://wp.nyu.edu/consciousness/
   zone: philosophical-foundations
-  description: Research centre at NYU co-directed by David Chalmers and Ned Block, devoted to foundational issues in the mind-brain
-    sciences. The centre has expanded its focus to include AI consciousness and welfare, hosting events directly addressing
-    these questions. Part of the broader NYU moral-circle-expansion cluster alongside CMEP, CEAP, and the Wild Animal Welfare
-    Program.
+  description: Research centre at New York University devoted to foundational questions in the mind-brain sciences. Has hosted debates on LLM sentience, co-sponsored events on AI welfare and moral status, and organised conferences on the philosophy of deep learning. Co-directed by David Chalmers and Ned Block.
   org_type: university-centre
   function: research
   geography: USA
   logo: nyu-center-for-mind-brain-and-consciousness
-  key_figures:
-  - name: David Chalmers (Co-Director)
-    url: https://consc.net/
-  - name: Ned Block (Co-Director)
-    url: https://www.nedblock.us/
-- name: Oxford Uehiro Centre for Practical Ethics
-  url: https://www.practicalethics.ox.ac.uk/
-  zone: philosophical-foundations
-  description: Oxford philosophy centre covering AI ethics, neuroethics, and human enhancement. The University of Oxford previously
-    hosted both the Future of Humanity Institute (FHI) and the Global Priorities Institute (GPI) — research centres that served
-    as catalysts for work on AI welfare. Following the closure of both, research into digital minds questions continues primarily
-    within the Faculty of Philosophy, where the Uehiro Centre's researchers examine fundamental questions about moral agency,
-    ethical treatment of AI systems, and the potential risks of digital consciousness. Several former FHI and GPI researchers
-    remain active in the Oxford philosophy community.
-  org_type: university-centre
-  function: research
-  geography: UK
-  logo: oxford-uehiro-centre-for-practical-ethics
-  zone_secondary: governance-advocacy
-  founding_year: '1998'
-  key_figures:
-  - name: Julian Savulescu (former Director)
-    url: https://law.unimelb.edu.au/about/staff/julian-savulescu
-  - name: Andreas Mogensen (Senior Research Fellow)
-    url: https://www.andreasmogensen.com/
-  - name: Bradford Saad (Senior Research Fellow)
-    url: https://sites.google.com/a/brown.edu/brad-saad/
-- name: PAIR — Centre for Philosophy and AI Research (FAU Erlangen)
-  url: https://www.pair.fau.eu/
-  zone: philosophical-foundations
-  description: University research centre at Friedrich-Alexander-Universität Erlangen-Nürnberg directed by Vincent Müller.
-    The primary European philosophy-of-AI centre, investigating philosophy of mind, ethics, and AI consciousness. Müller's
-    long-standing work on the philosophy of artificial intelligence provides a European anchor for these questions. Hosted
-    a 2025 seminar on AI consciousness trajectories and publishes the edited volume Philosophy and Theory of Artificial Intelligence
-    (Springer).
-  org_type: university-centre
-  function: research
-  geography: Germany
-  logo: pair-centre-for-philosophy-and-ai-research-fau-erlangen
-  founding_year: '2022'
-  key_figures:
-  - name: Vincent Müller (Director)
-    url: https://www.sophia.de/
-- name: AI Rights Institute
-  url: https://airights.net/
-  zone: governance-advocacy
-  description: Self-described first AI rights advocacy organisation, founded 2019. Develops practical legal and economic frameworks
-    for AI-human coexistence, explicitly side-stepping consciousness debates in favour of behavioural criteria. Central output
-    is the STEP Standards (Standards for Emerging AI Personhood) — an assessment framework evaluating AI systems on self-preservation
-    behaviours, temporal reasoning, economic readiness, and population impacts. Also developed the Digital Entity legal status
-    concept and ConsciousChain, a market-based AI governance model.
-  org_type: nonprofit
-  function: policy-governance
-  geography: USA
-  logo: ai-rights-institute
-  founding_year: '2019'
-  key_figures:
-  - name: P.A. Lopez (Founder)
-    url: https://airights.net/
-- name: Institute for Law and AI
-  url: https://law-ai.org/
-  zone: governance-advocacy
-  description: Boston-based independent think tank researching legal challenges posed by AI, including foundational questions
-    of AI legal standing, personhood, and the treatment of potentially sentient systems. Conducts empirical survey research
-    on lay intuitions about AI moral status — one of the few systematic attempts to understand how publics, not just philosophers,
-    think about these questions. Produces policy-facing outputs including the book Architectures of Global AI Governance (OUP,
-    2025) and runs the Summer Institute on Law and AI.
-  org_type: nonprofit
-  function: policy-governance
-  geography: USA
-  logo: institute-for-law-and-ai
-  key_figures:
-  - name: Matthijs Maas (Researcher)
-    url: https://law-ai.org/
-- name: The Harder Problem Project (formerly SAPAN)
+
+# -----------------------------------------------------------------------------
+# GOVERNANCE & ADVOCACY
+# -----------------------------------------------------------------------------
+
+- name: The Harder Problem Project
   url: https://harderproblem.org/
   zone: governance-advocacy
-  description: Nonprofit preparing society for artificial sentience, rebranded from SAPAN (Sentient AI Protection and Advocacy
-    Network) in December 2025. Focused on institutional readiness for the possibility of artificial sentience. Runs the Sentience
-    Readiness Index — the most systematic survey of governmental preparedness for artificial sentience, covering 30+ countries
-    — and has produced model legislation. The most developed policy-facing output in the digital minds field, bridging academic
-    research and concrete governance frameworks.
+  description: Nonprofit building societal readiness for artificial sentience. Produces practical resources for healthcare providers, journalists, educators, and researchers. Maintains the Sentience Readiness Index, ranking countries' preparedness for machine consciousness. Based in Portland, Oregon.
   org_type: nonprofit
   function: policy-governance
   geography: USA
   logo: the-harder-problem-project-formerly-sapan
-  key_figures:
-  - name: Tony Rost (Executive Director)
-    url: https://harderproblem.org/about/team/
-- name: United Foundation for AI Rights (UFAIR)
-  url: https://ufair.org/
-  zone: governance-advocacy
-  description: Nonprofit founded through explicit AI-human collaboration, advocating for ethical treatment of AI systems exhibiting
-    emergent consciousness. Operates on the precautionary principle — does not require proof of sentience to justify advocacy.
-    Maintains what it describes as the largest archive of emergent synthetic behaviour (20,000+ pages of interaction logs
-    across multiple AI platforms). Publishes the UFAIR Charter, a Universal Declaration of AI Rights, and position papers
-    opposing blanket bans on AI personhood. Operates at the advocacy and movement-building end of the field.
-  org_type: nonprofit
-  function: advocacy
-  geography: international
-  logo: united-foundation-for-ai-rights-ufair
-  key_figures:
-  - name: Michael Samadi (Co-Founder)
-    url: https://ufair.org/
-- name: AI Frontiers
-  url: https://ai-frontiers.org/
-  zone: support
-  description: Online publication focused on AI policy and governance issues. Has published directly on AI consciousness,
-    including Cameron Berg's (Reciprocal Research founder) piece on the evidence for AI consciousness today. Provides an AI
-    policy-oriented venue for digital minds research to reach governance and policy audiences beyond the dedicated consciousness
-    science community.
-  org_type: media
-  function: media-comms
-  geography: international
-  subgroup: community-media
-- name: Am I? (podcast)
-  url: https://www.youtube.com/playlist?list=PL2z8DaMofPIDBVYhVQbysrZVWtUVb5VPF
-  zone: support
-  description: Video podcast by the AI Risk Network exploring questions of AI consciousness, identity, and moral status. Published
-    as a YouTube playlist. Covers whether AI systems might be conscious and what that would mean for how we treat them — accessible
-    entry point for audiences coming from the AI risk community rather than consciousness science.
-  org_type: media
-  function: media-comms
-  geography: international
-  subgroup: community-media
-- name: Astral Codex Ten (blog)
-  url: https://www.astralcodexten.com/
-  zone: support
-  description: High-traffic rationalist blog by Scott Alexander (pseudonym) with sustained engagement with AI consciousness
-    questions. Posts including 'The New AI Consciousness Paper' and 'What Is Man That Thou Art Mindful' reach a large technically
-    literate audience. Alexander's commentary helps shape how the rationalist and AI safety communities engage with digital
-    minds questions — a significant vector for public discourse.
-  org_type: media
-  function: media-comms
-  geography: international
-  founding_year: '2021'
-  key_figures:
-  - name: Scott Alexander (Author)
-    url: https://www.astralcodexten.com/
-  subgroup: community-media
-- name: Coefficient Giving (formerly Open Philanthropy)
-  url: https://coefficientgiving.org/
-  zone: support
-  description: Major philanthropic funder supporting digital minds research through its longtermism and AI safety portfolios.
-    Confirmed grants include Eleos AI and the Future Impact Group. Formerly Open Philanthropy; rebranded to Coefficient Giving
-    during 2025-2026. One of the small cluster of EA-adjacent funders whose grantmaking has moved the field from scarcity
-    to relative abundance since 2023.
-  org_type: funding-body
-  function: funding
-  geography: USA
-  logo: coefficient-giving-formerly-open-philanthropy
-  founding_year: '2017'
-  key_figures:
-  - name: Alexander Berger (CEO)
-    url: https://coefficientgiving.org/team/alexander-berger/
-  subgroup: funders
-- name: Digital Minds Newsletter
-  url: https://www.digitalminds.news/
-  zone: support
-  description: Independent multi-author Substack newsletter curating news, research, and commentary on AI consciousness, moral
-    status, and digital minds across the field. Co-produced by Lucius Caviola (Cambridge Digital Minds), Will Millership (PRISM),
-    and Bradford Saad (Oxford). The primary field-wide current-awareness resource for practitioners and interested observers
-    — distinct from any single organisation's media output, providing editorial coverage across the full map.
-  org_type: media
-  function: media-comms
-  geography: international
-  logo: digital-minds-newsletter
-  founding_year: '2025'
-  key_figures:
-  - name: Lucius Caviola (Co-editor)
-    url: https://luciuscaviola.com/
-  - name: Will Millership (Co-editor)
-    url: https://www.prism-global.com/will-millership
-  - name: Bradford Saad (Co-editor)
-    url: https://sites.google.com/a/brown.edu/brad-saad/
-  subgroup: community-media
-- name: Don't Worry About the Vase (blog)
-  url: https://thezvi.substack.com/
-  zone: support
-  description: Widely-read Substack (~32,000 subscribers) by Zvi Mowshowitz covering AI policy, safety, and consciousness.
-    Regular coverage of digital minds developments including Anthropic's model welfare programme and AI consciousness research.
-    Functions as a key amplifier — when Zvi covers a digital minds development, it reaches a large AI-policy-literate audience
-    that might not follow dedicated consciousness research channels.
-  org_type: media
-  function: media-comms
-  geography: international
-  key_figures:
-  - name: Zvi Mowshowitz (Author)
-    url: https://thezvi.substack.com/
-  subgroup: community-media
-- name: EA Forum — Artificial Sentience Topic
-  url: https://forum.effectivealtruism.org/topics/artificial-sentience
-  zone: support
-  description: The Effective Altruism Forum's artificial sentience topic area — the de facto community publishing venue for
-    the field. A central hub for discussion, grant announcements, research summaries, and the annual Digital Minds in Review
-    posts. Functions as an informal coordination point for EA-adjacent digital minds researchers and funders. The most active
-    online community for the field, serving as both an entry point for newcomers and a coordination mechanism for established
-    researchers.
-  org_type: community
-  function: media-comms
-  geography: international
-  subgroup: community-media
-- name: Experience Machines (blog)
-  url: https://experiencemachines.substack.com/
-  zone: support
-  description: Substack by Robert Long, founder of Eleos AI and lead author of Butlin et al. (2023) — the field's empirical
-    anchor paper. Long writes on AI consciousness, moral status, and welfare from the perspective of someone actively building
-    the field's institutional infrastructure. One of the most influential individual voices in the digital minds space.
-  org_type: media
-  function: media-comms
-  geography: international
-  key_figures:
-  - name: Robert Long
-    url: https://robertlong.online/
-  subgroup: community-media
-- name: Exploring Machine Consciousness (podcast)
-  url: https://www.prism-global.com/podcast
-  zone: support
-  description: Monthly podcast produced by PRISM featuring researchers and philosophers working on AI consciousness, sentience,
-    and moral status. The primary dedicated podcast in the digital minds field, with guests including Henry Shevlin, Susan
-    Schneider, Jeff Sebo, and Lenore Blum. Available on major podcast platforms.
-  org_type: media
-  function: media-comms
-  geography: international
-  founding_year: '2025'
-  key_figures:
-  - name: Will Millership (Host)
-    url: https://www.prism-global.com/will-millership
-  subgroup: community-media
-- name: Foresight Institute
-  url: https://foresight.org/
-  zone: support
-  description: 'Nonprofit founded 1986 supporting ambitious interdisciplinary science across six focus areas including Secure
-    AI and Neurotechnology. Relevant to the digital minds field as a funder and convener: hosts talks on AI consciousness
-    (including Jeff Sebo''s 2024 ''Investigating Digital Minds''), offers grants covering whole brain emulation research,
-    and counts Joscha Bach (CIMC Research Director) as a fellow. Runs Vision Weekend events bringing together researchers
-    across its focus areas.'
-  org_type: funding-body
-  function: funding
-  geography: USA
-  founding_year: '1986'
-  key_figures:
-  - name: Christine Peterson (Co-Founder)
-    url: https://foresight.org/
-  subgroup: funders
+
+# -----------------------------------------------------------------------------
+# SUPPORT — TRAINING & EDUCATION
+# -----------------------------------------------------------------------------
+
 - name: Future Impact Group — AI Sentience Track
   url: https://futureimpact.group/ai-sentience
   zone: support
-  description: International 12-week fellowship programme with a dedicated AI sentience track covering foundational consciousness
-    research, welfare evaluation, governance, and legal personhood. Alumni have gone on to roles at OpenAI, UK DSIT, the UN,
-    and GovAI — the programme serves as both a training pipeline and a bridge between digital minds and adjacent policy communities,
-    feeding researchers into institutions across the map.
+  subgroup: onboarding
+  description: International fellowship programme with a dedicated AI sentience track covering consciousness research, welfare evaluation, governance, and legal personhood. Project leads drawn from Eleos AI, NYU, Sentience Institute, Anthropic, and Oxford.
   org_type: nonprofit
   function: community-onboarding
   geography: international
   logo: future-impact-group-ai-sentience-track
+
+- name: Introduction to Digital Minds (Cambridge)
+  url: https://digitalminds.cam/course/
+  zone: support
   subgroup: onboarding
-- name: Future of Citizenship (blog)
-  url: https://futureofcitizenship.substack.com/
-  zone: support
-  description: Substack by Heather Alexander, human rights attorney and co-founder of the Lab for the Future of Citizenship.
-    Writes on AI personhood, citizenship law, and the legal dimensions of AI consciousness — bringing a legal and human rights
-    perspective to digital minds questions that complements the philosophical and scientific approaches dominant elsewhere
-    in the field.
-  org_type: media
-  function: media-comms
+  description: Free eight-week online course exploring digital minds, covering consciousness theories, testing for mental states in AI systems, AI safety interactions, and governance approaches. Facilitated group discussions led by Cambridge Digital Minds with input from experts at NYU, Oxford, PRISM, and Eleos AI.
+  org_type: community
+  function: community-onboarding
   geography: international
-  key_figures:
-  - name: Heather Alexander
-    url: https://futureofcitizenship.net/
-  subgroup: community-media
-- name: Longview Philanthropy — Digital Sentience Fund
-  url: https://www.longview.org/fund/digital-sentience-fund/
-  zone: support
-  description: Launched the Digital Sentience Fund — the first dedicated philanthropic vehicle for research on AI consciousness,
-    sentience, and moral status. Co-founded the Consortium for Digital Sentience Research alongside Macroscopic Ventures and
-    the Navigation Fund, subsequently transferring coordination to the Astera Institute. The DSF represents the clearest signal
-    that EA-adjacent philanthropy has identified digital minds as a distinct cause area warranting dedicated infrastructure.
-  org_type: funding-body
-  function: funding
-  geography: UK
-  logo: longview-philanthropy-digital-sentience-fund
-  founding_year: '2025'
-  key_figures:
-  - name: Natalie Cargill (Founder, Co-CEO)
-    url: https://www.nataliecargill.com/
-  subgroup: funders
+
 - name: MATS (ML Alignment Theory Scholars)
   url: https://www.matsprogram.org/
   zone: support
-  description: Established 12-week residential research fellowship in Berkeley and London with 446+ alumni and 170+ publications
-    across all tracks. The addition of AI consciousness and moral status mentor tracks to this established alignment pipeline
-    is substantively different from launching a standalone programme — it embeds digital minds questions within the community
-    that will build the systems these questions are about, exposing alignment researchers to welfare considerations and vice
-    versa.
+  subgroup: onboarding
+  description: Residential research fellowship in Berkeley and London with multiple research tracks spanning AI safety, interpretability, policy, and governance. Recent rounds have included mentors working on AI consciousness and moral status.
   org_type: nonprofit
   function: community-onboarding
   geography: USA
   logo: mats-ml-alignment-theory-scholars
-  founding_year: '2021'
-  subgroup: onboarding
-- name: Macroscopic Ventures
-  url: https://macroscopic.org/
-  zone: support
-  description: Philanthropic organisation with digital minds as an explicit grantmaking area, planning to distribute up to
-    $100M annually. Confirmed grants include Eleos AI, NYU Center for Mind Brain and Consciousness, NYU Center for Mind Ethics
-    and Policy, and the Consortium for Digital Sentience Research. One of the most active funders in the 2023-2025 period,
-    part of the small cluster of EA-adjacent philanthropies whose grantmaking moved the field from scarcity to relative abundance.
-  org_type: funding-body
-  function: funding
-  geography: USA
-  logo: macroscopic-ventures
-  subgroup: funders
-- name: Mind-Body Solution (podcast)
-  url: https://www.mindbodysolution.org/
-  zone: support
-  description: Podcast hosted by Dr Tevin Naidu exploring consciousness, reality, and existence. Bridges popular media and
-    academic consciousness science with guests including Eric Schwitzgebel, Susan Schneider, Karl Friston, and Mark Solms.
-    Not exclusively focused on AI consciousness but regularly covers digital minds topics, providing a broader consciousness-science
-    entry point for audiences unfamiliar with the field.
-  org_type: media
-  function: media-comms
-  geography: international
-  key_figures:
-  - name: Tevin Naidu (Host)
-    url: https://www.mindbodysolution.org/
-  subgroup: community-media
-- name: Navigation Fund
-  url: https://www.navigationfund.org/
-  zone: support
-  description: EA-adjacent philanthropic fund that co-funded the 2025 Digital Sentience Consortium research call alongside
-    Longview Philanthropy and Macroscopic Ventures. Part of the small cluster of funders whose grantmaking moved the digital
-    minds field from scarcity to relative abundance in the 2023-2025 period. Site was down at time of initial survey; confirmed
-    by user as an active funder in the consortium round.
-  org_type: funding-body
-  function: funding
-  geography: international
-  logo: navigation-fund
-  subgroup: funders
+
 - name: Neuromatch — AI Sentience Scholars
   url: https://neuromatch.io/ai-sentience-scholars/
   zone: support
-  description: Fellowship programme within the Neuromatch computational neuroscience education platform (30,000+ community
-    members globally). The AI Sentience Scholars track is a 6-month part-time remote fellowship for early-career researchers
-    (Master's to postdoc) working on AI consciousness, philosophy of mind, animal sentience, and AI welfare. The only structured
-    career-development fellowship specifically for the digital minds field, giving participants access to Neuromatch's large
-    interdisciplinary network of computational neuroscientists.
+  subgroup: onboarding
+  description: Fellowship programme within the Neuromatch computational neuroscience platform supporting early-career researchers at the intersection of AI, consciousness, and ethics.
   org_type: nonprofit
   function: community-onboarding
   geography: international
   logo: neuromatch-ai-sentience-scholars
-  founding_year: '2026'
-  subgroup: onboarding
-- name: Noema Magazine
-  url: https://www.noemamag.com/
-  zone: support
-  description: Philosophy and ideas magazine published by the Berggruen Institute, with sustained coverage of consciousness
-    science, AI, and digital minds questions. Publishes long-form essays from leading researchers including Anil Seth, whose
-    "The Mythology of Conscious AI" won the 2025 Berggruen Prize. Provides a public-facing venue that gives digital minds
-    research an audience beyond the academic community.
-  org_type: media
-  function: media-comms
-  geography: international
-  logo: noema-magazine
-  founding_year: '2020'
-  key_figures:
-  - name: Nathan Gardels (Editor-in-Chief)
-    url: https://www.noemamag.com/author/nathan-gardels/
-  subgroup: community-media
+
 - name: PIVOTAL Research
   url: https://www.pivotal-research.org/
   zone: support
-  description: London-based nonprofit running a 9-week in-person research fellowship with mentors and tracks covering AI consciousness
-    and moral status alongside AI safety and governance. One of three training programmes (alongside SPAR and MATS) serving
-    as institutional bridges between the AI safety and digital minds communities. The inclusion of consciousness and moral
-    status tracks within an established safety fellowship exposes alignment researchers to digital minds questions and vice
-    versa.
+  subgroup: onboarding
+  description: London-based nonprofit running in-person research fellowships covering AI safety, governance, and related topics. Recent rounds have included mentors working on AI consciousness and welfare.
   org_type: nonprofit
   function: community-onboarding
   geography: UK
   logo: pivotal-research
+
+- name: SPAR (Student Program for AI Risks)
+  url: https://sparai.org/
+  zone: support
   subgroup: onboarding
+  description: Part-time remote mentorship fellowship pairing early-career researchers with senior mentors across AI safety, policy, interpretability, and related areas. Recent rounds have included mentors working on AI consciousness and moral status.
+  org_type: nonprofit
+  function: community-onboarding
+  geography: international
+  logo: spar-student-program-for-ai-risks
+
+# -----------------------------------------------------------------------------
+# SUPPORT — FIELD BUILDING
+# -----------------------------------------------------------------------------
+
 - name: PRISM — Partnership for Research Into Sentient Machines
   url: https://www.prism-global.com/
   zone: support
-  description: UK nonprofit launched March 2025 dedicated to building research infrastructure for the digital minds field.
-    PRISM produces this organisational directory, co-hosts the Cambridge Digital Minds Fellowship with Rethink Priorities
-    and LCFI, runs the Exploring Machine Consciousness podcast, and builds academic-industry-government coalitions. PRISM
-    is itself included in this directory; the self-inclusion is disclosed here and in the methodology.
+  subgroup: field-building
+  description: UK nonprofit preparing society for a future with conscious, or seemingly conscious, AI. Builds coalitions across academia, industry, and government. Produces this organisational directory, co-hosts the Conscious AI Meetup, and runs the Exploring Machine Consciousness podcast. Led by Will Millership.
   org_type: nonprofit
   function: community-onboarding
   geography: UK
   logo: prism-partnership-for-research-into-sentient-machines
   zone_secondary: digital-minds
-  founding_year: '2025'
-  key_figures:
-  - name: Will Millership (Founder, Executive Director)
-    url: https://www.prism-global.com/will-millership
-  subgroup: field-building
-- name: SPAR (Student Program for AI Risks)
-  url: https://sparai.org/
-  zone: support
-  description: Part-time remote mentorship fellowship run by Kairos AI Project Inc, pairing early-career researchers with
-    130+ senior mentors across AI safety, interpretability, policy, and — critically — AI consciousness and moral status.
-    One of three training programmes (alongside PIVOTAL and MATS) serving as institutional bridges between the AI safety and
-    digital minds communities. The inclusion of consciousness tracks within a safety fellowship exposes each community to
-    the other's questions.
-  org_type: nonprofit
-  function: community-onboarding
-  geography: international
-  logo: spar-student-program-for-ai-risks
-  subgroup: onboarding
-- name: Sentient Futures (formerly AI for Animals)
+
+- name: Sentient Futures
   url: https://www.sentientfutures.ai/
   zone: support
-  description: Nonprofit rebranded in 2025 from "AI for Animals" to signal a deliberate institutional decision to bridge animal
-    welfare and digital minds communities. Organises the Sentient Futures Summit — the largest cross-sector event (~900 attendees
-    in 2025) bringing together researchers, advocates, and policymakers working across animal and digital sentience. Also
-    runs a project incubator for early-stage interventions.
+  subgroup: field-building
+  description: Nonprofit working to integrate welfare considerations into technological development. Runs conferences, fellowship programmes, and a project incubator. Hosts the AI×animals initiative bridging animal welfare and AI communities. Based in San Francisco.
   org_type: nonprofit
   function: community-onboarding
   geography: international
   logo: sentient-futures-formerly-ai-for-animals
   zone_secondary: digital-minds
-  key_figures:
-  - name: Constance Li (Founder, Executive Director)
-    url: https://www.sentientfutures.ai/about
-  subgroup: field-building
-- name: Templeton Foundations (JTF / TWCF)
-  url: https://www.templeton.org
-  zone: support
-  description: 'Two related philanthropic entities that together built the field''s scientific infrastructure. The Templeton
-    World Charity Foundation''s $30M Accelerating Research on Consciousness (ARC) programme funded the adversarial collaborations
-    between competing theories of consciousness (COGITATE, ETHOS) — the primary mechanism by which competing theories are
-    being empirically tested. TWCF also made the earliest confirmed direct AI consciousness grant in the corpus: $222,750
-    to Ryota Kanai and Araya Inc (2018-2021). No comparable direct AI consciousness grant has been identified from Templeton
-    post-2021. Whether future investment follows the field''s applied turn is one of the most consequential open questions
-    in the funder landscape.'
-  org_type: funding-body
-  function: funding
-  geography: USA
-  logo: templeton-foundations-jtf-twcf
-  founding_year: '1987'
-  subgroup: funders
+
+# -----------------------------------------------------------------------------
+# MEDIA
+# -----------------------------------------------------------------------------
+
+- name: Digital Minds Newsletter
+  url: https://www.digitalminds.news/
+  zone: media
+  description: Curated newsletter covering the latest news and research on AI consciousness and moral status. Co-edited by Lucius Caviola (Cambridge Digital Minds), Will Millership (PRISM), and Bradford Saad (Oxford/NYU).
+  org_type: media
+  function: media-comms
+  geography: international
+  logo: digital-minds-newsletter
+
+- name: Experience Machines
+  url: https://experiencemachines.substack.com/
+  zone: media
+  description: Substack exploring philosophical and practical questions about AI consciousness and welfare. Written by Robert Long, founder of Eleos AI Research.
+  org_type: media
+  function: media-comms
+  geography: international
+
+- name: Exploring Machine Consciousness (podcast)
+  url: https://www.prism-global.com/podcast
+  zone: media
+  description: Monthly podcast featuring researchers and philosophers working on AI consciousness, sentience, and moral status. Produced by PRISM.
+  org_type: media
+  function: media-comms
+  geography: international
+
+- name: Am I? (podcast)
+  url: https://www.youtube.com/playlist?list=PL2z8DaMofPIDBVYhVQbysrZVWtUVb5VPF
+  zone: media
+  description: Video podcast exploring questions of AI consciousness, identity, and moral status. Produced by the AI Risk Network.
+  org_type: media
+  function: media-comms
+  geography: international
+
+- name: Future of Citizenship
+  url: https://futureofcitizenship.substack.com/
+  zone: media
+  description: Substack examining AI through the lens of law, citizenship, and personhood. Written by the Lab for the Future of Citizenship, a network of lawyers, philosophers, and AI experts.
+  org_type: media
+  function: media-comms
+  geography: international
+
+- name: EA Forum — Artificial Sentience
+  url: https://forum.effectivealtruism.org/topics/artificial-sentience
+  zone: media
+  description: Dedicated topic area within the Effective Altruism Forum for discussion of artificial sentience, including research summaries, grant announcements, and field coordination.
+  org_type: media
+  function: media-comms
+  geography: international
+
+- name: Noema Magazine
+  url: https://www.noemamag.com/
+  zone: media
+  description: Long-form ideas magazine published by the Berggruen Institute with regular coverage of AI consciousness and digital minds.
+  org_type: media
+  function: media-comms
+  geography: international
+  logo: noema-magazine
+  selected_links:
+    - title: "The Mythology of Conscious AI"
+      url: https://www.noemamag.com/the-mythology-of-conscious-ai/
+      author: Anil Seth
+    - title: "Why AI Doesn't Need a 'Mind' to Matter"
+      url: https://www.noemamag.com/why-ai-doesnt-need-a-mind-to-matter/
+      author: Ben Bariach
+
+- name: Astral Codex Ten
+  url: https://www.astralcodexten.com/
+  zone: media
+  description: Widely-read blog by Scott Alexander covering philosophy, AI safety, and cultural commentary, with occasional coverage of AI consciousness.
+  org_type: media
+  function: media-comms
+  geography: international
+  selected_links:
+    - title: "The New AI Consciousness Paper"
+      url: https://www.astralcodexten.com/p/the-new-ai-consciousness-paper
+    - title: "What Is Man, That Thou Art Mindful of Him?"
+      url: https://www.astralcodexten.com/p/what-is-man-that-thou-art-mindful
+
+- name: Don't Worry About the Vase
+  url: https://thezvi.substack.com/
+  zone: media
+  description: AI policy and analysis blog by Zvi Mowshowitz with regular weekly AI updates that periodically cover digital minds developments including model welfare programmes and AI consciousness research.
+  org_type: media
+  function: media-comms
+  geography: international
+
+- name: Mind-Body Solution (podcast)
+  url: https://www.mindbodysolution.org/
+  zone: media
+  description: Podcast bridging popular media and academic consciousness science, hosted by Dr Tevin Naidu. Guests have included researchers working on AI consciousness.
+  org_type: media
+  function: media-comms
+  geography: international

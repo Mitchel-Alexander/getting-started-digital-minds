@@ -1042,6 +1042,11 @@ details.discipline .discipline-body ul:last-child {
   color: #7a6540;
 }
 
+.org-zone-tag--media {
+  background: #f5efe8;
+  color: #8b5e3c;
+}
+
 .org-name {
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
   font-size: 0.92rem;
@@ -1223,6 +1228,28 @@ details.discipline .discipline-body ul:last-child {
 }
 
 .modal-people-list a:hover {
+  text-decoration-color: #003366;
+}
+
+.modal-selected-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-selected-list li {
+  font-size: 0.85rem;
+  color: #333;
+  padding: 0.15rem 0;
+}
+
+.modal-selected-list a {
+  color: #003366;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 51, 102, 0.3);
+}
+
+.modal-selected-list a:hover {
   text-decoration-color: #003366;
 }
 
