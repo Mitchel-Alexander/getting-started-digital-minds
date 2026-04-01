@@ -826,42 +826,42 @@ details.discipline .discipline-body ul:last-child {
 }
 
 .directory-toc {
-  background: #f8f9fb;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 1rem 1.5rem 1rem 1.5rem;
   margin-bottom: 2rem;
   max-width: 720px;
 }
 
-.directory-toc::before {
-  content: "On this page";
-  display: block;
-  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #1a1a2e;
-  margin-bottom: 0.5rem;
-}
-
 .directory-toc ul {
   list-style: none;
-  padding-left: 0.25rem;
+  padding: 0;
   margin: 0;
-  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .directory-toc li {
-  margin-bottom: 0.25rem;
+  margin: 0;
 }
 
 .directory-toc a {
-  color: #003366;
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #555;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
   text-decoration: none;
+  transition: all 0.15s;
+  line-height: 1.4;
 }
 
 .directory-toc a:hover {
-  text-decoration: underline;
+  color: #003366;
+  border-color: #003366;
+  background: #f0f4f8;
 }
 
 /* Directory section headings */
