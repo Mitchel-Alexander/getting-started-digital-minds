@@ -36,6 +36,40 @@
   url: /field-map/
   sections: []
 
+- title: Open Questions
+  url: /open-questions/
+  sections:
+    - title: About This Directory
+      anchor: about-this-directory
+    - title: Framing Questions
+      anchor: framing-questions
+    - title: Consciousness
+      anchor: 1-consciousness-theories-and-application-to-ai
+    - title: Sentience
+      anchor: 2-sentience-valence-and-the-experience-of-suffering
+    - title: Agency
+      anchor: 3-agency-desires-and-moral-status-without-consciousness
+    - title: Inside AI Systems
+      anchor: 4-what-is-happening-inside-ai-systems
+    - title: Assessment
+      anchor: 5-assessing-ai-systems-indicators-evaluations-and-welfare-measurement
+    - title: Uncertainty
+      anchor: 6-uncertainty-credences-and-decision-making-under-ignorance
+    - title: Willing Servitude
+      anchor: 7-willing-servitude-and-designed-preferences
+    - title: Safety-Welfare
+      anchor: 8-the-safety-welfare-interface
+    - title: Norms & Institutions
+      anchor: 9-norms-institutions-and-welfare-sensitive-design
+    - title: Rights & Law
+      anchor: 10-rights-legal-personhood-and-political-frameworks
+    - title: Public Perception
+      anchor: 11-public-perception-and-social-dynamics
+    - title: AI Companions
+      anchor: 12-ai-companions-and-consumer-dynamics
+    - title: Forecasting
+      anchor: 13-forecasting-and-futures
+
 - title: Tips & Resources
   url: /tips-resources/
   sections: []

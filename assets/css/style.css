@@ -1285,3 +1285,41 @@ details.discipline .discipline-body ul:last-child {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Register tags (Open Questions) */
+.register-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.15em 0.45em;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-right: 0.25em;
+  text-transform: uppercase;
+}
+
+.register-tag--phil {
+  background: #e8e0f0;
+  color: #4a2d6e;
+}
+
+.register-tag--emp {
+  background: #dceef8;
+  color: #1a5276;
+}
+
+.register-tag--soc {
+  background: #fef3d6;
+  color: #7d5a00;
+}
+
+.register-tag--pol {
+  background: #d6f0e0;
+  color: #1a6b3c;
+}
+
+.register-tag--str {
+  background: #fde0d8;
+  color: #8b2500;
+}
